@@ -4,7 +4,7 @@ import os
 
 def extract():
     api_url = "https://the-trivia-api.com/v2/questions"
-    curr_dir = os.getcwd()
+    curr_dir = os.path.dirname(os.path.abspath(__file__))
 
     try:
         response = requests.get(api_url)
@@ -21,3 +21,6 @@ def extract():
         print(f"Error making API request: {e}")
     except json.JSONDecodeError as e:
         print(f"Error decoding JSON response: {e}")
+
+if __name__ == '__main__':
+    extract()
