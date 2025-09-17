@@ -104,15 +104,15 @@ class Quiz:
     def all_asked(self):
         return True if len(self.asked_questions) >= len(self._data) else False    
 
+if __name__ == "__main__":
+    q = Quiz()
+    q.load_questions()
 
-q = Quiz()
-q.load_questions()
+    while not q.all_asked():
+        que = q.ask_question()
 
-while not q.all_asked():
-    que = q.ask_question()
+        print(que["text"])
 
-    print(que["text"])
+        q.get_answer(que["index"])
 
-    q.get_answer(que["index"])
-
-q.display_score()
+    q.display_score()
