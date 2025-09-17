@@ -1,0 +1,221 @@
+[
+    {
+        "category": "science",
+        "id": "622a1c3e7cc59eab6f9522ee",
+        "correctAnswer": "Rabies",
+        "incorrectAnswers": [
+            "Smallpox",
+            "Coronavirus",
+            "Diabetes"
+        ],
+        "question": {
+            "text": "For What Illness Did Louis Pasteur Develop A Cure?"
+        },
+        "tags": [
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "622a1c357cc59eab6f94ff7a",
+        "correctAnswer": "Tonga",
+        "incorrectAnswers": [
+            "Samoa",
+            "Mexico",
+            "New Zealand"
+        ],
+        "question": {
+            "text": "Which country altered its timezone in order to be the first to see in the year 2000 ?"
+        },
+        "tags": [
+            "00's",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "general_knowledge",
+        "id": "6355b7e2e8b368eed3a68233",
+        "correctAnswer": "The p in 'pin'",
+        "incorrectAnswers": [
+            "The ch in 'cheese'",
+            "The n in 'no'",
+            "The m in 'mother'"
+        ],
+        "question": {
+            "text": "In phonetics, which of these is an example of a plosive sound?"
+        },
+        "tags": [
+            "language",
+            "linguistics",
+            "general_knowledge",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "646089ddde964ebc39016c87",
+        "correctAnswer": "Joan of Arc",
+        "incorrectAnswers": [
+            "Mary Magdalene",
+            "St. Theresa",
+            "St. Catherine"
+        ],
+        "question": {
+            "text": "Which famous martyr is the heroine of many operas, including \"The Maid of Orleans\"?"
+        },
+        "tags": [
+            "opera",
+            "history",
+            "people",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c397cc59eab6f950eb8",
+        "correctAnswer": "Karel \u010capek",
+        "incorrectAnswers": [
+            "William Gibson",
+            "Maurice Leblanc",
+            "Neil Gaiman"
+        ],
+        "question": {
+            "text": "Which author wrote 'Krakatit'?"
+        },
+        "tags": [
+            "arts_and_literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "6461403b4d46e537ca8cd99e",
+        "correctAnswer": "The Netherlands",
+        "incorrectAnswers": [
+            "Poland",
+            "Portugal",
+            "Greece"
+        ],
+        "question": {
+            "text": "From 1795-1806, which country was briefly known as the Batavian Republic?"
+        },
+        "tags": [
+            "europe",
+            "history",
+            "countries"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c3a7cc59eab6f95135f",
+        "correctAnswer": "Monotype",
+        "incorrectAnswers": [
+            "Watercolor",
+            "Mache",
+            "Stenography"
+        ],
+        "question": {
+            "text": "What is the word given to a unique image printed from a polished plate which has been painted with a design in ink?"
+        },
+        "tags": [
+            "words",
+            "art",
+            "arts_and_literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "622a1c387cc59eab6f950858",
+        "correctAnswer": "Spain",
+        "incorrectAnswers": [
+            "Monaco",
+            "Switzerland",
+            "Luxembourg"
+        ],
+        "question": {
+            "text": "Which of these countries borders Andorra?"
+        },
+        "tags": [
+            "europe",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "647f9de83a4302a719271655",
+        "correctAnswer": "Scurvy",
+        "incorrectAnswers": [
+            "Smallpox",
+            "Malaria",
+            "Yellow fever"
+        ],
+        "question": {
+            "text": "What disease did the British navy begin issuing daily rations of lemon juice in 1795 to prevent?"
+        },
+        "tags": [
+            "nutrition",
+            "health",
+            "disease",
+            "diseases",
+            "science",
+            "medicine",
+            "seafaring",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "622a1c387cc59eab6f950806",
+        "correctAnswer": "Oceania",
+        "incorrectAnswers": [
+            "South America",
+            "Europe",
+            "Asia"
+        ],
+        "question": {
+            "text": "The country of Tonga is on which continent?"
+        },
+        "tags": [
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    }
+]

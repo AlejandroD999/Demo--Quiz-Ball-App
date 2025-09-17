@@ -1,0 +1,29 @@
+Quizball app
+
+Modules 
+    random, tkinter, ttkbootstrap, 
+    json, difflib's SequenceMatcher, os
+
+Procedure:
+    >Create pre-Quizball app
+        -Load Questions
+        -Ask Questions
+        -Get & Check answer
+        -Display Score
+
+    >Create GUI version
+    >Upload through  GIT
+
+Task:
+    -Load Questions: 10 random from api
+    -Ask one random, not asked question:
+        >Check:
+            -if correct:
+                >return "Correct!!"
+                > score + 1
+            -if not correct: return "Incorrect, ->" correct answer
+
+            -Questions answered count + 1
+        
+    -Repeat until quiz ends
+    -Display Score
