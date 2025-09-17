@@ -4,10 +4,6 @@ from difflib import SequenceMatcher
 import random
 import extract_questions as eq
 
-'''
-Need to convert code into a class...
-'''
-
 class Quiz:
 
     def __init__(self):
@@ -30,7 +26,7 @@ class Quiz:
             print("Extraction of questions required")
 
     def ask_question(self):
-        
+        #If no data found: generate new questions        
         if not self._data:
             self.generate_questions()
             return
@@ -41,7 +37,7 @@ class Quiz:
             self.generate_questions()
 
         question_index = self.generate_index()
-
+        
         self.asked_questions.add(question_index)
 
         
