@@ -37,7 +37,7 @@ class Quiz:
             self.generate_questions()
 
         question_index = self.generate_index()
-        
+
         self.asked_questions.add(question_index)
 
         
@@ -100,15 +100,6 @@ class Quiz:
     def all_asked(self):
         return True if len(self.asked_questions) >= len(self._data) else False    
 
-
-q = Quiz()
-q.load_questions()
-
-while not q.all_asked():
-    que = q.ask_question()
-
-    print(que["text"])
-
-    q.get_answer(que["index"])
-
-q.display_score()
+'''
+Class has no objects. Thus, it doesn't work
+'''
