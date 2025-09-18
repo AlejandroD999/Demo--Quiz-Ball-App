@@ -4,10 +4,6 @@ from difflib import SequenceMatcher
 import random
 import extract_questions as eq
 
-'''
-Need to convert code into a class...
-'''
-
 class Quiz:
 
     def __init__(self):
