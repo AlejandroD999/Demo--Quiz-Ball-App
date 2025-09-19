@@ -1,6 +1,7 @@
 import tkinter as tk
 import backend
-class QuizGUI(tk.Tk):
+
+class App(tk.Tk):
 
     def __init__(self):
         super().__init__()
@@ -10,11 +11,18 @@ class QuizGUI(tk.Tk):
         self.widgets()
 
     def widgets(self):
-        
-        self.header_frame = tk.Frame(master = self)
-        self.header_frame.pack()
+        self.current_view = self.home_frame
+        self.home_frame = tk.Frame(master = self)
+
+    def show_home(self):
+
+        self.current_view.pack_forget()
+        self.home_frame.pack(self, bg="black")
+
+    def show_other(self, current_view):
+        pass
 
 
-root = QuizGUI()
-
-root.mainloop()
+if __name__ == '__main__':
+    app = App()
+    app.mainloop()
