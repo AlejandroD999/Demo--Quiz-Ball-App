@@ -12,7 +12,7 @@ class App(CTk):
         self.title("QuizBall")
         self.background_color = "#00171f"
 
-        self.container = CTkFrame(self)
+        self.container = CTkFrame(self, fg_color=self.background_color)
         self.container.pack(fill="both", expand= True)
 
         self.pages = {}
@@ -21,7 +21,7 @@ class App(CTk):
             self.pages[Page] = page
             page.grid(row=0, column=0, sticky="nsew")
 
-        self.show_page(ModeSelectionPage)
+        self.show_page(HomePage)
 
     
     def show_page(self, page_class):
@@ -45,7 +45,7 @@ class HomePage(CTkFrame):
 
         self.start_button = CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3).pack(pady=(100, 0))
+                                 border_color="black", corner_radius = 3, command = self.start_quiz).pack(pady=(100, 0))
         
         self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
@@ -54,6 +54,9 @@ class HomePage(CTkFrame):
         self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3, command=lambda: quit()).pack(pady=(20, 0))
+
+    def start_quiz(self):
+        self.controller.show_page(ModeSelectionPage)
 
 class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
