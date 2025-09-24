@@ -9,7 +9,7 @@ class App(CTk):
         self.geometry("600x400")
         self.resizable(0, 0)
 
-        self.title("QuizBall")
+        self.title("CogniTriv")
         self.background_color = "#00171f"
 
         self.container = CTkFrame(self, fg_color=self.background_color)
@@ -40,7 +40,7 @@ class HomePage(CTkFrame):
         self.load_widgets()
 
     def load_widgets(self):
-        self.app_title = CTkLabel(self, text="Project Name", fg_color=self.controller.background_color, text_color="#007ea7",
+        self.app_title = CTkLabel(self, text="CogniTriv", fg_color=self.controller.background_color, text_color="#007ea7",
                          font=("Times New Roman", 48)).pack(pady=(35, 0))
 
         self.start_button = CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
