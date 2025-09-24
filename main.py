@@ -7,6 +7,8 @@ class App(customtkinter.CTk):
         super().__init__()
 
         self.geometry("600x400")
+        self.resizable(0, 0)
+
         self.title("QuizBall")
         self.background_color = "#00171f"
 
@@ -19,7 +21,7 @@ class App(customtkinter.CTk):
             self.pages[Page] = page
             page.grid(row=0, column=0, sticky="nsew")
 
-        self.show_page(HomePage)
+        self.show_page(ModeSelectionPage)
 
     
     def show_page(self, page_class):
@@ -29,7 +31,6 @@ class App(customtkinter.CTk):
 
 class HomePage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
-
         super().__init__(parent, fg_color = controller.background_color, corner_radius=0)
         self.controller = controller
 
@@ -56,18 +57,30 @@ class HomePage(customtkinter.CTkFrame):
 
 class ModeSelectionPage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
-        super().__init__(parent, fg_color="#003459")
+        super().__init__(parent, fg_color= controller.background_color, corner_radius=0)
+        self.controller = controller
+        self.propagate(False)
 
-        label = customtkinter.CTkLabel(self, text="Modes").pack(pady = 20)
+        self.load_widgets()
+
+
+    def load_widgets(self):
+
+        self.mode_label = customtkinter.CTkLabel(self, text="Select Mode", font=("Times New Roman", 36), text_color = "#007ea7",
+                                                 bg_color=self.controller.background_color).pack(pady=(35, 0))
+
 
 class QuizBallPage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
-        super().__init__(parent, fg_color='#003459')
+        self.controller = controller
+        super().__init__(parent, fg_color=self.controller.background_color, corner_radius=0)
+        self.propagate(False)
+
 
 class ResultsPage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
-        super().__init__(parent, fg_color="#003459")
-
+        super().__init__(parent, fg_color="#003459", corner_radius=0)
+        self.propagate(False)
 
 if __name__ == '__main__':
     app = App()
