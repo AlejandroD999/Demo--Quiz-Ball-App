@@ -36,18 +36,21 @@ class HomePage(customtkinter.CTkFrame):
         self.configure(width=600, height=400)
         self.propagate(False)
 
-        app_title = customtkinter.CTkLabel(self, text="Project Name", fg_color=self.controller.background_color, text_color="#007ea7",
+        self.load_widgets()
+
+    def load_widgets(self):
+        self.app_title = customtkinter.CTkLabel(self, text="Project Name", fg_color=self.controller.background_color, text_color="#007ea7",
                          font=("Times New Roman", 48)).pack(pady=(35, 0))
 
-        start_button = customtkinter.CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
+        self.start_button = customtkinter.CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3).pack(pady=(100, 0))
         
-        LearnMore_button = customtkinter.CTkButton(self, text="Learn More", font=("Times New Roman", 25),
+        self.LearnMore_button = customtkinter.CTkButton(self, text="Learn More", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3).pack(pady=(20, 0))
 
-        exit_button = customtkinter.CTkButton(self, text="Exit", font=("Times New Roman", 25),
+        self.exit_button = customtkinter.CTkButton(self, text="Exit", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3).pack(pady=(20, 0))
 
