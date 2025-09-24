@@ -96,6 +96,7 @@ class QuizBallPage(CTkFrame):
 
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
+        self.controller = controller
         super().__init__(parent, fg_color="#003459", corner_radius=0)
         self.propagate(False)
 
