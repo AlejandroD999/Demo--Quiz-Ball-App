@@ -52,7 +52,7 @@ class HomePage(customtkinter.CTkFrame):
 
         self.exit_button = customtkinter.CTkButton(self, text="Exit", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3).pack(pady=(20, 0))
+                                 border_color="black", corner_radius = 3, command=lambda: quit()).pack(pady=(20, 0))
 
 class ModeSelectionPage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
