@@ -1,7 +1,7 @@
-import customtkinter
+from customtkinter import *
 import backend
 
-class App(customtkinter.CTk):
+class App(CTk):
 
     def __init__(self):
         super().__init__()
@@ -12,7 +12,7 @@ class App(customtkinter.CTk):
         self.title("QuizBall")
         self.background_color = "#00171f"
 
-        self.container = customtkinter.CTkFrame(self)
+        self.container = CTkFrame(self)
         self.container.pack(fill="both", expand= True)
 
         self.pages = {}
@@ -29,7 +29,7 @@ class App(customtkinter.CTk):
         page.tkraise()
 
 
-class HomePage(customtkinter.CTkFrame):
+class HomePage(CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent, fg_color = controller.background_color, corner_radius=0)
         self.controller = controller
@@ -40,22 +40,22 @@ class HomePage(customtkinter.CTkFrame):
         self.load_widgets()
 
     def load_widgets(self):
-        self.app_title = customtkinter.CTkLabel(self, text="Project Name", fg_color=self.controller.background_color, text_color="#007ea7",
+        self.app_title = CTkLabel(self, text="Project Name", fg_color=self.controller.background_color, text_color="#007ea7",
                          font=("Times New Roman", 48)).pack(pady=(35, 0))
 
-        self.start_button = customtkinter.CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
+        self.start_button = CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3).pack(pady=(100, 0))
         
-        self.LearnMore_button = customtkinter.CTkButton(self, text="Learn More", font=("Times New Roman", 25),
+        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3).pack(pady=(20, 0))
 
-        self.exit_button = customtkinter.CTkButton(self, text="Exit", font=("Times New Roman", 25),
+        self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  border_color="black", corner_radius = 3, command=lambda: quit()).pack(pady=(20, 0))
 
-class ModeSelectionPage(customtkinter.CTkFrame):
+class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent, fg_color= controller.background_color, corner_radius=0)
         self.controller = controller
@@ -66,18 +66,32 @@ class ModeSelectionPage(customtkinter.CTkFrame):
 
     def load_widgets(self):
 
-        self.mode_label = customtkinter.CTkLabel(self, text="Select Mode", font=("Times New Roman", 36), text_color = "#007ea7",
-                                                 bg_color=self.controller.background_color).pack(pady=(35, 0))
+        self.mode_label = CTkLabel(self, text="Select a Mode", font=("Times New Roman", 54), text_color = "#007ea7",
+                                                 bg_color=self.controller.background_color).pack(pady=(60, 0))
 
+        self.easy_button = CTkButton(self, text="Easy", font=("Times New Roman", 35),
+                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
+                                 height=3,
+                                 border_color="black", corner_radius = 3).pack(side="left", padx=(60, 0), pady=(0, 45))
 
-class QuizBallPage(customtkinter.CTkFrame):
+        self.medium_button = CTkButton(self, text="Medium", font=("Times New Roman", 35),
+                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
+                                 height=3,
+                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 0),pady=(0, 45))
+
+        self.hard_button = CTkButton(self, text="Hard", font=("Times New Roman", 35),
+                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
+                                 height=3,
+                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 0),pady=(0, 45))
+
+class QuizBallPage(CTkFrame):
     def __init__(self, parent, controller):
         self.controller = controller
         super().__init__(parent, fg_color=self.controller.background_color, corner_radius=0)
         self.propagate(False)
 
 
-class ResultsPage(customtkinter.CTkFrame):
+class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent, fg_color="#003459", corner_radius=0)
         self.propagate(False)
