@@ -24,7 +24,8 @@ class Quiz:
         
         except FileNotFoundError:
             print("Extraction of questions required")
-
+            self.generate_questions()
+    
     def ask_question(self):
         
         if not self._data:
@@ -69,7 +70,6 @@ class Quiz:
 
         self.total_questions_answered += 1
 
-
     def check_answer(self, answer, index):
         correct_answer = str(self._data[index]['correctAnswer'])
 
@@ -82,8 +82,6 @@ class Quiz:
         except ValueError:
             return self.is_similar(answer, correct_answer)
 
-
-    
     def is_similar(self, answer: str, correct: str, threshold: float = 0.6) -> bool:
             ratio = SequenceMatcher(None, answer.lower().strip(), correct.lower().strip()).ratio()
             return ratio >= threshold
@@ -98,3 +96,7 @@ class Quiz:
 
     def all_asked(self):
         return True if len(self.asked_questions) >= len(self._data) else False    
+
+if __name__ == '__main__':
+    q = Quiz()
+    q.load_questions()

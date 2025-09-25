@@ -69,8 +69,12 @@ class ModeSelectionPage(CTkFrame):
 
     def load_widgets(self):
 
+        self.buttons_frame = CTkFrame(self)
+
         self.mode_label = CTkLabel(self, text="Select a Mode", font=("Times New Roman", 54), text_color = "#007ea7",
                                                  bg_color=self.controller.background_color).pack(pady=(60, 0))
+
+        self.buttons_frame.pack(pady=(0, 45))
 
         self.easy_button = CTkButton(self, text="Easy", font=("Times New Roman", 35),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
@@ -86,6 +90,12 @@ class ModeSelectionPage(CTkFrame):
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  height=3,
                                  border_color="black", corner_radius = 3).pack(side="left", padx=(20, 0),pady=(0, 45))
+
+        self.random_button = CTkButton(self, text="Random", font=("Times New Roman", 35),
+                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
+                                 height=2,
+                                 border_color="black", corner_radius = 3).pack(pady=(0, 0))
+
 
 class QuizBallPage(CTkFrame):
     def __init__(self, parent, controller):
