@@ -16,7 +16,7 @@ class App(CTk):
         self.container.pack(fill="both", expand= True)
 
         self.pages = {}
-        for Page in (HomePage, ModeSelectionPage, QuizBallPage, ResultsPage):
+        for Page in (HomePage, ModeSelectionPage, QuizPage, ResultsPage):
             page = Page(self.container, self)
             self.pages[Page] = page
             page.grid(row=0, column=0, sticky="nsew")
@@ -56,7 +56,7 @@ class HomePage(CTkFrame):
                                  border_color="black", corner_radius = 3, command=lambda: quit()).pack(pady=(20, 0))
 
     def start_quiz(self):
-        self.controller.show_page(ModeSelectionPage)
+        self.controller.show_page(QuizPage)
 
 class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
@@ -69,38 +69,38 @@ class ModeSelectionPage(CTkFrame):
 
     def load_widgets(self):
 
-        self.buttons_frame = CTkFrame(self)
+        self.buttons_frame = CTkFrame(self, fg_color=self.controller.background_color)
 
         self.mode_label = CTkLabel(self, text="Select a Mode", font=("Times New Roman", 54), text_color = "#007ea7",
                                                  bg_color=self.controller.background_color).pack(pady=(60, 0))
 
-        self.buttons_frame.pack(pady=(0, 45))
+        self.buttons_frame.pack(pady=(35, 0)) 
 
-        self.easy_button = CTkButton(self, text="Easy", font=("Times New Roman", 35),
+        self.easy_button = CTkButton(self.buttons_frame, text="Easy", font=("Times New Roman", 35),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  height=3,
-                                 border_color="black", corner_radius = 3).pack(side="left", padx=(60, 0), pady=(0, 45))
+                                 border_color="black", corner_radius = 3).pack(side="left",padx=10, pady=20)
 
-        self.medium_button = CTkButton(self, text="Medium", font=("Times New Roman", 35),
+        self.medium_button = CTkButton(self.buttons_frame, text="Medium", font=("Times New Roman", 35),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  height=3,
-                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 0),pady=(0, 45))
+                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 10))
 
-        self.hard_button = CTkButton(self, text="Hard", font=("Times New Roman", 35),
+        self.hard_button = CTkButton(self.buttons_frame, text="Hard", font=("Times New Roman", 35),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  height=3,
-                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 0),pady=(0, 45))
+                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 10))
 
         self.random_button = CTkButton(self, text="Random", font=("Times New Roman", 35),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
                                  height=2,
-                                 border_color="black", corner_radius = 3).pack(pady=(0, 0))
+                                 border_color="black", corner_radius = 3).pack()
 
 
-class QuizBallPage(CTkFrame):
+class QuizPage(CTkFrame):
     def __init__(self, parent, controller):
         self.controller = controller
-        super().__init__(parent, fg_color=self.controller.background_color, corner_radius=0)
+        super().__init__(parent, fg_color="#007ea7", corner_radius=0)
         self.propagate(False)
 
 
