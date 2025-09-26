@@ -103,6 +103,64 @@ class QuizPage(CTkFrame):
         super().__init__(parent, fg_color="#007ea7", corner_radius=0)
         self.propagate(False)
 
+        self.quiz_backend = backend.Quiz()
+        self.quiz_backend.load_questions()
+
+        self.load_widgets()
+
+    def load_widgets(self):
+
+        self.question_handling()
+
+        self.question_label = CTkLabel(self, text = self.question["text"], font=("Times New Roman", 28),
+                                        wraplength=400, fg_color="#00a8e8", width=500)
+
+        self.choices_frame = CTkFrame(self, fg_color="#00a8e8", width=300, height=212)
+        self.choices_frame.propagate(False)
+
+        #Frame A
+        self.frame_a = CTkFrame(self.choices_frame, fg_color="#00a8e8",
+                                width=300, height=46)
+        self.frame_a.propagate(False)
+        #Frame B
+        self.frame_b = CTkFrame(self.choices_frame, fg_color="#00a8e8",
+                                width=300, height=46)
+        self.frame_b.propagate(False)
+        #Frame C
+        self.frame_c = CTkFrame(self.choices_frame, fg_color="#00a8e8",
+                                width=300, height=46)
+        self.frame_c.propagate(False)
+        #Frame D
+        self.frame_d = CTkFrame(self.choices_frame, fg_color="#00a8e8",
+                                width=300, height=46)
+        self.frame_d.propagate(False)
+
+
+        self.a_button = CTkButton(self.frame_a, text="A", width=24, height=1)
+        self.b_button = CTkButton(self.frame_b, text="B", width=24, height=1)
+        self.c_button = CTkButton(self.frame_c, text="C", width=24, height=1)
+        self.d_button = CTkButton(self.frame_d, text="D", width=24, height=1)        
+
+        self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(25, 0))
+        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(65, 0))
+
+        self.frame_a.pack(pady=(6, 1))
+        self.frame_b.pack(pady=(1, 0))
+        self.frame_c.pack(pady=(1, 0))
+        self.frame_d.pack(pady=(1, 6))
+
+        self.a_button.pack(side="left", padx=(5, 2))
+        self.b_button.pack(side="left", padx=(5, 2))
+        self.c_button.pack(side="left", padx=(5, 2))
+        self.d_button.pack(side="left", padx=(5, 2))
+
+    def question_handling(self):
+        self.question = self.quiz_backend.ask_question()
+
+        self.choices_list = self.quiz_backend.get_possible_answers(self.question["index"])
+
+
+
 
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):

@@ -82,6 +82,20 @@ class Quiz:
         except ValueError:
             return self.is_similar(answer, correct_answer)
 
+    def get_possible_answers(self, index):
+        incorrect_answers = self._data[index]["incorrectAnswers"]
+        correct_answer = self._data[index]["correctAnswer"]
+     
+        possible_answers = []
+
+        for incorrect_answer in incorrect_answers:
+            possible_answers.append(incorrect_answer)
+
+        possible_answers.append(correct_answer)
+        random.shuffle(possible_answers)
+
+        return possible_answers
+
     def is_similar(self, answer: str, correct: str, threshold: float = 0.6) -> bool:
             ratio = SequenceMatcher(None, answer.lower().strip(), correct.lower().strip()).ratio()
             return ratio >= threshold
