@@ -38,3 +38,4 @@ Process Order:
 3. Rebuild check_answer in 'backend.py' <- Does not work in frontend
 4. Make buttons work && check answer based on button
 5. Create Submit button
+6. Increase width of Window -main.py

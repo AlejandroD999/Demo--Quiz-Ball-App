@@ -114,43 +114,47 @@ class QuizPage(CTkFrame):
 
         self.question_label = CTkLabel(self, text = self.question["text"], font=("Times New Roman", 28),
                                         wraplength=400, fg_color="#00a8e8", width=500)
-
-        self.choices_frame = CTkFrame(self, fg_color="#00a8e8", width=300, height=212)
+#50 && #88
+        self.choices_frame = CTkFrame(self, fg_color="#00a8e8", width=350, height=285)
         self.choices_frame.propagate(False)
 
         #Frame A
         self.frame_a = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=300, height=46)
+                                width=350, height=60)
         self.frame_a.propagate(False)
         #Frame B
         self.frame_b = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=300, height=46)
+                                width=350, height=60)
         self.frame_b.propagate(False)
         #Frame C
         self.frame_c = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=300, height=46)
+                                width=350, height=60)
         self.frame_c.propagate(False)
         #Frame D
         self.frame_d = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=300, height=46)
+                                width=350, height=60)
         self.frame_d.propagate(False)
 
 
         self.a_button = CTkButton(self.frame_a, text="A", width=24, height=1)
-        self.a_label = CTkLabel(self.frame_a, text=self.choices_list[0], font=("Times New Roman", 22))
+        self.a_label = CTkLabel(self.frame_a, text=self.choices_list[0], font=("Times New Roman", 22),
+                                wraplength=295)
 
         self.b_button = CTkButton(self.frame_b, text="B", width=24, height=1)
-        self.b_label = CTkLabel(self.frame_b, text=self.choices_list[1], font=("Times New Roman", 22))
+        self.b_label = CTkLabel(self.frame_b, text=self.choices_list[1], font=("Times New Roman", 22),
+                                wraplength=295)
 
         self.c_button = CTkButton(self.frame_c, text="C", width=24, height=1)
-        self.c_label = CTkLabel(self.frame_c, text=self.choices_list[2], font=("Times New Roman", 22))
+        self.c_label = CTkLabel(self.frame_c, text=self.choices_list[2], font=("Times New Roman", 22),
+                                wraplength=295)
         
         self.d_button = CTkButton(self.frame_d, text="D", width=24, height=1)        
-        self.d_label = CTkLabel(self.frame_d, text=self.choices_list[3], font=("Times New Roman", 22))
+        self.d_label = CTkLabel(self.frame_d, text=self.choices_list[3], font=("Times New Roman", 22),
+                                wraplength=295)
 
 
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(25, 0))
-        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(65, 0))
+        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(20, 0))
 
         self.frame_a.pack(pady=(6, 1))
         self.frame_b.pack(pady=(1, 0))

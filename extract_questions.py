@@ -18,9 +18,9 @@ def extract():
         print(f"Questions successfully extracted")
 
     except requests.exceptions.RequestException as e:
-        print(f"Error making API request: {e}")
+        return f"Error making API request: {e}"
     except json.JSONDecodeError as e:
-        print(f"Error decoding JSON response: {e}")
+        return f"Error decoding JSON response: {e}"
 
 if __name__ == '__main__':
     extract()
