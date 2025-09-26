@@ -137,9 +137,17 @@ class QuizPage(CTkFrame):
 
 
         self.a_button = CTkButton(self.frame_a, text="A", width=24, height=1)
+        self.a_label = CTkLabel(self.frame_a, text=self.choices_list[0], font=("Times New Roman", 22))
+
         self.b_button = CTkButton(self.frame_b, text="B", width=24, height=1)
+        self.b_label = CTkLabel(self.frame_b, text=self.choices_list[1], font=("Times New Roman", 22))
+
         self.c_button = CTkButton(self.frame_c, text="C", width=24, height=1)
+        self.c_label = CTkLabel(self.frame_c, text=self.choices_list[2], font=("Times New Roman", 22))
+        
         self.d_button = CTkButton(self.frame_d, text="D", width=24, height=1)        
+        self.d_label = CTkLabel(self.frame_d, text=self.choices_list[3], font=("Times New Roman", 22))
+
 
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(25, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(65, 0))
@@ -149,16 +157,22 @@ class QuizPage(CTkFrame):
         self.frame_c.pack(pady=(1, 0))
         self.frame_d.pack(pady=(1, 6))
 
-        self.a_button.pack(side="left", padx=(5, 2))
-        self.b_button.pack(side="left", padx=(5, 2))
-        self.c_button.pack(side="left", padx=(5, 2))
-        self.d_button.pack(side="left", padx=(5, 2))
+        self.a_button.pack(side="left", padx=(5, 0))
+        self.a_label.pack(side="left", padx=(10))
+
+        self.b_button.pack(side="left", padx=(5, 0))
+        self.b_label.pack(side="left", padx=(10))
+
+        self.c_button.pack(side="left", padx=(5, 0))
+        self.c_label.pack(side="left", padx=(10))
+
+        self.d_button.pack(side="left", padx=(5, 0))
+        self.d_label.pack(side="left", padx=(10))
 
     def question_handling(self):
         self.question = self.quiz_backend.ask_question()
 
         self.choices_list = self.quiz_backend.get_possible_answers(self.question["index"])
-
 
 
 
