@@ -6,7 +6,7 @@ class App(CTk):
     def __init__(self):
         super().__init__()
 
-        self.geometry("600x400")
+        self.geometry("800x500")
         self.resizable(0, 0)
 
         self.title("CogniTriv")
@@ -34,7 +34,7 @@ class HomePage(CTkFrame):
         super().__init__(parent, fg_color = controller.background_color, corner_radius=0)
         self.controller = controller
 
-        self.configure(width=600, height=400)
+        self.configure(width=800, height=500)
         self.propagate(False)
 
         self.load_widgets()
@@ -113,69 +113,37 @@ class QuizPage(CTkFrame):
         self.question_handling()
 
         self.question_label = CTkLabel(self, text = self.question["text"], font=("Times New Roman", 28),
-                                        wraplength=400, fg_color="#00a8e8", width=500)
+                                        wraplength=450, fg_color="#00a8e8", width=550)
 #50 && #88
-        self.choices_frame = CTkFrame(self, fg_color="#00a8e8", width=350, height=285)
+        self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=300)
         self.choices_frame.propagate(False)
 
-        #Frame A
-        self.frame_a = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=350, height=60)
-        self.frame_a.propagate(False)
-        #Frame B
-        self.frame_b = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=350, height=60)
-        self.frame_b.propagate(False)
-        #Frame C
-        self.frame_c = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=350, height=60)
-        self.frame_c.propagate(False)
-        #Frame D
-        self.frame_d = CTkFrame(self.choices_frame, fg_color="#00a8e8",
-                                width=350, height=60)
-        self.frame_d.propagate(False)
+        self.choices_widgets = {}
 
+        for idx, label in enumerate(["A", "B", "C", "D"]):
+            frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
+            button = CTkButton(frame, text=label, width=28, height=2)
+            label = CTkLabel(frame, text=self.choices_list[idx], font=("Times New Roman", 20), wraplength=295)
 
-        self.a_button = CTkButton(self.frame_a, text="A", width=24, height=1)
-        self.a_label = CTkLabel(self.frame_a, text=self.choices_list[0], font=("Times New Roman", 22),
-                                wraplength=295)
-
-        self.b_button = CTkButton(self.frame_b, text="B", width=24, height=1)
-        self.b_label = CTkLabel(self.frame_b, text=self.choices_list[1], font=("Times New Roman", 22),
-                                wraplength=295)
-
-        self.c_button = CTkButton(self.frame_c, text="C", width=24, height=1)
-        self.c_label = CTkLabel(self.frame_c, text=self.choices_list[2], font=("Times New Roman", 22),
-                                wraplength=295)
+            self.choices_widgets[label] = {"frame": frame, "button": button, "label": label}
         
-        self.d_button = CTkButton(self.frame_d, text="D", width=24, height=1)        
-        self.d_label = CTkLabel(self.frame_d, text=self.choices_list[3], font=("Times New Roman", 22),
-                                wraplength=295)
-
-
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(25, 0))
-        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(20, 0))
+        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(40, 0))
 
-        self.frame_a.pack(pady=(6, 1))
-        self.frame_b.pack(pady=(1, 0))
-        self.frame_c.pack(pady=(1, 0))
-        self.frame_d.pack(pady=(1, 6))
+        for key in self.choices_widgets.keys():
+            curr_frame = self.choices_widgets[key]["frame"]
+            curr_frame.propagate(False)
+            curr_frame.pack(padx = (5, 5), pady = (5, 5))
 
-        self.a_button.pack(side="left", padx=(5, 0))
-        self.a_label.pack(side="left", padx=(10))
+            curr_button = self.choices_widgets[key]["button"]
+            curr_button.pack(side="left", padx=(5, 0))
 
-        self.b_button.pack(side="left", padx=(5, 0))
-        self.b_label.pack(side="left", padx=(10))
+            curr_label = self.choices_widgets[key]["label"]
+            curr_label.pack(side="left", padx=(10, 0))
 
-        self.c_button.pack(side="left", padx=(5, 0))
-        self.c_label.pack(side="left", padx=(10))
-
-        self.d_button.pack(side="left", padx=(5, 0))
-        self.d_label.pack(side="left", padx=(10))
 
     def question_handling(self):
         self.question = self.quiz_backend.ask_question()
-
         self.choices_list = self.quiz_backend.get_possible_answers(self.question["index"])
 
 
