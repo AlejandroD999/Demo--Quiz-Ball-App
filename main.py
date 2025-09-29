@@ -114,7 +114,7 @@ class QuizPage(CTkFrame):
 
         self.question_label = CTkLabel(self, text = self.question["text"], font=("Times New Roman", 28),
                                         wraplength=450, fg_color="#00a8e8", width=550)
-#50 && #88
+
         self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=300)
         self.choices_frame.propagate(False)
 
