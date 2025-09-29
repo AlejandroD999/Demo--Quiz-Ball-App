@@ -102,7 +102,8 @@ class QuizPage(CTkFrame):
         self.controller = controller
         super().__init__(parent, fg_color="#007ea7", corner_radius=0)
         self.propagate(False)
-
+        
+        self.score = 0
         self.quiz_backend = backend.Quiz()
         self.quiz_backend.load_questions()
 
@@ -115,10 +116,14 @@ class QuizPage(CTkFrame):
         self.question_label = CTkLabel(self, text = self.question["text"], font=("Times New Roman", 28),
                                         wraplength=450, fg_color="#00a8e8", width=550)
 
-        self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=300)
+        self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=320)
         self.choices_frame.propagate(False)
 
+        self.score_label = CTkLabel(self.choices_frame, text=f"Score: {self.score}", font=("Times New Roman", 25),
+                                anchor='w', fg_color="#3b5c69", text_color="#bfdbf7", width=345)
         self.choices_widgets = {}
+
+
 
         for idx, label in enumerate(["A", "B", "C", "D"]):
             frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
@@ -127,9 +132,11 @@ class QuizPage(CTkFrame):
 
             self.choices_widgets[label] = {"frame": frame, "button": button, "label": label}
         
-        self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(25, 0))
-        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(40, 0))
-
+        self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
+        self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
+        self.score_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
+        
+        #Pack choices widgets
         for key in self.choices_widgets.keys():
             curr_frame = self.choices_widgets[key]["frame"]
             curr_frame.propagate(False)
