@@ -1,106 +1,20 @@
 [
     {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fc37",
-        "correctAnswer": "\"There's no place like home.\"",
-        "incorrectAnswers": [
-            "\"Oh, Jerry, don't let's ask for the moon. We have the stars.\"",
-            "\"I\u2019m already pregnant. So, what other shenanigans could I get myself into?\"",
-            "\"This is the day you will always remember as the day you almost caught Captain Jack Sparrow!\""
-        ],
-        "question": {
-            "text": "Which of these quotes is from the film 'The Wizard of Oz'?"
-        },
-        "tags": [
-            "film",
-            "quotes",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "society_and_culture",
-        "id": "646089e4de964ebc39016c9f",
-        "correctAnswer": "A yuppie",
+        "id": "6357fd5468bd5000211e7194",
+        "correctAnswer": "Punjabi",
         "incorrectAnswers": [
-            "A hipster",
-            "A bohemian",
-            "A beatnik"
+            "Telugu",
+            "Bengali",
+            "Hausa"
         ],
         "question": {
-            "text": "What term, coined in the 1980s, refers to a youthful metropolitan white-collar worker?"
+            "text": "Which of these languages would you find spoken in Pakistan?"
         },
         "tags": [
-            "words",
-            "society_and_culture",
-            "1980's"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "625ea00e796f721e95543fcb",
-        "correctAnswer": "United Arab Emirates",
-        "incorrectAnswers": [
-            "Vietnam",
-            "China",
-            "Netherlands"
-        ],
-        "question": {
-            "text": "Which of these countries has black on its flag?"
-        },
-        "tags": [
-            "flags",
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "63f39503989356ef48370be5",
-        "correctAnswer": "The Moon",
-        "incorrectAnswers": [
-            "Mars",
-            "Jupiter",
-            "Mercury"
-        ],
-        "question": {
-            "text": "Which of the following is not a planet?"
-        },
-        "tags": [
-            "science",
-            "space",
-            "the_solar_system",
-            "astrophysics"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c377cc59eab6f95069c",
-        "correctAnswer": "Jason Bateman",
-        "incorrectAnswers": [
-            "Javier Bardem",
-            "Colin Firth",
-            "Tim Roth"
-        ],
-        "question": {
-            "text": "Which actor has featured in films including DodgeBall: A True Underdog Story and Up in the Air?"
-        },
-        "tags": [
-            "film_and_tv"
+            "language",
+            "linguistics",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -109,19 +23,18 @@
     },
     {
         "category": "music",
-        "id": "622a1c357cc59eab6f94feed",
-        "correctAnswer": "David Bowie",
+        "id": "622a1c397cc59eab6f950c4f",
+        "correctAnswer": "Bee Gees",
         "incorrectAnswers": [
-            "Eric Clapton",
-            "Madonna",
-            "Mika"
+            "Level 42",
+            "Culture Club",
+            "Dire Straits"
         ],
         "question": {
-            "text": "Which musician released the album 'Low'?"
+            "text": "Which English-Australian pop group released the album 'Horizontal'?"
         },
         "tags": [
-            "music_albums",
-            "musicians"
+            "music"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -129,20 +42,23 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "622a1c367cc59eab6f9501f9",
-        "correctAnswer": "Peter Jackson",
+        "category": "geography",
+        "id": "6498912f0752843c0d8aadea",
+        "correctAnswer": "Sri Lanka",
         "incorrectAnswers": [
-            "Steven Spielberg",
-            "Woody Allen",
-            "Martin Scorsese"
+            "Madagascar",
+            "Belize",
+            "Fiji"
         ],
         "question": {
-            "text": "Which director directed The Lord of the Rings: The Fellowship of the Ring?"
+            "text": "Which island nation has been called the 'teardrop of India' due to its location and shape?"
         },
         "tags": [
-            "film",
-            "film_and_tv"
+            "islands",
+            "asia",
+            "geography",
+            "countries",
+            "india"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -150,19 +66,103 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c377cc59eab6f950524",
-        "correctAnswer": "vibrations and oscillations in the Sun",
+        "category": "geography",
+        "id": "625e9e36796f721e95543f47",
+        "correctAnswer": "Red",
         "incorrectAnswers": [
-            "origin of life",
-            "earthquakes",
-            "alternative method of massage, manipulative therapy|therapy or pressure on certain points of the sole of the feet as a means of relieving nervous tension"
+            "Maroon",
+            "Black",
+            "Orange"
         ],
         "question": {
-            "text": "What is Helioseismology the study of?"
+            "text": "Which of these colors is included on the flag of Costa Rica?"
+        },
+        "tags": [
+            "flags",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "general_knowledge",
+        "id": "6239f8269129041bf3925ccb",
+        "correctAnswer": "Oscar",
+        "incorrectAnswers": [
+            "Ordinary",
+            "Otter",
+            "Ombudsman"
+        ],
+        "question": {
+            "text": "What word is used in the NATO Phonetic Alphabet for the letter O?"
+        },
+        "tags": [
+            "general_knowledge"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c347cc59eab6f94f9a2",
+        "correctAnswer": "George III",
+        "incorrectAnswers": [
+            "Henry I",
+            "Edward II",
+            "Anne"
+        ],
+        "question": {
+            "text": "Who was the monarch of The United Kingdom during the time period 1760-1820?"
+        },
+        "tags": [
+            "kings",
+            "uk",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c397cc59eab6f950fbe",
+        "correctAnswer": "Thomas Edison",
+        "incorrectAnswers": [
+            "Samuel Colt",
+            "Henry Blair",
+            "Elisha Otis"
+        ],
+        "question": {
+            "text": "Who Invented The Gramophone?"
         },
         "tags": [
             "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "625ea004796f721e95543fc8",
+        "correctAnswer": "Blue",
+        "incorrectAnswers": [
+            "Black",
+            "Orange",
+            "White"
+        ],
+        "question": {
+            "text": "Which of these colors is included on the flag of Ukraine?"
+        },
+        "tags": [
+            "flags",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -171,18 +171,17 @@
     },
     {
         "category": "society_and_culture",
-        "id": "622a1c367cc59eab6f95010a",
-        "correctAnswer": "Oxford University",
+        "id": "622a1c367cc59eab6f95010f",
+        "correctAnswer": "Valhalla",
         "incorrectAnswers": [
-            "Jerusalem",
-            "Cape Town",
-            "Bethlehem"
+            "Trondheim",
+            "Odinsbahn",
+            "Asgard"
         ],
         "question": {
-            "text": "Where was Methodism founded?"
+            "text": "What's heaven to fallen Norse warriors?"
         },
         "tags": [
-            "religion",
             "society_and_culture"
         ],
         "type": "text_choice",
@@ -191,21 +190,20 @@
         "isNiche": false
     },
     {
-        "category": "food_and_drink",
-        "id": "622a1c3e7cc59eab6f9522dd",
-        "correctAnswer": "Coconut",
+        "category": "science",
+        "id": "622a1c377cc59eab6f9505b4",
+        "correctAnswer": "The effects of radiation upon living organisms",
         "incorrectAnswers": [
-            "Banana",
-            "Chilli",
-            "Pumpkin"
+            "Fossils of ancient life",
+            "The art of using cosmetics",
+            "Acids"
         ],
         "question": {
-            "text": "From what food do you get copra?"
+            "text": "What is Actinobiology the study of?"
         },
         "tags": [
-            "food_and_drink",
-            "plants",
-            "food"
+            "science",
+            "words"
         ],
         "type": "text_choice",
         "difficulty": "medium",

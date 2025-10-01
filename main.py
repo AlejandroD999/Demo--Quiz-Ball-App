@@ -112,9 +112,9 @@ class QuizPage(CTkFrame):
 
     def load_widgets(self):
 
-        self.question_handling()
+        self.question_dict = self.question_handling()
 
-        self.question_label = CTkLabel(self, text = self.question["text"], font=("Times New Roman", 28),
+        self.question_label = CTkLabel(self, text = self.question_dict["question"]["text"], font=("Times New Roman", 28),
                                         wraplength=450, fg_color="#00a8e8", width=550)
 
         self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=320)
@@ -123,22 +123,42 @@ class QuizPage(CTkFrame):
         self.score_variable = tk.StringVar(self, value=f"Score: {self.score}")
         self.score_label = CTkLabel(self.choices_frame, textvariable = self.score_variable, font=("Times New Roman", 25),
                                 anchor='w', fg_color="#3b5c69", text_color="#bfdbf7", width=345)
-        self.choices_widgets = {}
 
+        self.choices_widgets = self.create_choices_widgets()
 
-
-        for idx, label in enumerate(["A", "B", "C", "D"]):
-            frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
-            button = CTkButton(frame, text=label, width=28, height=2)
-            option_label = CTkLabel(frame, text=self.choices_list[idx], font=("Times New Roman", 20), wraplength=295)
-
-            self.choices_widgets[label] = {"frame": frame, "button": button, "label": option_label}
         
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
         self.score_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
         
         #Pack choices widgets
+        self.pack_choices_widgets()        
+
+    def question_handling(self):
+        question_attributes = {}
+
+        question = self.quiz_backend.ask_question()
+        correct_answer = self.quiz_backend._data[question["index"]]["correctAnswer"]
+        choices_list = self.quiz_backend.get_possible_answers(question["index"])
+        
+        question_attributes = {"question": question, "correctAnswer": correct_answer, "all_choices": choices_list}
+
+        return question_attributes
+
+    def create_choices_widgets(self):
+        widgets = {}
+        
+        for idx, label in enumerate(["A", "B", "C", "D"]):
+            frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
+            button = CTkButton(frame, text=label, width=28, height=2)
+            option_label = CTkLabel(frame, text=self.question_dict["all_choices"][idx], font=("Times New Roman", 20), wraplength=295)
+
+            widgets[label] = {"frame": frame, "button": button, "label": option_label}
+        
+        return widgets
+
+    def pack_choices_widgets(self):
+
         for key in self.choices_widgets.keys():
             curr_frame = self.choices_widgets[key]["frame"]
             curr_frame.propagate(False)
@@ -153,22 +173,29 @@ class QuizPage(CTkFrame):
 
 
 
-    def question_handling(self):
-        self.question = self.quiz_backend.ask_question()
-        self.correct_answer = self.quiz_backend._data[self.question["index"]]["correctAnswer"]
-        self.choices_list = self.quiz_backend.get_possible_answers(self.question["index"])
-
     def check_answer(self, answer_frame):
         label = self.choices_widgets[answer_frame]["label"]
         answer_text = label.cget("text")
 
-        if answer_text == self.correct_answer:
+        if answer_text == self.question_dict["correctAnswer"]:
             self.increase_score()
+            self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
+            self.question_dict = self.question_handling()
+            self.update_question_widgets()
+
+    def update_question_widgets(self):
+        self.question_label.configure(text=self.question_dict["question"]["text"])
+        
+        for idx, label in enumerate(["A", "B", "C", "D"]):
+            self.choices_widgets[label]["label"].configure(
+                text=self.question_dict["all_choices"][idx]
+            )
+
     def increase_score(self):
             self.score += 1
             self.score_variable.set(f"Score: {self.score}")
 
-    
+
 
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
