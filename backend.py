@@ -1,8 +1,9 @@
+from difflib import SequenceMatcher
+import extract_questions as eq
 import json
 import os
-from difflib import SequenceMatcher
 import random
-import extract_questions as eq
+
 
 class Quiz:
 
@@ -81,6 +82,8 @@ class Quiz:
             return abs(answer_num - correct_num) <= 0.01
         except ValueError:
             return self.is_similar(answer, correct_answer)
+
+
 
     def get_possible_answers(self, index):
         incorrect_answers = self._data[index]["incorrectAnswers"]
