@@ -1,4 +1,5 @@
 from customtkinter import *
+import tkinter as tk
 import backend
 
 class App(CTk):
@@ -119,7 +120,8 @@ class QuizPage(CTkFrame):
         self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=320)
         self.choices_frame.propagate(False)
 
-        self.score_label = CTkLabel(self.choices_frame, text=f"Score: {self.score}", font=("Times New Roman", 25),
+        self.score_variable = tk.StringVar(self, value=f"Score: {self.score}")
+        self.score_label = CTkLabel(self.choices_frame, textvariable = self.score_variable, font=("Times New Roman", 25),
                                 anchor='w', fg_color="#3b5c69", text_color="#bfdbf7", width=345)
         self.choices_widgets = {}
 
@@ -128,9 +130,9 @@ class QuizPage(CTkFrame):
         for idx, label in enumerate(["A", "B", "C", "D"]):
             frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
             button = CTkButton(frame, text=label, width=28, height=2)
-            label = CTkLabel(frame, text=self.choices_list[idx], font=("Times New Roman", 20), wraplength=295)
+            option_label = CTkLabel(frame, text=self.choices_list[idx], font=("Times New Roman", 20), wraplength=295)
 
-            self.choices_widgets[label] = {"frame": frame, "button": button, "label": label}
+            self.choices_widgets[label] = {"frame": frame, "button": button, "label": option_label}
         
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
@@ -144,16 +146,29 @@ class QuizPage(CTkFrame):
 
             curr_button = self.choices_widgets[key]["button"]
             curr_button.pack(side="left", padx=(5, 0))
+            curr_button.configure(command=lambda k=key: self.check_answer(k))
 
             curr_label = self.choices_widgets[key]["label"]
             curr_label.pack(side="left", padx=(10, 0))
 
 
+
     def question_handling(self):
         self.question = self.quiz_backend.ask_question()
+        self.correct_answer = self.quiz_backend._data[self.question["index"]]["correctAnswer"]
         self.choices_list = self.quiz_backend.get_possible_answers(self.question["index"])
 
+    def check_answer(self, answer_frame):
+        label = self.choices_widgets[answer_frame]["label"]
+        answer_text = label.cget("text")
 
+        if answer_text == self.correct_answer:
+            self.increase_score()
+    def increase_score(self):
+            self.score += 1
+            self.score_variable.set(f"Score: {self.score}")
+
+    
 
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
