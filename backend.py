@@ -34,8 +34,6 @@ class Quiz:
             return
                 
         if self.all_asked():
-            print("\nAll questions have been answered...")
-            print(" Generating new questions")
             self.generate_questions()
 
         question_index = self.generate_index()
@@ -57,6 +55,7 @@ class Quiz:
 
         return random_index
 
+# Only for input based questions (if any)
     def get_answer(self, index):
         #Get Answer
         answer = input("Answer: ")
@@ -70,7 +69,7 @@ class Quiz:
             print(f"Incorrect!!\nCorrect answer is {self._data[index]["correctAnswer"]}")
 
         self.total_questions_answered += 1
-
+# Only for input based questions (if any)
     def check_answer(self, answer, index):
         correct_answer = str(self._data[index]['correctAnswer'])
 

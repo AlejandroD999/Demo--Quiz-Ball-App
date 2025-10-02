@@ -36,3 +36,4 @@ Process Order:
 1. Eliminate print() when extracting questions. GUI version does not need
 2. Rebuild check_answer in 'backend.py' <- Does not work in frontend
 3. Create Submit button
+4. Fix Buttons height when choosing answer
