@@ -1,41 +1,20 @@
 [
     {
-        "category": "general_knowledge",
-        "id": "6239f8019129041bf3925cbd",
-        "correctAnswer": "Alpha",
-        "incorrectAnswers": [
-            "Apple",
-            "Animal",
-            "Aeroplan"
-        ],
-        "question": {
-            "text": "What word is used in the NATO Phonetic Alphabet for the letter A?"
-        },
-        "tags": [
-            "general_knowledge"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "music",
-        "id": "636a52a1990390307063f3ae",
-        "correctAnswer": "Sea of Love",
+        "id": "622a1c357cc59eab6f94fd74",
+        "correctAnswer": "Prince",
         "incorrectAnswers": [
-            "The Chain",
-            "Ring of Fire",
-            "The Man Who Sold the World"
+            "Celine Dion",
+            "Barry Gibb",
+            "Elvis Presley"
         ],
         "question": {
-            "text": "Which song was originally recorded by Phil Philips and was later covered by The Honeydrippers?"
+            "text": "Who Wrote The Songs \"Manic Monday\" , \"Nothing Compares To You\" And \"I Feel For You\"? "
         },
         "tags": [
-            "music",
-            "cover_song",
             "songs",
-            "musicians"
+            "people",
+            "music"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -44,18 +23,19 @@
     },
     {
         "category": "arts_and_literature",
-        "id": "622a1c347cc59eab6f94f97b",
-        "correctAnswer": "All the King's Men",
+        "id": "622a1c347cc59eab6f94fa28",
+        "correctAnswer": "Dutch Golden Age",
         "incorrectAnswers": [
-            "Gone With the Wind",
-            "Lonesome Dove",
-            "Love in the Time of Cholera"
+            "Neoclassicism",
+            "Dutch and Flemish Renaissance",
+            "Fauvism"
         ],
         "question": {
-            "text": "Which book contains the character 'Willie Stark'?"
+            "text": "The painting \"Girl with a Pearl Earring\" by \u200e\u200eJohannes Vermeer is a part of which art movement?"
         },
         "tags": [
-            "literature",
+            "painting",
+            "art",
             "arts_and_literature"
         ],
         "type": "text_choice",
@@ -65,19 +45,17 @@
     },
     {
         "category": "society_and_culture",
-        "id": "622a1c357cc59eab6f94fcf6",
-        "correctAnswer": "Jean-Paul Sartre",
+        "id": "622a1c377cc59eab6f950416",
+        "correctAnswer": "Spain",
         "incorrectAnswers": [
-            "Baruch Spinoza",
-            "Socrates",
-            "Epicurus"
+            "Italy",
+            "France",
+            "Chile"
         ],
         "question": {
-            "text": "Which philosopher famously said 'Everything that exists is born for no reason, carries on living through weakness, and dies by accident'?"
+            "text": "In which country do they eat 12 grapes as the clock strikes midnight (one each time the clock chimes) on New Year's Eve?"
         },
         "tags": [
-            "philosophy",
-            "quotes",
             "society_and_culture"
         ],
         "type": "text_choice",
@@ -86,64 +64,20 @@
         "isNiche": false
     },
     {
-        "category": "sport_and_leisure",
-        "id": "622a1c347cc59eab6f94f896",
-        "correctAnswer": "Motor racing",
-        "incorrectAnswers": [
-            "Hockey",
-            "Track and field",
-            "Table tennis"
-        ],
-        "question": {
-            "text": "With which sport is Michael Schumacher associated?"
-        },
-        "tags": [
-            "general_knowledge",
-            "people",
-            "sport"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "geography",
-        "id": "622a1c357cc59eab6f94fe51",
-        "correctAnswer": "The Black Sea\u00a0",
+        "id": "645cb12a602ff42ca52fb422",
+        "correctAnswer": "Pitcairn Island",
         "incorrectAnswers": [
-            "The Mediterranean",
-            "The Dead Sea",
-            "The Aegean Sea"
+            "Falkland Island",
+            "Ascension Island",
+            "South Georgia Island"
         ],
         "question": {
-            "text": "Into Which Sea Does The river Danube Flow?"
+            "text": "Which of these is a remote British island in the South Pacific?"
         },
         "tags": [
-            "rivers",
-            "bodies_of_water",
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "general_knowledge",
-        "id": "622a1c357cc59eab6f94fc8d",
-        "correctAnswer": "Curmudgeon",
-        "incorrectAnswers": [
-            "Bumfuzzle",
-            "Borborygmus",
-            "Deipnophobia"
-        ],
-        "question": {
-            "text": "Which word is defined as 'a bad-tempered person'?"
-        },
-        "tags": [
-            "words",
-            "general_knowledge"
+            "islands",
+            "pacific_ocean"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -151,18 +85,109 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3a7cc59eab6f9510cd",
-        "correctAnswer": "Algae",
+        "category": "music",
+        "id": "622a1c397cc59eab6f950c18",
+        "correctAnswer": "Nirvana",
         "incorrectAnswers": [
-            "Prawns",
-            "Dye",
-            "Sunlight"
+            "Counting Crows",
+            "Three 6 Mafia",
+            "The Velvet Underground"
         ],
         "question": {
-            "text": "Flamingos are not naturally pink. They get their color from ________."
+            "text": "Which American rock band released the album 'Bleach'?"
         },
         "tags": [
+            "rock_music",
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94fb14",
+        "correctAnswer": "Julia Roberts",
+        "incorrectAnswers": [
+            "Joan Allen",
+            "Juliette Binoche",
+            "Ellen Burstyn"
+        ],
+        "question": {
+            "text": "Who won the 2000 Academy Award for Best Leading Actress for playing the role of Erin Brockovich in Erin Brockovich?"
+        },
+        "tags": [
+            "acting",
+            "academy_awards",
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c3c7cc59eab6f95187b",
+        "correctAnswer": "At a full moon",
+        "incorrectAnswers": [
+            "At midnight",
+            "On Halloween",
+            "On Mondays"
+        ],
+        "question": {
+            "text": "When do Werewolves appear?"
+        },
+        "tags": [
+            "mythology",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94fbfc",
+        "correctAnswer": "\"Yo, Adrian!\"",
+        "incorrectAnswers": [
+            "\"May the odds ever be in your favor.\"",
+            "\"Just keep swimming.\"",
+            "\"A martini. Shaken, not stirred.\""
+        ],
+        "question": {
+            "text": "Which of these quotes is from the film 'Rocky'?"
+        },
+        "tags": [
+            "quotes",
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c3e7cc59eab6f952318",
+        "correctAnswer": "Skin",
+        "incorrectAnswers": [
+            "Hair",
+            "Heart",
+            "Feet"
+        ],
+        "question": {
+            "text": "What part of the body is affected by dermatitis?"
+        },
+        "tags": [
+            "anatomy",
+            "medicine",
+            "biology",
+            "words",
             "science"
         ],
         "type": "text_choice",
@@ -171,43 +196,19 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "62573f939da29df7b05f73a3",
-        "correctAnswer": "A family heads to a hotel for the winter where a presence influences the father into violence.",
+        "category": "music",
+        "id": "622a1c367cc59eab6f95021b",
+        "correctAnswer": "Van Morrison\u00a0",
         "incorrectAnswers": [
-            "A group of low-level criminals fight to track down a priceless stolen diamond.",
-            "After the death of a tycoon, reporters scramble to uncover the meaning of his final utterance.",
-            "A car designer and driver battle to build a revolutionary race car."
+            "Megadeth",
+            "Boyz II Men",
+            "Janet Jackson"
         ],
         "question": {
-            "text": "What is the plot of the movie The Shining?"
+            "text": "Who released the album 'Tupelo honey'?"
         },
         "tags": [
-            "film",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c3d7cc59eab6f951bf2",
-        "correctAnswer": "Augustus",
-        "incorrectAnswers": [
-            "Nero",
-            "Herod",
-            "Pilate"
-        ],
-        "question": {
-            "text": "Who ruled Rome when Christ was born?"
-        },
-        "tags": [
-            "romans",
-            "christianity",
-            "classics",
-            "history"
+            "music"
         ],
         "type": "text_choice",
         "difficulty": "hard",

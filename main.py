@@ -150,32 +150,31 @@ class QuizPage(CTkFrame):
         
         for idx, label in enumerate(["A", "B", "C", "D"]):
             frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
-            button = CTkButton(frame, text=label, width=28, height=2)
-            option_label = CTkLabel(frame, text=self.question_dict["all_choices"][idx], font=("Times New Roman", 20), wraplength=295)
+            button = CTkButton(self.choices_frame, text=self.question_dict["all_choices"][idx], width=420, height=65)
+            button._text_label.configure(wraplength=295)
 
-            widgets[label] = {"frame": frame, "button": button, "label": option_label}
+            widgets[label] = {"frame": frame, "button": button}
         
         return widgets
 
     def pack_choices_widgets(self):
 
         for key in self.choices_widgets.keys():
+            """
             curr_frame = self.choices_widgets[key]["frame"]
             curr_frame.propagate(False)
             curr_frame.pack(padx = (5, 5), pady = (5, 5))
+            """
 
             curr_button = self.choices_widgets[key]["button"]
-            curr_button.pack(side="left", padx=(5, 0))
+            curr_button.pack(padx=(0, 0), pady=(3, 3))
             curr_button.configure(command=lambda k=key: self.check_answer(k))
-
-            curr_label = self.choices_widgets[key]["label"]
-            curr_label.pack(side="left", padx=(10, 0))
 
 
 
     def check_answer(self, answer_frame):
-        label = self.choices_widgets[answer_frame]["label"]
-        answer_text = label.cget("text")
+        button = self.choices_widgets[answer_frame]["button"]
+        answer_text = button.cget("text")
 
         if answer_text == self.question_dict["correctAnswer"]:
             self.increase_score()
@@ -186,8 +185,8 @@ class QuizPage(CTkFrame):
     def update_question_widgets(self):
         self.question_label.configure(text=self.question_dict["question"]["text"])
         
-        for idx, label in enumerate(["A", "B", "C", "D"]):
-            self.choices_widgets[label]["label"].configure(
+        for idx, letter in enumerate(["A", "B", "C", "D"]):
+            self.choices_widgets[letter]["button"].configure(
                 text=self.question_dict["all_choices"][idx]
             )
 
