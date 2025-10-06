@@ -1,63 +1,62 @@
 [
     {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fc37",
-        "correctAnswer": "\"There's no place like home.\"",
+        "category": "music",
+        "id": "622a1c357cc59eab6f94fd74",
+        "correctAnswer": "Prince",
         "incorrectAnswers": [
-            "\"Oh, Jerry, don't let's ask for the moon. We have the stars.\"",
-            "\"I\u2019m already pregnant. So, what other shenanigans could I get myself into?\"",
-            "\"This is the day you will always remember as the day you almost caught Captain Jack Sparrow!\""
+            "Celine Dion",
+            "Barry Gibb",
+            "Elvis Presley"
         ],
         "question": {
-            "text": "Which of these quotes is from the film 'The Wizard of Oz'?"
+            "text": "Who Wrote The Songs \"Manic Monday\" , \"Nothing Compares To You\" And \"I Feel For You\"? "
         },
         "tags": [
-            "film",
-            "quotes",
-            "film_and_tv"
+            "songs",
+            "people",
+            "music"
         ],
         "type": "text_choice",
-        "difficulty": "easy",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c347cc59eab6f94fa28",
+        "correctAnswer": "Dutch Golden Age",
+        "incorrectAnswers": [
+            "Neoclassicism",
+            "Dutch and Flemish Renaissance",
+            "Fauvism"
+        ],
+        "question": {
+            "text": "The painting \"Girl with a Pearl Earring\" by \u200e\u200eJohannes Vermeer is a part of which art movement?"
+        },
+        "tags": [
+            "painting",
+            "art",
+            "arts_and_literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "society_and_culture",
-        "id": "646089e4de964ebc39016c9f",
-        "correctAnswer": "A yuppie",
+        "id": "622a1c377cc59eab6f950416",
+        "correctAnswer": "Spain",
         "incorrectAnswers": [
-            "A hipster",
-            "A bohemian",
-            "A beatnik"
+            "Italy",
+            "France",
+            "Chile"
         ],
         "question": {
-            "text": "What term, coined in the 1980s, refers to a youthful metropolitan white-collar worker?"
+            "text": "In which country do they eat 12 grapes as the clock strikes midnight (one each time the clock chimes) on New Year's Eve?"
         },
         "tags": [
-            "words",
-            "society_and_culture",
-            "1980's"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "625ea00e796f721e95543fcb",
-        "correctAnswer": "United Arab Emirates",
-        "incorrectAnswers": [
-            "Vietnam",
-            "China",
-            "Netherlands"
-        ],
-        "question": {
-            "text": "Which of these countries has black on its flag?"
-        },
-        "tags": [
-            "flags",
-            "geography"
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -65,22 +64,85 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "63f39503989356ef48370be5",
-        "correctAnswer": "The Moon",
+        "category": "geography",
+        "id": "645cb12a602ff42ca52fb422",
+        "correctAnswer": "Pitcairn Island",
         "incorrectAnswers": [
-            "Mars",
-            "Jupiter",
-            "Mercury"
+            "Falkland Island",
+            "Ascension Island",
+            "South Georgia Island"
         ],
         "question": {
-            "text": "Which of the following is not a planet?"
+            "text": "Which of these is a remote British island in the South Pacific?"
         },
         "tags": [
-            "science",
-            "space",
-            "the_solar_system",
-            "astrophysics"
+            "islands",
+            "pacific_ocean"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "622a1c397cc59eab6f950c18",
+        "correctAnswer": "Nirvana",
+        "incorrectAnswers": [
+            "Counting Crows",
+            "Three 6 Mafia",
+            "The Velvet Underground"
+        ],
+        "question": {
+            "text": "Which American rock band released the album 'Bleach'?"
+        },
+        "tags": [
+            "rock_music",
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94fb14",
+        "correctAnswer": "Julia Roberts",
+        "incorrectAnswers": [
+            "Joan Allen",
+            "Juliette Binoche",
+            "Ellen Burstyn"
+        ],
+        "question": {
+            "text": "Who won the 2000 Academy Award for Best Leading Actress for playing the role of Erin Brockovich in Erin Brockovich?"
+        },
+        "tags": [
+            "acting",
+            "academy_awards",
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c3c7cc59eab6f95187b",
+        "correctAnswer": "At a full moon",
+        "incorrectAnswers": [
+            "At midnight",
+            "On Halloween",
+            "On Mondays"
+        ],
+        "question": {
+            "text": "When do Werewolves appear?"
+        },
+        "tags": [
+            "mythology",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "easy",
@@ -89,79 +151,43 @@
     },
     {
         "category": "film_and_tv",
-        "id": "622a1c377cc59eab6f95069c",
-        "correctAnswer": "Jason Bateman",
+        "id": "622a1c347cc59eab6f94fbfc",
+        "correctAnswer": "\"Yo, Adrian!\"",
         "incorrectAnswers": [
-            "Javier Bardem",
-            "Colin Firth",
-            "Tim Roth"
+            "\"May the odds ever be in your favor.\"",
+            "\"Just keep swimming.\"",
+            "\"A martini. Shaken, not stirred.\""
         ],
         "question": {
-            "text": "Which actor has featured in films including DodgeBall: A True Underdog Story and Up in the Air?"
+            "text": "Which of these quotes is from the film 'Rocky'?"
         },
         "tags": [
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "622a1c357cc59eab6f94feed",
-        "correctAnswer": "David Bowie",
-        "incorrectAnswers": [
-            "Eric Clapton",
-            "Madonna",
-            "Mika"
-        ],
-        "question": {
-            "text": "Which musician released the album 'Low'?"
-        },
-        "tags": [
-            "music_albums",
-            "musicians"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c367cc59eab6f9501f9",
-        "correctAnswer": "Peter Jackson",
-        "incorrectAnswers": [
-            "Steven Spielberg",
-            "Woody Allen",
-            "Martin Scorsese"
-        ],
-        "question": {
-            "text": "Which director directed The Lord of the Rings: The Fellowship of the Ring?"
-        },
-        "tags": [
+            "quotes",
             "film",
             "film_and_tv"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "science",
-        "id": "622a1c377cc59eab6f950524",
-        "correctAnswer": "vibrations and oscillations in the Sun",
+        "id": "622a1c3e7cc59eab6f952318",
+        "correctAnswer": "Skin",
         "incorrectAnswers": [
-            "origin of life",
-            "earthquakes",
-            "alternative method of massage, manipulative therapy|therapy or pressure on certain points of the sole of the feet as a means of relieving nervous tension"
+            "Hair",
+            "Heart",
+            "Feet"
         ],
         "question": {
-            "text": "What is Helioseismology the study of?"
+            "text": "What part of the body is affected by dermatitis?"
         },
         "tags": [
+            "anatomy",
+            "medicine",
+            "biology",
+            "words",
             "science"
         ],
         "type": "text_choice",
@@ -170,45 +196,22 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "622a1c367cc59eab6f95010a",
-        "correctAnswer": "Oxford University",
+        "category": "music",
+        "id": "622a1c367cc59eab6f95021b",
+        "correctAnswer": "Van Morrison\u00a0",
         "incorrectAnswers": [
-            "Jerusalem",
-            "Cape Town",
-            "Bethlehem"
+            "Megadeth",
+            "Boyz II Men",
+            "Janet Jackson"
         ],
         "question": {
-            "text": "Where was Methodism founded?"
+            "text": "Who released the album 'Tupelo honey'?"
         },
         "tags": [
-            "religion",
-            "society_and_culture"
+            "music"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "622a1c3e7cc59eab6f9522dd",
-        "correctAnswer": "Coconut",
-        "incorrectAnswers": [
-            "Banana",
-            "Chilli",
-            "Pumpkin"
-        ],
-        "question": {
-            "text": "From what food do you get copra?"
-        },
-        "tags": [
-            "food_and_drink",
-            "plants",
-            "food"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }

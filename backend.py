@@ -1,8 +1,9 @@
+from difflib import SequenceMatcher
+import extract_questions as eq
 import json
 import os
-from difflib import SequenceMatcher
 import random
-import extract_questions as eq
+
 
 class Quiz:
 
@@ -33,8 +34,6 @@ class Quiz:
             return
                 
         if self.all_asked():
-            print("\nAll questions have been answered...")
-            print(" Generating new questions")
             self.generate_questions()
 
         question_index = self.generate_index()
@@ -56,6 +55,7 @@ class Quiz:
 
         return random_index
 
+# Only for input based questions (if any)
     def get_answer(self, index):
         #Get Answer
         answer = input("Answer: ")
@@ -69,7 +69,7 @@ class Quiz:
             print(f"Incorrect!!\nCorrect answer is {self._data[index]["correctAnswer"]}")
 
         self.total_questions_answered += 1
-
+# Only for input based questions (if any)
     def check_answer(self, answer, index):
         correct_answer = str(self._data[index]['correctAnswer'])
 
@@ -81,6 +81,8 @@ class Quiz:
             return abs(answer_num - correct_num) <= 0.01
         except ValueError:
             return self.is_similar(answer, correct_answer)
+
+
 
     def get_possible_answers(self, index):
         incorrect_answers = self._data[index]["incorrectAnswers"]
