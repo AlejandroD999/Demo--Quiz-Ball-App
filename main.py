@@ -160,12 +160,6 @@ class QuizPage(CTkFrame):
     def pack_choices_widgets(self):
 
         for key in self.choices_widgets.keys():
-            """
-            curr_frame = self.choices_widgets[key]["frame"]
-            curr_frame.propagate(False)
-            curr_frame.pack(padx = (5, 5), pady = (5, 5))
-            """
-
             curr_button = self.choices_widgets[key]["button"]
             curr_button.pack(padx=(0, 0), pady=(3, 3))
             curr_button.configure(command=lambda k=key: self.check_answer(k))
