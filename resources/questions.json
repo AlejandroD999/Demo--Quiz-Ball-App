@@ -1,21 +1,18 @@
 [
     {
-        "category": "film_and_tv",
-        "id": "624dba22de6018633d31f6b6",
-        "correctAnswer": "Duran Duran",
+        "category": "geography",
+        "id": "62373f90cb85f7ce9e949ca5",
+        "correctAnswer": "Bangladesh",
         "incorrectAnswers": [
-            "Garbage",
-            "Chris Cornell",
-            "Lulu"
+            "Costa Rica",
+            "Antigua and Barbuda",
+            "Zambia"
         ],
         "question": {
-            "text": "Who performed the theme song to the James Bond film A View to a Kill?"
+            "text": "Dhaka is the capital city of which country?"
         },
         "tags": [
-            "james_bond",
-            "film",
-            "soundtracks",
-            "film_and_tv"
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -23,22 +20,21 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3f7cc59eab6f95235d",
-        "correctAnswer": "-40",
+        "category": "geography",
+        "id": "62374250cb85f7ce9e949dc0",
+        "correctAnswer": "Ljubljana",
         "incorrectAnswers": [
-            "0",
-            "16",
-            "64"
+            "Sarajevo",
+            "Yaounde",
+            "Reykjavik"
         ],
         "question": {
-            "text": "At Which Point Are The Temperature Scales Fahrenheit & Celcius The Same?"
+            "text": "What is the capital city of Slovenia?"
         },
         "tags": [
-            "general_knowledge",
-            "numbers",
-            "physics",
-            "science"
+            "capital_cities",
+            "europe",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -47,20 +43,84 @@
     },
     {
         "category": "society_and_culture",
-        "id": "6293ecbd7f41d6338b96ef07",
-        "correctAnswer": "Founder of Manichaeism, a gnostic religion which for a time was a rival to Christianity.",
+        "id": "6502100c2b411b896c984b1c",
+        "correctAnswer": "Gemini",
         "incorrectAnswers": [
-            "Dictator of Nazi Germany.",
-            "Founder of the Achaemenid Empire, the first Persian Empire.",
-            "Spiritual teacher and central figure of Christianity."
+            "Cancer",
+            "Sagittarius",
+            "Virgo"
         ],
         "question": {
-            "text": "Which of the following was Mani famous for?"
+            "text": "Which zodiac sign is characterized by a 2-sided personality and frequent mood changes?"
         },
         "tags": [
-            "people",
-            "history",
-            "society_and_culture"
+            "zodiac",
+            "society_and_culture",
+            "astrology"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "622a1c387cc59eab6f950a29",
+        "correctAnswer": "Laos",
+        "incorrectAnswers": [
+            "Vietnam",
+            "Singapore",
+            "Bangladesh"
+        ],
+        "question": {
+            "text": "Which of these countries borders Thailand?"
+        },
+        "tags": [
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "64adcb300d501be39aa6c78c",
+        "correctAnswer": "Thailand",
+        "incorrectAnswers": [
+            "Vietnam",
+            "Laos",
+            "Cambodia"
+        ],
+        "question": {
+            "text": "Which Southeast Asian monarchy was never colonized by Europeans?"
+        },
+        "tags": [
+            "countries",
+            "geography",
+            "southeast_asia",
+            "colonialism"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "625740579da29df7b05f73d6",
+        "correctAnswer": "The Elephant Man",
+        "incorrectAnswers": [
+            "Vertigo",
+            "Back to the Future",
+            "Mr. Smith Goes to Washington"
+        ],
+        "question": {
+            "text": "Name the movie that matches the following plot summary: 'A surgeon rescues a disfigured man who is mistreated while scraping a living as a side-show freak.'"
+        },
+        "tags": [
+            "film",
+            "film_and_tv"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -69,129 +129,21 @@
     },
     {
         "category": "geography",
-        "id": "625e9ef6796f721e95543f79",
-        "correctAnswer": "Israel",
+        "id": "6462628bab138b829b81ea22",
+        "correctAnswer": "Rome",
         "incorrectAnswers": [
-            "Germany",
-            "Portugal",
-            "Chile"
+            "Milan",
+            "Florence",
+            "Naples"
         ],
         "question": {
-            "text": "Which country's flag can be described as 'White with a blue star centered between two equal horizontal blue bands'?"
+            "text": "Which city in Italy is served by the Leonardo da Vinci International Airport?"
         },
         "tags": [
-            "flags",
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "622a1c3a7cc59eab6f9511b1",
-        "correctAnswer": "Eris",
-        "incorrectAnswers": [
-            "Razr",
-            "Mercury",
-            "Zeus"
-        ],
-        "question": {
-            "text": "Who is the Greek equivalent of the Roman god Discordia?"
-        },
-        "tags": [
-            "ancient_greece",
-            "mythology",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "64746b395a4c31088dd9d027",
-        "correctAnswer": "A mummy",
-        "incorrectAnswers": [
-            "A zombie",
-            "A skeleton",
-            "A vampire"
-        ],
-        "question": {
-            "text": "What is the name of the bandaged walking dead often seen during Halloween, whose name comes from the Persian word for 'wax'?"
-        },
-        "tags": [
-            "halloween",
-            "words",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c347cc59eab6f94f9c4",
-        "correctAnswer": "William J. Clinton",
-        "incorrectAnswers": [
-            "Rutherford B. Hayes",
-            "Woodrow Wilson",
-            "Dwight Eisenhower"
-        ],
-        "question": {
-            "text": "Who was the 42nd president of the USA, in term during the period 1993\u20132001?"
-        },
-        "tags": [
-            "usa",
-            "presidents",
-            "1990's",
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "637162911bf863c45ca6c387",
-        "correctAnswer": "Bono malum superate",
-        "incorrectAnswers": [
-            "Bona fide",
-            "Humilitas occidit superbiam",
-            "Fortiter et fideliter"
-        ],
-        "question": {
-            "text": "Which of these Latin phrases means 'Overcome evil with good'?"
-        },
-        "tags": [
-            "society_and_culture",
-            "language",
-            "the_romans",
-            "classics"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "general_knowledge",
-        "id": "622a1c3a7cc59eab6f9510ba",
-        "correctAnswer": "Water",
-        "incorrectAnswers": [
-            "Jungle",
-            "Desert",
-            "Arctic"
-        ],
-        "question": {
-            "text": "In What Environment Did Ichthysaurs Live"
-        },
-        "tags": [
-            "general_knowledge"
+            "airports",
+            "tourism",
+            "cities",
+            "italy"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -200,25 +152,66 @@
     },
     {
         "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94f8fa",
-        "correctAnswer": "Dustin Hoffman",
+        "id": "649d6d6de3aef0a3c23f6429",
+        "correctAnswer": "George Clooney",
         "incorrectAnswers": [
-            "Robert Duvall",
-            "Michael Douglas",
-            "Kevin Spacey"
+            "Brad Pitt",
+            "Leonardo DiCaprio",
+            "Tom Hanks"
         ],
         "question": {
-            "text": "Which actor played the role of Raymond Babbitt in Rain Man?"
+            "text": "Which actor received 3 Oscar nominations in one year, winning for his supporting role in \"Syriana\"?"
         },
         "tags": [
-            "people",
-            "acting",
-            "general_knowledge",
+            "film_and_tv",
             "film",
-            "film_and_tv"
+            "acting",
+            "academy_awards"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "648891854cd3f064f443dc1f",
+        "correctAnswer": "Atlas Shrugged",
+        "incorrectAnswers": [
+            "Brave New World",
+            "Fahrenheit 451",
+            "1984"
+        ],
+        "question": {
+            "text": "In which novel does a character called John Galt persuade the world's business leaders to abandon their companies and form a new capitalist society?"
+        },
+        "tags": [
+            "novels",
+            "arts_and_literature",
+            "literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "food_and_drink",
+        "id": "624ab05fc64ce21c11f06e95",
+        "correctAnswer": "North America",
+        "incorrectAnswers": [
+            "Southeast Asia",
+            "Central Asia",
+            "Europe"
+        ],
+        "question": {
+            "text": "From which part of the world do blueberries originate?"
+        },
+        "tags": [
+            "food_and_drink"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }
