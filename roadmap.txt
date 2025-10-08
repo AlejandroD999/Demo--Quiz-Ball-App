@@ -34,7 +34,4 @@ Process Order:
 ***To Do***
 
 1. Eliminate print() when extracting questions. GUI version does not need
-2. Create Score tracker for QuizPage
-3. Rebuild check_answer in 'backend.py' <- Does not work in frontend
-4. Make buttons work && check answer based on button
-5. Create Submit button
+2. Create Submit button

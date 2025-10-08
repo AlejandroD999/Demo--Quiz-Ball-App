@@ -186,8 +186,7 @@ class QuizPage(CTkFrame):
             
             self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
             self.question_dict = self.question_handling()
-            self.update_question_widgets()
-            self.attempts = 0
+            self.next_question()
         
         else:
             button.configure(fg_color= incorrect_color, hover_color=incorrect_color)
@@ -205,7 +204,7 @@ class QuizPage(CTkFrame):
                     return
 
 
-    def update_question_widgets(self):
+    def next_question(self):
         self.question_label.configure(text=self.question_dict["question"]["text"])
 
         for idx, letter in enumerate(["A", "B", "C", "D"]):
