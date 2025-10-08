@@ -35,3 +35,4 @@ Process Order:
 
 1. Eliminate print() when extracting questions. GUI version does not need
 2. Create Submit button
+3. Fix bug; Glitch during question extraction

@@ -1,169 +1,20 @@
 [
     {
-        "category": "music",
-        "id": "622a1c357cc59eab6f94fd74",
-        "correctAnswer": "Prince",
-        "incorrectAnswers": [
-            "Celine Dion",
-            "Barry Gibb",
-            "Elvis Presley"
-        ],
-        "question": {
-            "text": "Who Wrote The Songs \"Manic Monday\" , \"Nothing Compares To You\" And \"I Feel For You\"? "
-        },
-        "tags": [
-            "songs",
-            "people",
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "arts_and_literature",
-        "id": "622a1c347cc59eab6f94fa28",
-        "correctAnswer": "Dutch Golden Age",
-        "incorrectAnswers": [
-            "Neoclassicism",
-            "Dutch and Flemish Renaissance",
-            "Fauvism"
-        ],
-        "question": {
-            "text": "The painting \"Girl with a Pearl Earring\" by \u200e\u200eJohannes Vermeer is a part of which art movement?"
-        },
-        "tags": [
-            "painting",
-            "art",
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "622a1c377cc59eab6f950416",
-        "correctAnswer": "Spain",
-        "incorrectAnswers": [
-            "Italy",
-            "France",
-            "Chile"
-        ],
-        "question": {
-            "text": "In which country do they eat 12 grapes as the clock strikes midnight (one each time the clock chimes) on New Year's Eve?"
-        },
-        "tags": [
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "645cb12a602ff42ca52fb422",
-        "correctAnswer": "Pitcairn Island",
-        "incorrectAnswers": [
-            "Falkland Island",
-            "Ascension Island",
-            "South Georgia Island"
-        ],
-        "question": {
-            "text": "Which of these is a remote British island in the South Pacific?"
-        },
-        "tags": [
-            "islands",
-            "pacific_ocean"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "622a1c397cc59eab6f950c18",
-        "correctAnswer": "Nirvana",
-        "incorrectAnswers": [
-            "Counting Crows",
-            "Three 6 Mafia",
-            "The Velvet Underground"
-        ],
-        "question": {
-            "text": "Which American rock band released the album 'Bleach'?"
-        },
-        "tags": [
-            "rock_music",
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fb14",
-        "correctAnswer": "Julia Roberts",
+        "id": "624dba22de6018633d31f6b6",
+        "correctAnswer": "Duran Duran",
         "incorrectAnswers": [
-            "Joan Allen",
-            "Juliette Binoche",
-            "Ellen Burstyn"
+            "Garbage",
+            "Chris Cornell",
+            "Lulu"
         ],
         "question": {
-            "text": "Who won the 2000 Academy Award for Best Leading Actress for playing the role of Erin Brockovich in Erin Brockovich?"
+            "text": "Who performed the theme song to the James Bond film A View to a Kill?"
         },
         "tags": [
-            "acting",
-            "academy_awards",
+            "james_bond",
             "film",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "622a1c3c7cc59eab6f95187b",
-        "correctAnswer": "At a full moon",
-        "incorrectAnswers": [
-            "At midnight",
-            "On Halloween",
-            "On Mondays"
-        ],
-        "question": {
-            "text": "When do Werewolves appear?"
-        },
-        "tags": [
-            "mythology",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fbfc",
-        "correctAnswer": "\"Yo, Adrian!\"",
-        "incorrectAnswers": [
-            "\"May the odds ever be in your favor.\"",
-            "\"Just keep swimming.\"",
-            "\"A martini. Shaken, not stirred.\""
-        ],
-        "question": {
-            "text": "Which of these quotes is from the film 'Rocky'?"
-        },
-        "tags": [
-            "quotes",
-            "film",
+            "soundtracks",
             "film_and_tv"
         ],
         "type": "text_choice",
@@ -173,22 +24,43 @@
     },
     {
         "category": "science",
-        "id": "622a1c3e7cc59eab6f952318",
-        "correctAnswer": "Skin",
+        "id": "622a1c3f7cc59eab6f95235d",
+        "correctAnswer": "-40",
         "incorrectAnswers": [
-            "Hair",
-            "Heart",
-            "Feet"
+            "0",
+            "16",
+            "64"
         ],
         "question": {
-            "text": "What part of the body is affected by dermatitis?"
+            "text": "At Which Point Are The Temperature Scales Fahrenheit & Celcius The Same?"
         },
         "tags": [
-            "anatomy",
-            "medicine",
-            "biology",
-            "words",
+            "general_knowledge",
+            "numbers",
+            "physics",
             "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "6293ecbd7f41d6338b96ef07",
+        "correctAnswer": "Founder of Manichaeism, a gnostic religion which for a time was a rival to Christianity.",
+        "incorrectAnswers": [
+            "Dictator of Nazi Germany.",
+            "Founder of the Achaemenid Empire, the first Persian Empire.",
+            "Spiritual teacher and central figure of Christianity."
+        ],
+        "question": {
+            "text": "Which of the following was Mani famous for?"
+        },
+        "tags": [
+            "people",
+            "history",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -196,22 +68,157 @@
         "isNiche": false
     },
     {
-        "category": "music",
-        "id": "622a1c367cc59eab6f95021b",
-        "correctAnswer": "Van Morrison\u00a0",
+        "category": "geography",
+        "id": "625e9ef6796f721e95543f79",
+        "correctAnswer": "Israel",
         "incorrectAnswers": [
-            "Megadeth",
-            "Boyz II Men",
-            "Janet Jackson"
+            "Germany",
+            "Portugal",
+            "Chile"
         ],
         "question": {
-            "text": "Who released the album 'Tupelo honey'?"
+            "text": "Which country's flag can be described as 'White with a blue star centered between two equal horizontal blue bands'?"
         },
         "tags": [
-            "music"
+            "flags",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c3a7cc59eab6f9511b1",
+        "correctAnswer": "Eris",
+        "incorrectAnswers": [
+            "Razr",
+            "Mercury",
+            "Zeus"
+        ],
+        "question": {
+            "text": "Who is the Greek equivalent of the Roman god Discordia?"
+        },
+        "tags": [
+            "ancient_greece",
+            "mythology",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "64746b395a4c31088dd9d027",
+        "correctAnswer": "A mummy",
+        "incorrectAnswers": [
+            "A zombie",
+            "A skeleton",
+            "A vampire"
+        ],
+        "question": {
+            "text": "What is the name of the bandaged walking dead often seen during Halloween, whose name comes from the Persian word for 'wax'?"
+        },
+        "tags": [
+            "halloween",
+            "words",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c347cc59eab6f94f9c4",
+        "correctAnswer": "William J. Clinton",
+        "incorrectAnswers": [
+            "Rutherford B. Hayes",
+            "Woodrow Wilson",
+            "Dwight Eisenhower"
+        ],
+        "question": {
+            "text": "Who was the 42nd president of the USA, in term during the period 1993\u20132001?"
+        },
+        "tags": [
+            "usa",
+            "presidents",
+            "1990's",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "637162911bf863c45ca6c387",
+        "correctAnswer": "Bono malum superate",
+        "incorrectAnswers": [
+            "Bona fide",
+            "Humilitas occidit superbiam",
+            "Fortiter et fideliter"
+        ],
+        "question": {
+            "text": "Which of these Latin phrases means 'Overcome evil with good'?"
+        },
+        "tags": [
+            "society_and_culture",
+            "language",
+            "the_romans",
+            "classics"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "general_knowledge",
+        "id": "622a1c3a7cc59eab6f9510ba",
+        "correctAnswer": "Water",
+        "incorrectAnswers": [
+            "Jungle",
+            "Desert",
+            "Arctic"
+        ],
+        "question": {
+            "text": "In What Environment Did Ichthysaurs Live"
+        },
+        "tags": [
+            "general_knowledge"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94f8fa",
+        "correctAnswer": "Dustin Hoffman",
+        "incorrectAnswers": [
+            "Robert Duvall",
+            "Michael Douglas",
+            "Kevin Spacey"
+        ],
+        "question": {
+            "text": "Which actor played the role of Raymond Babbitt in Rain Man?"
+        },
+        "tags": [
+            "people",
+            "acting",
+            "general_knowledge",
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     }
