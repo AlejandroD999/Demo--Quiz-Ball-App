@@ -105,6 +105,8 @@ class QuizPage(CTkFrame):
         self.propagate(False)
         
         self.score = 0
+        self.attempts = 0
+
         self.default_button_color = "#00a8e8"
         self.default_hover_color = "#007ea7"
 
@@ -172,7 +174,6 @@ class QuizPage(CTkFrame):
 
 
     def check_answer(self, answer_frame):
-        self.attempts = 0
         incorrect_color = "#FF0000"
         correct_color = "#35C935"
         
@@ -181,17 +182,15 @@ class QuizPage(CTkFrame):
 
         if answer_text == self.question_dict["correctAnswer"]:
             
-            if self.attempts < 1:
-                self.increase_score()
-            
+            self.increase_score()            
             self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
             self.question_dict = self.question_handling()
             self.next_question()
         
         else:
+            self.attempts += 1
             button.configure(fg_color= incorrect_color, hover_color=incorrect_color)
             self.highlight_answer(correct_color)
-            self.attempts += 1
 
     
     def highlight_answer(self, color):
@@ -199,14 +198,14 @@ class QuizPage(CTkFrame):
                 correct_button = self.choices_widgets[key]["button"]
 
                 if correct_button.cget("text") == self.question_dict["correctAnswer"]:
-                    print(correct_button.cget("text"))
                     correct_button.configure(fg_color= color, hover_color = color)
                     return
 
 
     def next_question(self):
         self.question_label.configure(text=self.question_dict["question"]["text"])
-
+        self.attempts = 0
+        
         for idx, letter in enumerate(["A", "B", "C", "D"]):
             self.choices_widgets[letter]["button"].configure(
                 text=self.question_dict["all_choices"][idx],
@@ -215,8 +214,9 @@ class QuizPage(CTkFrame):
             )
 
     def increase_score(self):
-            self.score += 1
-            self.score_variable.set(f"Score: {self.score}")
+            if self.attempts < 1:
+                self.score += 1
+                self.score_variable.set(f"Score: {self.score}")
 
 
 
