@@ -1,4 +1,5 @@
 from customtkinter import *
+import time
 import tkinter as tk
 import backend
 
@@ -97,7 +98,6 @@ class ModeSelectionPage(CTkFrame):
                                  height=2,
                                  border_color="black", corner_radius = 3).pack()
 
-
 class QuizPage(CTkFrame):
     def __init__(self, parent, controller):
         self.controller = controller
@@ -105,6 +105,9 @@ class QuizPage(CTkFrame):
         self.propagate(False)
         
         self.score = 0
+        self.default_button_color = "#00a8e8"
+        self.default_hover_color = "#007ea7"
+
         self.quiz_backend = backend.Quiz()
         self.quiz_backend.load_questions()
 
@@ -147,13 +150,15 @@ class QuizPage(CTkFrame):
 
     def create_choices_widgets(self):
         widgets = {}
-        
-        for idx, label in enumerate(["A", "B", "C", "D"]):
-            frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
-            button = CTkButton(self.choices_frame, text=self.question_dict["all_choices"][idx], width=420, height=65)
-            button._text_label.configure(wraplength=295)
 
-            widgets[label] = {"frame": frame, "button": button}
+        for idx, label in enumerate(["A", "B", "C", "D"]):
+#            frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
+            button = CTkButton(self.choices_frame, 
+                               fg_color=self.default_button_color, hover_color=self.default_hover_color,
+                               text=self.question_dict["all_choices"][idx],
+                               width=420, height=65)
+            button._text_label.configure(wraplength=295)
+            widgets[label] = {"button": button}
         
         return widgets
 
@@ -167,21 +172,47 @@ class QuizPage(CTkFrame):
 
 
     def check_answer(self, answer_frame):
+        self.attempts = 0
+        incorrect_color = "#FF0000"
+        correct_color = "#35C935"
+        
         button = self.choices_widgets[answer_frame]["button"]
         answer_text = button.cget("text")
 
         if answer_text == self.question_dict["correctAnswer"]:
-            self.increase_score()
+            
+            if self.attempts < 1:
+                self.increase_score()
+            
             self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
             self.question_dict = self.question_handling()
             self.update_question_widgets()
+            self.attempts = 0
+        
+        else:
+            button.configure(fg_color= incorrect_color, hover_color=incorrect_color)
+            self.highlight_answer(correct_color)
+            self.attempts += 1
+
+    
+    def highlight_answer(self, color):
+            for key in ("A", "B", "C", "D"):
+                correct_button = self.choices_widgets[key]["button"]
+
+                if correct_button.cget("text") == self.question_dict["correctAnswer"]:
+                    print(correct_button.cget("text"))
+                    correct_button.configure(fg_color= color, hover_color = color)
+                    return
+
 
     def update_question_widgets(self):
         self.question_label.configure(text=self.question_dict["question"]["text"])
-        
+
         for idx, letter in enumerate(["A", "B", "C", "D"]):
             self.choices_widgets[letter]["button"].configure(
-                text=self.question_dict["all_choices"][idx]
+                text=self.question_dict["all_choices"][idx],
+                fg_color= self.default_button_color,
+                hover_color = self.default_hover_color
             )
 
     def increase_score(self):
