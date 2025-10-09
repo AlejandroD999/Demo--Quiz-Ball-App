@@ -1,5 +1,4 @@
 from customtkinter import *
-import time
 import tkinter as tk
 import backend
 
@@ -140,7 +139,9 @@ class QuizPage(CTkFrame):
         
         #Pack choices widgets
         self.pack_choices_widgets()
-        self.submit_button.pack()
+
+    def prompt_for_results(self):
+        msg = 0
 
     def question_handling(self):
         question_attributes = {}
