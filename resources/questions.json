@@ -1,40 +1,42 @@
 [
     {
-        "category": "geography",
-        "id": "62373f90cb85f7ce9e949ca5",
-        "correctAnswer": "Bangladesh",
+        "category": "arts_and_literature",
+        "id": "63d95311168979b94b2e4f8f",
+        "correctAnswer": "1997",
         "incorrectAnswers": [
-            "Costa Rica",
-            "Antigua and Barbuda",
-            "Zambia"
+            "1993",
+            "2001",
+            "1989"
         ],
         "question": {
-            "text": "Dhaka is the capital city of which country?"
+            "text": "In which year was the first Harry Potter book released?"
         },
         "tags": [
-            "geography"
+            "harry_potter",
+            "arts_and_literature",
+            "literature",
+            "young_adult"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "geography",
-        "id": "62374250cb85f7ce9e949dc0",
-        "correctAnswer": "Ljubljana",
+        "category": "food_and_drink",
+        "id": "622a1c367cc59eab6f95022c",
+        "correctAnswer": "Grapefruit & Tangerine\u00a0",
         "incorrectAnswers": [
-            "Sarajevo",
-            "Yaounde",
-            "Reykjavik"
+            "Apple & Banana",
+            "Peach & Nectarine",
+            "Durian & Jackfruit"
         ],
         "question": {
-            "text": "What is the capital city of Slovenia?"
+            "text": "Which two fruits are crossed to make an ugly fruit?"
         },
         "tags": [
-            "capital_cities",
-            "europe",
-            "geography"
+            "food",
+            "food_and_drink"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -43,20 +45,20 @@
     },
     {
         "category": "society_and_culture",
-        "id": "6502100c2b411b896c984b1c",
-        "correctAnswer": "Gemini",
+        "id": "622a1c357cc59eab6f94fcf7",
+        "correctAnswer": "John Stuart Mill",
         "incorrectAnswers": [
-            "Cancer",
-            "Sagittarius",
-            "Virgo"
+            "Thomas Hobbes",
+            "Ludwig Wittgenstein",
+            "William of Ockham"
         ],
         "question": {
-            "text": "Which zodiac sign is characterized by a 2-sided personality and frequent mood changes?"
+            "text": "Which philosopher famously said 'To do as one would be done by, and to love one's neighbor as oneself, constitute the ideal perfection of utilitarian morality'?"
         },
         "tags": [
-            "zodiac",
-            "society_and_culture",
-            "astrology"
+            "quotes",
+            "philosophy",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -64,19 +66,19 @@
         "isNiche": false
     },
     {
-        "category": "geography",
-        "id": "622a1c387cc59eab6f950a29",
-        "correctAnswer": "Laos",
+        "category": "general_knowledge",
+        "id": "622a1c377cc59eab6f950428",
+        "correctAnswer": "Clogs",
         "incorrectAnswers": [
-            "Vietnam",
-            "Singapore",
-            "Bangladesh"
+            "Feather Caps",
+            "Empty truckles of edam",
+            "Leather cups"
         ],
         "question": {
-            "text": "Which of these countries borders Thailand?"
+            "text": "What Do Dutch Children Traditionally Put Out For Santa To Fill?"
         },
         "tags": [
-            "geography"
+            "general_knowledge"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -84,22 +86,21 @@
         "isNiche": false
     },
     {
-        "category": "geography",
-        "id": "64adcb300d501be39aa6c78c",
-        "correctAnswer": "Thailand",
+        "category": "society_and_culture",
+        "id": "6266e632ff2394bd44dee038",
+        "correctAnswer": "Trois",
         "incorrectAnswers": [
-            "Vietnam",
-            "Laos",
-            "Cambodia"
+            "Tre",
+            "Drie",
+            "Noir"
         ],
         "question": {
-            "text": "Which Southeast Asian monarchy was never colonized by Europeans?"
+            "text": "In French, what is the word for for 'three'?"
         },
         "tags": [
-            "countries",
-            "geography",
-            "southeast_asia",
-            "colonialism"
+            "language",
+            "translations",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -107,20 +108,63 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "625740579da29df7b05f73d6",
-        "correctAnswer": "The Elephant Man",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f95100d",
+        "correctAnswer": "Seat Belt",
         "incorrectAnswers": [
-            "Vertigo",
-            "Back to the Future",
-            "Mr. Smith Goes to Washington"
+            "Cat Eye",
+            "Airbag",
+            "Crumple Zone"
         ],
         "question": {
-            "text": "Name the movie that matches the following plot summary: 'A surgeon rescues a disfigured man who is mistreated while scraping a living as a side-show freak.'"
+            "text": "What Vehicular Safety Device Was First Pantented By Ej Claghorn?"
         },
         "tags": [
-            "film",
-            "film_and_tv"
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c3d7cc59eab6f951c2c",
+        "correctAnswer": "Malta",
+        "incorrectAnswers": [
+            "Cyprus",
+            "Greece",
+            "Spain"
+        ],
+        "question": {
+            "text": "Don Mintoff became which countries first Prime Minister after it became a republic in 1974?"
+        },
+        "tags": [
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "646339a001d576cfac3aa397",
+        "correctAnswer": "Corduroy",
+        "incorrectAnswers": [
+            "Chardonnay",
+            "Cordon Bleu",
+            "Cordon Sanitaire"
+        ],
+        "question": {
+            "text": "What is the name of the durable cotton fabric derived from the French for \"Cord fit for the King\"?"
+        },
+        "tags": [
+            "clothing",
+            "fabric",
+            "words",
+            "fashion",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -128,87 +172,39 @@
         "isNiche": false
     },
     {
-        "category": "geography",
-        "id": "6462628bab138b829b81ea22",
-        "correctAnswer": "Rome",
+        "category": "history",
+        "id": "622a1c3c7cc59eab6f9519c0",
+        "correctAnswer": "Cambodia",
         "incorrectAnswers": [
-            "Milan",
-            "Florence",
-            "Naples"
+            "Ethiopia",
+            "Cuba",
+            "Indonesia"
         ],
         "question": {
-            "text": "Which city in Italy is served by the Leonardo da Vinci International Airport?"
+            "text": "What country was ruled by Pol Pot, leader of the Khmer Rouge party?"
         },
         "tags": [
-            "airports",
-            "tourism",
-            "cities",
-            "italy"
+            "history"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "649d6d6de3aef0a3c23f6429",
-        "correctAnswer": "George Clooney",
-        "incorrectAnswers": [
-            "Brad Pitt",
-            "Leonardo DiCaprio",
-            "Tom Hanks"
-        ],
-        "question": {
-            "text": "Which actor received 3 Oscar nominations in one year, winning for his supporting role in \"Syriana\"?"
-        },
-        "tags": [
-            "film_and_tv",
-            "film",
-            "acting",
-            "academy_awards"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "arts_and_literature",
-        "id": "648891854cd3f064f443dc1f",
-        "correctAnswer": "Atlas Shrugged",
+        "id": "622a1c397cc59eab6f950ee2",
+        "correctAnswer": "Charles Dickens",
         "incorrectAnswers": [
-            "Brave New World",
-            "Fahrenheit 451",
-            "1984"
+            "Oscar Wilde",
+            "Joseph Conrad",
+            "Henryk Sienkiewicz"
         ],
         "question": {
-            "text": "In which novel does a character called John Galt persuade the world's business leaders to abandon their companies and form a new capitalist society?"
+            "text": "Which author wrote 'Little Dorrit'?"
         },
         "tags": [
-            "novels",
-            "arts_and_literature",
-            "literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "624ab05fc64ce21c11f06e95",
-        "correctAnswer": "North America",
-        "incorrectAnswers": [
-            "Southeast Asia",
-            "Central Asia",
-            "Europe"
-        ],
-        "question": {
-            "text": "From which part of the world do blueberries originate?"
-        },
-        "tags": [
-            "food_and_drink"
+            "arts_and_literature"
         ],
         "type": "text_choice",
         "difficulty": "hard",

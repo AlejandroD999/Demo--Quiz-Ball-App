@@ -172,10 +172,13 @@ class QuizPage(CTkFrame):
             curr_button.configure(command=lambda k=key: self.check_answer(k))
 
 
-
     def check_answer(self, answer_frame):
-        incorrect_color = "#FF0000"
-        correct_color = "#35C935"
+        incorrect_color = "#CA1111"
+        incorrect_hover_color = "#C21A1A"
+
+        correct_color = "#42BE1D"
+        correct_hover_color = "#1B851B"
+
         
         button = self.choices_widgets[answer_frame]["button"]
         answer_text = button.cget("text")
@@ -189,16 +192,15 @@ class QuizPage(CTkFrame):
         
         else:
             self.attempts += 1
-            button.configure(fg_color= incorrect_color, hover_color=incorrect_color)
-            self.highlight_answer(correct_color)
+            button.configure(fg_color= incorrect_color, hover_color=incorrect_hover_color)
+            self.highlight_answer(correct_color, correct_hover_color)
 
-    
-    def highlight_answer(self, color):
+    def highlight_answer(self, color, hover_color):
             for key in ("A", "B", "C", "D"):
                 correct_button = self.choices_widgets[key]["button"]
 
                 if correct_button.cget("text") == self.question_dict["correctAnswer"]:
-                    correct_button.configure(fg_color= color, hover_color = color)
+                    correct_button.configure(fg_color= color, hover_color = hover_color)
                     return
 
 
