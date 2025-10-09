@@ -131,13 +131,16 @@ class QuizPage(CTkFrame):
 
         self.choices_widgets = self.create_choices_widgets()
 
-        
+        self.submit_button = CTkButton(self, text="Results", width=6, height=2,
+                                       command=self.show_results_page)
+
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
         self.score_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
         
         #Pack choices widgets
-        self.pack_choices_widgets()        
+        self.pack_choices_widgets()
+        self.submit_button.pack()
 
     def question_handling(self):
         question_attributes = {}
@@ -217,8 +220,9 @@ class QuizPage(CTkFrame):
                 self.score += 1
                 self.score_variable.set(f"Score: {self.score}")
 
-    def show_results(self):
-        pass
+    def show_results_page(self):
+        self.controller.show_page(ResultsPage)
+        return
 
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
