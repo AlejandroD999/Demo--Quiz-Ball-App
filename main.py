@@ -171,13 +171,9 @@ class QuizPage(CTkFrame):
             curr_button.pack(padx=(0, 0), pady=(3, 3))
             curr_button.configure(command=lambda k=key: self.check_answer(k))
 
-
     def check_answer(self, answer_frame):
-        incorrect_color = "#CA1111"
-        incorrect_hover_color = "#C21A1A"
-
-        correct_color = "#42BE1D"
-        correct_hover_color = "#1B851B"
+        incorrect_color = ["#D32020", "#C21A1A"]
+        correct_color = ["#42BE1D", "#1B851B"]
 
         
         button = self.choices_widgets[answer_frame]["button"]
@@ -192,9 +188,10 @@ class QuizPage(CTkFrame):
         
         else:
             self.attempts += 1
-            button.configure(fg_color= incorrect_color, hover_color=incorrect_hover_color)
-            self.highlight_answer(correct_color, correct_hover_color)
+            button.configure(fg_color= incorrect_color[0], hover_color=incorrect_color[1])
+            self.highlight_answer(correct_color[0], correct_color[1])
 
+    # Marks the button with the right answer
     def highlight_answer(self, color, hover_color):
             for key in ("A", "B", "C", "D"):
                 correct_button = self.choices_widgets[key]["button"]
@@ -203,7 +200,7 @@ class QuizPage(CTkFrame):
                     correct_button.configure(fg_color= color, hover_color = hover_color)
                     return
 
-
+    #Updates window to show the next question
     def next_question(self):
         self.question_label.configure(text=self.question_dict["question"]["text"])
         self.attempts = 0
@@ -220,7 +217,8 @@ class QuizPage(CTkFrame):
                 self.score += 1
                 self.score_variable.set(f"Score: {self.score}")
 
-
+    def show_results(self):
+        pass
 
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
