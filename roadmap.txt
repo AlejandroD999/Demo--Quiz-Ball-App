@@ -34,4 +34,4 @@ Process Order:
 ***To Do***
 
 1. Eliminate print() when extracting questions. GUI version does not need (Last step)
-2. Create Submit button
+2. Make everything look good (Last after fundamentals completed).

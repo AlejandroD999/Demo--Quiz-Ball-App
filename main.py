@@ -131,17 +131,47 @@ class QuizPage(CTkFrame):
         self.choices_widgets = self.create_choices_widgets()
 
         self.submit_button = CTkButton(self, text="Results", width=6, height=2,
-                                       command=self.show_results_page)
+                                       command=self.prompt_for_results)
 
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
         self.score_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
-        
+
         #Pack choices widgets
         self.pack_choices_widgets()
+        self.submit_button.pack()
 
     def prompt_for_results(self):
-        msg = 0
+        background_color = self.default_button_color
+        top = CTkToplevel()
+
+        top.title("Get Results")
+        top.config(bg=background_color)
+        top.geometry("350x100")
+
+        label = CTkLabel(top, text="Do you want to finish this round?", font=("Times New Roman", 20),
+                         bg_color=background_color)
+        buttons_frame = CTkFrame(top, width=185, height= 10, fg_color=background_color)
+
+        confirm_button = CTkButton(buttons_frame, text="Confirm", width=90, command=lambda: self.prompt_confirm_action(top),
+                                   bg_color=background_color,
+                                   text_color="black")
+
+        dismiss_button = CTkButton(buttons_frame, text="Dismiss", width=90, command=top.destroy,
+                                   bg_color=background_color,
+                                   text_color="black")
+
+        label.pack()
+
+        buttons_frame.pack(anchor="e", padx=(0, 10), pady=(35, 0))
+        confirm_button.pack(side="right", padx=(5, 0))
+        dismiss_button.pack(side="left")
+
+        top.after(100, lambda: top.grab_set())
+
+    def prompt_confirm_action(self, root):
+        self.show_results_page()
+        root.destroy()
 
     def question_handling(self):
         question_attributes = {}
