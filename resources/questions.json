@@ -1,21 +1,22 @@
 [
     {
-        "category": "arts_and_literature",
-        "id": "63d95311168979b94b2e4f8f",
-        "correctAnswer": "1997",
+        "category": "science",
+        "id": "647f9da63a4302a7192715db",
+        "correctAnswer": "Open and Closed",
         "incorrectAnswers": [
-            "1993",
-            "2001",
-            "1989"
+            "Curved and Straight",
+            "Hairline and Fault line ",
+            "Partial and Complete"
         ],
         "question": {
-            "text": "In which year was the first Harry Potter book released?"
+            "text": "What are the two main types of bone fracture?"
         },
         "tags": [
-            "harry_potter",
-            "arts_and_literature",
-            "literature",
-            "young_adult"
+            "anatomy",
+            "medicine",
+            "science",
+            "biology",
+            "bones"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -23,20 +24,19 @@
         "isNiche": false
     },
     {
-        "category": "food_and_drink",
-        "id": "622a1c367cc59eab6f95022c",
-        "correctAnswer": "Grapefruit & Tangerine\u00a0",
+        "category": "sport_and_leisure",
+        "id": "65056eff7a97013de78b53ab",
+        "correctAnswer": "Eel fishing",
         "incorrectAnswers": [
-            "Apple & Banana",
-            "Peach & Nectarine",
-            "Durian & Jackfruit"
+            "Bear hunting",
+            "Hawking",
+            "Crabbing"
         ],
         "question": {
-            "text": "Which two fruits are crossed to make an ugly fruit?"
+            "text": "What are you doing when you are sniggling?"
         },
         "tags": [
-            "food",
-            "food_and_drink"
+            "sport_and_leisure"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -45,79 +45,141 @@
     },
     {
         "category": "society_and_culture",
-        "id": "622a1c357cc59eab6f94fcf7",
-        "correctAnswer": "John Stuart Mill",
+        "id": "639c9dab929b90846f2fc989",
+        "correctAnswer": "Hajj",
         "incorrectAnswers": [
-            "Thomas Hobbes",
-            "Ludwig Wittgenstein",
-            "William of Ockham"
+            "Umrah",
+            "Haram",
+            "Ziyarat"
         ],
         "question": {
-            "text": "Which philosopher famously said 'To do as one would be done by, and to love one's neighbor as oneself, constitute the ideal perfection of utilitarian morality'?"
+            "text": "What is the name for the Islamic pilgrimage to Mecca?"
         },
         "tags": [
-            "quotes",
-            "philosophy",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "general_knowledge",
-        "id": "622a1c377cc59eab6f950428",
-        "correctAnswer": "Clogs",
-        "incorrectAnswers": [
-            "Feather Caps",
-            "Empty truckles of edam",
-            "Leather cups"
-        ],
-        "question": {
-            "text": "What Do Dutch Children Traditionally Put Out For Santa To Fill?"
-        },
-        "tags": [
-            "general_knowledge"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "6266e632ff2394bd44dee038",
-        "correctAnswer": "Trois",
-        "incorrectAnswers": [
-            "Tre",
-            "Drie",
-            "Noir"
-        ],
-        "question": {
-            "text": "In French, what is the word for for 'three'?"
-        },
-        "tags": [
-            "language",
-            "translations",
-            "society_and_culture"
+            "islam",
+            "religion",
+            "society_and_culture",
+            "traditions"
         ],
         "type": "text_choice",
         "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "622a1c387cc59eab6f950b7b",
+        "correctAnswer": "Modern Talking",
+        "incorrectAnswers": [
+            "Sodom",
+            "Rage",
+            "Edguy"
+        ],
+        "question": {
+            "text": "Which German synth pop duo released the song 'You're My Heart, You're My Soul'?"
+        },
+        "tags": [
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94f8ba",
+        "correctAnswer": "Anthony Perkins",
+        "incorrectAnswers": [
+            "Orson Welles",
+            "Andy Serkis",
+            "Robert Duvall"
+        ],
+        "question": {
+            "text": "Which actor played the role of Norman Bates in Psycho?"
+        },
+        "tags": [
+            "film",
+            "acting",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "62374300cb85f7ce9e949e07",
+        "correctAnswer": "Zimbabwe",
+        "incorrectAnswers": [
+            "Namibia",
+            "Malaysia",
+            "Belgium"
+        ],
+        "question": {
+            "text": "Harare is the capital city of which country?"
+        },
+        "tags": [
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "science",
-        "id": "622a1c3a7cc59eab6f95100d",
-        "correctAnswer": "Seat Belt",
+        "id": "6243351bcfaae40c12961486",
+        "correctAnswer": "A Buck",
         "incorrectAnswers": [
-            "Cat Eye",
-            "Airbag",
-            "Crumple Zone"
+            "A Jack",
+            "A Billy",
+            "A Drake"
         ],
         "question": {
-            "text": "What Vehicular Safety Device Was First Pantented By Ej Claghorn?"
+            "text": "What is a male rat known as?"
+        },
+        "tags": [
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "625e9fa4796f721e95543fac",
+        "correctAnswer": "White",
+        "incorrectAnswers": [
+            "Red",
+            "Green",
+            "Blue"
+        ],
+        "question": {
+            "text": "Which of these colors is included on the flag of Qatar?"
+        },
+        "tags": [
+            "flags",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "6242cb51d543524f1b19c922",
+        "correctAnswer": "A kindle",
+        "incorrectAnswers": [
+            "A gang",
+            "A stud",
+            "A fall"
+        ],
+        "question": {
+            "text": "What is the word for a group of kittens?"
         },
         "tags": [
             "science"
@@ -129,85 +191,24 @@
     },
     {
         "category": "history",
-        "id": "622a1c3d7cc59eab6f951c2c",
-        "correctAnswer": "Malta",
+        "id": "622a1c3c7cc59eab6f951874",
+        "correctAnswer": "800BC",
         "incorrectAnswers": [
-            "Cyprus",
-            "Greece",
-            "Spain"
+            "2000BC",
+            "50BC",
+            "200AD"
         ],
         "question": {
-            "text": "Don Mintoff became which countries first Prime Minister after it became a republic in 1974?"
+            "text": "When was the Greek alphabet first used?"
         },
         "tags": [
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "646339a001d576cfac3aa397",
-        "correctAnswer": "Corduroy",
-        "incorrectAnswers": [
-            "Chardonnay",
-            "Cordon Bleu",
-            "Cordon Sanitaire"
-        ],
-        "question": {
-            "text": "What is the name of the durable cotton fabric derived from the French for \"Cord fit for the King\"?"
-        },
-        "tags": [
-            "clothing",
-            "fabric",
-            "words",
-            "fashion",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c3c7cc59eab6f9519c0",
-        "correctAnswer": "Cambodia",
-        "incorrectAnswers": [
-            "Ethiopia",
-            "Cuba",
-            "Indonesia"
-        ],
-        "question": {
-            "text": "What country was ruled by Pol Pot, leader of the Khmer Rouge party?"
-        },
-        "tags": [
+            "ancient_greece",
+            "language",
+            "the_ancient_world",
             "history"
         ],
         "type": "text_choice",
         "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950ee2",
-        "correctAnswer": "Charles Dickens",
-        "incorrectAnswers": [
-            "Oscar Wilde",
-            "Joseph Conrad",
-            "Henryk Sienkiewicz"
-        ],
-        "question": {
-            "text": "Which author wrote 'Little Dorrit'?"
-        },
-        "tags": [
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }

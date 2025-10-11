@@ -1,4 +1,5 @@
 from customtkinter import *
+import time
 import tkinter as tk
 import backend
 
@@ -124,22 +125,22 @@ class QuizPage(CTkFrame):
         self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=320)
         self.choices_frame.propagate(False)
 
-        self.score_variable = tk.StringVar(self, value=f"Score: {self.score}")
-        self.score_label = CTkLabel(self.choices_frame, textvariable = self.score_variable, font=("Times New Roman", 25),
+        self.question_count_variable = tk.StringVar(self, value=f"Score: {self.quiz_backend.total_questions_answered}")
+        self.question_count_label = CTkLabel(self.choices_frame, textvariable = self.question_count_variable, font=("Times New Roman", 25),
                                 anchor='w', fg_color="#3b5c69", text_color="#bfdbf7", width=345)
 
         self.choices_widgets = self.create_choices_widgets()
 
-        self.submit_button = CTkButton(self, text="Results", width=6, height=2,
+        self.submit_button = CTkButton(self, text="Finish", font=("Times New Roman", 16), width=115, height=50,
                                        command=self.prompt_for_results)
 
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
-        self.score_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
+        self.question_count_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
 
         #Pack choices widgets
         self.pack_choices_widgets()
-        self.submit_button.pack()
+        self.submit_button.place(x=670, y=435)
 
     def prompt_for_results(self):
         background_color = self.default_button_color
@@ -213,17 +214,21 @@ class QuizPage(CTkFrame):
         button = self.choices_widgets[answer_frame]["button"]
         answer_text = button.cget("text")
 
+        for key in self.choices_widgets:
+            self.choices_widgets[key]["button"].configure(state="disabled")
+
         if answer_text == self.question_dict["correctAnswer"]:
-            
-            self.increase_score()            
-            self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
-            self.question_dict = self.question_handling()
-            self.next_question()
+            button.configure(fg_color= correct_color[0], hover_color = correct_color[1])
+            self.attempts = 0
         
         else:
             self.attempts += 1
             button.configure(fg_color= incorrect_color[0], hover_color=incorrect_color[1])
             self.highlight_answer(correct_color[0], correct_color[1])
+
+        self.after(1750, self.next_question)
+
+                
 
     # Marks the button with the right answer
     def highlight_answer(self, color, hover_color):
@@ -236,20 +241,27 @@ class QuizPage(CTkFrame):
 
     #Updates window to show the next question
     def next_question(self):
+        self.increase_score()
+        self.quiz_backend.total_questions_answered += 1  
+        self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
+        self.question_dict = self.question_handling()
         self.question_label.configure(text=self.question_dict["question"]["text"])
         self.attempts = 0
-        
+
         for idx, letter in enumerate(["A", "B", "C", "D"]):
-            self.choices_widgets[letter]["button"].configure(
+            btn = self.choices_widgets[letter]["button"]
+            btn.configure(
                 text=self.question_dict["all_choices"][idx],
                 fg_color= self.default_button_color,
-                hover_color = self.default_hover_color
+                hover_color = self.default_hover_color,
+                state="normal"
             )
 
     def increase_score(self):
             if self.attempts < 1:
                 self.score += 1
-                self.score_variable.set(f"Score: {self.score}")
+#                self.question_count_variable.set(f"Score: {self.score}")
+            self.question_count_variable.set(f"Score: {self.quiz_backend.total_questions_answered}")
 
     def show_results_page(self):
         self.controller.show_page(ResultsPage)
