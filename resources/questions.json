@@ -1,90 +1,40 @@
 [
     {
         "category": "arts_and_literature",
-        "id": "646339bc01d576cfac3aa3ac",
-        "correctAnswer": "Ian Fleming",
+        "id": "622a1c397cc59eab6f950e60",
+        "correctAnswer": "Dante Alighieri",
         "incorrectAnswers": [
+            "Giovanni Boccaccio",
             "Agatha Christie",
-            "Ernest Hemingway",
-            "George Orwell"
+            "Aleksandr Solzhenitsyn"
         ],
         "question": {
-            "text": "Which author wrote 'Thunderball' and other James Bond novels?"
+            "text": "Which author wrote 'The Divine Comedy'?"
         },
         "tags": [
-            "authors",
-            "james_bond",
-            "arts_and_literature",
-            "literature",
-            "espionage"
+            "arts_and_literature"
         ],
         "type": "text_choice",
         "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c3d7cc59eab6f951bf3",
-        "correctAnswer": "Winston Churchill",
-        "incorrectAnswers": [
-            "Abraham Lincoln",
-            "Neil Armstrong",
-            "Tom Cruise"
-        ],
-        "question": {
-            "text": "Who said 'I have nothing to offer but blood, tears, toil and sweat'?"
-        },
-        "tags": [
-            "quotes",
-            "people",
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "geography",
-        "id": "6233844362eaad73716a8bf9",
-        "correctAnswer": "Lisbon",
+        "id": "62602d634b176d54800e3c94",
+        "correctAnswer": "Brisbane",
         "incorrectAnswers": [
-            "Madrid",
-            "Sarajevo",
-            "Brussels"
+            "Queenstown",
+            "Auckland",
+            "Christchurch"
         ],
         "question": {
-            "text": "What Is The Most Westerly Capital City In Mainland Europe?"
+            "text": "Which of these cities is in Australia?"
         },
         "tags": [
-            "capital_cities",
-            "europe",
-            "records",
+            "cities",
+            "australia",
             "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "625006ea0d86c8f685d80f06",
-        "correctAnswer": "Radiator",
-        "incorrectAnswers": [
-            "Little ears",
-            "Rings",
-            "to cut"
-        ],
-        "question": {
-            "text": "The pasta radiatori has what meaning in Italian?"
-        },
-        "tags": [
-            "food",
-            "words",
-            "language",
-            "food_and_drink"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -92,44 +42,18 @@
         "isNiche": false
     },
     {
-        "category": "general_knowledge",
-        "id": "64730798cf09068746f6377c",
-        "correctAnswer": "Abbreviate",
-        "incorrectAnswers": [
-            "Abolish",
-            "Abduct",
-            "Abhor"
-        ],
-        "question": {
-            "text": "What is the verb that means to shorten a word or phrase by omitting letters?"
-        },
-        "tags": [
-            "vocabulary",
-            "grammar",
-            "words",
-            "language",
-            "general_knowledge"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "society_and_culture",
-        "id": "622a1c357cc59eab6f94fd1c",
-        "correctAnswer": "S\u00f8ren Kierkegaard",
+        "id": "622a1c367cc59eab6f95013a",
+        "correctAnswer": "Crete",
         "incorrectAnswers": [
-            "Ludwig Wittgenstein",
-            "Friedrich Nietzsche",
-            "Bertrand Russell"
+            "Minoa",
+            "Lesbos",
+            "Rhodes"
         ],
         "question": {
-            "text": "Which philosopher famously said 'Life must be understood backward. But it must be lived forward '?"
+            "text": "In Greek mythology, what was Minos the king of?"
         },
         "tags": [
-            "quotes",
-            "philosophy",
             "society_and_culture"
         ],
         "type": "text_choice",
@@ -138,92 +62,157 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3e7cc59eab6f952316",
-        "correctAnswer": "PVC",
+        "category": "general_knowledge",
+        "id": "645c9f1642ea81e2554c5eed",
+        "correctAnswer": "One-armed bandit",
         "incorrectAnswers": [
-            "Plastic",
-            "Nylon",
-            "PoVy"
+            "Roly Polies",
+            "Kachings",
+            "Spinning banks"
         ],
         "question": {
-            "text": "Developed in the USA in 1930, by what name is poly vinyl chloride better known?"
+            "text": "Which of these terms is often used to refer to slot machines?"
         },
         "tags": [
-            "words",
-            "science"
+            "gambling",
+            "casinos",
+            "nicknames",
+            "society_and_culture"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "622a1c387cc59eab6f950b56",
+        "correctAnswer": "Gorillaz",
+        "incorrectAnswers": [
+            "Pulp",
+            "Spandau Ballet",
+            "One Direction"
+        ],
+        "question": {
+            "text": "Which band was formed by Damon Albarn?"
+        },
+        "tags": [
+            "music",
+            "bands"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "6477ba95550bc819ad646ab3",
+        "correctAnswer": "Walk Like An Egyptian",
+        "incorrectAnswers": [
+            "Dance Like A Zulu",
+            "Sway Like An Aztec",
+            "March Like A Roman"
+        ],
+        "question": {
+            "text": "Which of these is a song by The Bangles?"
+        },
+        "tags": [
+            "pop",
+            "1980's",
+            "songs",
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "society_and_culture",
-        "id": "63e4c368106de6ffa7d4a7ec",
-        "correctAnswer": "Orange and Black",
+        "id": "626288a84b176d54800e3dac",
+        "correctAnswer": "The World's Local Bank",
         "incorrectAnswers": [
-            "Red and White",
-            "Pink and Blue",
-            "Green and Yellow"
+            "There are some things money can't buy",
+            "Everywhere you want to be",
+            "Because Change Happens"
         ],
         "question": {
-            "text": "Which of these are colors that are traditionally associated with Halloween?"
+            "text": "What is the marketing slogan of HSBC?"
         },
         "tags": [
-            "society_and_culture",
-            "halloween",
-            "traditions",
-            "colours"
+            "business",
+            "marketing",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "649553a42cb69a84d25273f1",
+        "correctAnswer": "Anjali mudra",
+        "incorrectAnswers": [
+            "Namaste",
+            "Hatha yoga",
+            "Tadasana"
+        ],
+        "question": {
+            "text": "What is the name of the hand gesture, originating in India, where palms are placed together at the heart to show respect and gratitude?"
+        },
+        "tags": [
+            "india",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "history",
-        "id": "6488deed50a27f7378a91de8",
-        "correctAnswer": "A shield",
+        "id": "622a1c3c7cc59eab6f9517af",
+        "correctAnswer": "Napoleon",
         "incorrectAnswers": [
-            "A sword",
-            "A helmet",
-            "A spear"
+            "Charlemagne",
+            "De Gaulle",
+            "Joan of Arc"
         ],
         "question": {
-            "text": "Used by the Roman military, what was a Scutum?"
+            "text": "Which French Ruler Was Finally Defeated In 1815?"
         },
         "tags": [
-            "military",
-            "arms",
-            "weapons",
-            "the_romans"
+            "france",
+            "wars",
+            "people",
+            "leaders",
+            "history"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "637162811bf863c45ca6c380",
-        "correctAnswer": "Every man is the maker of his own fortune",
+        "category": "sport_and_leisure",
+        "id": "622a1c347cc59eab6f94f866",
+        "correctAnswer": "Tennis",
         "incorrectAnswers": [
-            "Nothing is arduous for the fortunate",
-            "A beard doesn't make one fortuitous",
-            "One swallow does not make summer"
+            "Baseball",
+            "Gymnastics",
+            "Skiing"
         ],
         "question": {
-            "text": "How does that Latin phrase 'Faber est suae quisque fortunae' translate into English?"
+            "text": "With which sport is Rod Laver associated?"
         },
         "tags": [
-            "society_and_culture",
-            "language",
-            "the_romans",
-            "classics"
+            "people",
+            "sport"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }
