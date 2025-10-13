@@ -1,60 +1,18 @@
 [
     {
-        "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950e60",
-        "correctAnswer": "Dante Alighieri",
+        "category": "science",
+        "id": "62433323cfaae40c129613c2",
+        "correctAnswer": "A Pup",
         "incorrectAnswers": [
-            "Giovanni Boccaccio",
-            "Agatha Christie",
-            "Aleksandr Solzhenitsyn"
+            "A Kit",
+            "A Gosling",
+            "A Poult"
         ],
         "question": {
-            "text": "Which author wrote 'The Divine Comedy'?"
+            "text": "What is the word for a young bat?"
         },
         "tags": [
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "62602d634b176d54800e3c94",
-        "correctAnswer": "Brisbane",
-        "incorrectAnswers": [
-            "Queenstown",
-            "Auckland",
-            "Christchurch"
-        ],
-        "question": {
-            "text": "Which of these cities is in Australia?"
-        },
-        "tags": [
-            "cities",
-            "australia",
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "622a1c367cc59eab6f95013a",
-        "correctAnswer": "Crete",
-        "incorrectAnswers": [
-            "Minoa",
-            "Lesbos",
-            "Rhodes"
-        ],
-        "question": {
-            "text": "In Greek mythology, what was Minos the king of?"
-        },
-        "tags": [
-            "society_and_culture"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -62,22 +20,23 @@
         "isNiche": false
     },
     {
-        "category": "general_knowledge",
-        "id": "645c9f1642ea81e2554c5eed",
-        "correctAnswer": "One-armed bandit",
+        "category": "film_and_tv",
+        "id": "622a1c3b7cc59eab6f95172e",
+        "correctAnswer": "The Simpsons",
         "incorrectAnswers": [
-            "Roly Polies",
-            "Kachings",
-            "Spinning banks"
+            "The Flintstones",
+            "The Bradys",
+            "The Sopranos"
         ],
         "question": {
-            "text": "Which of these terms is often used to refer to slot machines?"
+            "text": "Which TV Family Adopted A Greyhound For Christmas?"
         },
         "tags": [
-            "gambling",
-            "casinos",
-            "nicknames",
-            "society_and_culture"
+            "tv",
+            "dogs",
+            "film_and_tv",
+            "fictitious_characters",
+            "christmas"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -86,85 +45,59 @@
     },
     {
         "category": "music",
-        "id": "622a1c387cc59eab6f950b56",
-        "correctAnswer": "Gorillaz",
+        "id": "622a1c357cc59eab6f94ffb2",
+        "correctAnswer": "Aerosmith",
         "incorrectAnswers": [
-            "Pulp",
-            "Spandau Ballet",
-            "One Direction"
+            "AC/DC",
+            "David Bowie",
+            "Freddie Mercury"
         ],
         "question": {
-            "text": "Which band was formed by Damon Albarn?"
+            "text": "Who Suggested \"Lets Get Rocked\""
         },
         "tags": [
-            "music",
-            "bands"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "6477ba95550bc819ad646ab3",
-        "correctAnswer": "Walk Like An Egyptian",
-        "incorrectAnswers": [
-            "Dance Like A Zulu",
-            "Sway Like An Aztec",
-            "March Like A Roman"
-        ],
-        "question": {
-            "text": "Which of these is a song by The Bangles?"
-        },
-        "tags": [
-            "pop",
-            "1980's",
-            "songs",
+            "lyrics",
             "music"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "626288a84b176d54800e3dac",
-        "correctAnswer": "The World's Local Bank",
+        "category": "sport_and_leisure",
+        "id": "6384b45e83dddfb71ee5e376",
+        "correctAnswer": "The Six Nations",
         "incorrectAnswers": [
-            "There are some things money can't buy",
-            "Everywhere you want to be",
-            "Because Change Happens"
+            "The Open Championship",
+            "The FINA World Championships",
+            "The Hopman Cup"
         ],
         "question": {
-            "text": "What is the marketing slogan of HSBC?"
+            "text": "Which of these is a Rugby competition?"
         },
         "tags": [
-            "business",
-            "marketing",
-            "society_and_culture"
+            "sport"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "649553a42cb69a84d25273f1",
-        "correctAnswer": "Anjali mudra",
+        "category": "music",
+        "id": "622a1c3d7cc59eab6f951c6c",
+        "correctAnswer": "4 O'clock",
         "incorrectAnswers": [
-            "Namaste",
-            "Hatha yoga",
-            "Tadasana"
+            "Midnight",
+            "9 O'clock",
+            "Lunchtime"
         ],
         "question": {
-            "text": "What is the name of the hand gesture, originating in India, where palms are placed together at the heart to show respect and gratitude?"
+            "text": "According to The Everly Bros Song \"Wake Up Little Susie\", What Time Did Susie Finally Wake Up?"
         },
         "tags": [
-            "india",
-            "society_and_culture"
+            "music"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -173,21 +106,17 @@
     },
     {
         "category": "history",
-        "id": "622a1c3c7cc59eab6f9517af",
-        "correctAnswer": "Napoleon",
+        "id": "622a1c367cc59eab6f950387",
+        "correctAnswer": "Lady Godiva",
         "incorrectAnswers": [
-            "Charlemagne",
-            "De Gaulle",
-            "Joan of Arc"
+            "Lady Gaga",
+            "Lady Geronimo",
+            "Lady Galebe"
         ],
         "question": {
-            "text": "Which French Ruler Was Finally Defeated In 1815?"
+            "text": "Who is famous for historically riding naked on horseback through Coventry, England?"
         },
         "tags": [
-            "france",
-            "wars",
-            "people",
-            "leaders",
             "history"
         ],
         "type": "text_choice",
@@ -196,23 +125,88 @@
         "isNiche": false
     },
     {
-        "category": "sport_and_leisure",
-        "id": "622a1c347cc59eab6f94f866",
-        "correctAnswer": "Tennis",
+        "category": "arts_and_literature",
+        "id": "622a1c397cc59eab6f950eec",
+        "correctAnswer": "Jack London",
         "incorrectAnswers": [
-            "Baseball",
-            "Gymnastics",
-            "Skiing"
+            "Edgar Rice Burroughs",
+            "James Fenimore Cooper",
+            "Frederik Pohl"
         ],
         "question": {
-            "text": "With which sport is Rod Laver associated?"
+            "text": "Which author wrote 'White Fang'?"
         },
         "tags": [
-            "people",
-            "sport"
+            "literature",
+            "arts_and_literature"
         ],
         "type": "text_choice",
         "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c367cc59eab6f950138",
+        "correctAnswer": "A Labyrinth",
+        "incorrectAnswers": [
+            "A Statue",
+            "A Child",
+            "A Flying Horse"
+        ],
+        "question": {
+            "text": "In Greek mythology, what did Daedalus construct for Minos?"
+        },
+        "tags": [
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c3d7cc59eab6f951bc0",
+        "correctAnswer": "32",
+        "incorrectAnswers": [
+            "22",
+            "42",
+            "52"
+        ],
+        "question": {
+            "text": "How old was Alexander the Great when he died ?"
+        },
+        "tags": [
+            "ancient_greece",
+            "people",
+            "leaders",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "64b5a8837282fc9eadbafd9a",
+        "correctAnswer": "Common-law",
+        "incorrectAnswers": [
+            "Civil",
+            "Religious",
+            "Arranged"
+        ],
+        "question": {
+            "text": "What is another name for an informal marriage that often comes with some level of legal recognition?"
+        },
+        "tags": [
+            "marriage",
+            "law",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     }

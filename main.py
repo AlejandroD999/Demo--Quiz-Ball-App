@@ -287,12 +287,32 @@ class ResultsPage(CTkFrame):
                         font=("Times New Roman", 48)).pack(pady=(35, 0))
         
         self.load_results_button = CTkButton(self, text="Load Results", width=30, height=4,
-                                             command=self.get_grade).pack()
+                                             command=self.load_results)
+
+        self.results_frame = CTkFrame(self, width= 200, height= 200, corner_radius= 2, border_width= 3)
+
+        self.load_results_button.pack()        
+
+
+    def load_results(self):
+
+        self.load_results_button.pack_forget()
+        self.results_frame.pack()
+
+        self.grade = self.get_grade()
+
 
     def get_grade(self):
-        self.grade_ranks = ["A", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"]
-
+        grades = {"F": 0, "D": 60, "C": 70, "C+": 76.67, "B-": 80, "B": 83.33, "B+": 86.67, "A-": 90, "A": 93.33}
         self.score_percentage = round((float(self.quiz_backend.score / self.quiz_backend.total_questions_answered) * 100), 1)
+
+        grade = ""
+        for key in grades.keys():
+
+            if grades[key] <= self.score_percentage:
+                grade = key
+
+        return grade
 
 
         print(self.quiz_backend.score, self.quiz_backend.total_questions_answered)
