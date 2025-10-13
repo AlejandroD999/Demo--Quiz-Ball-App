@@ -1,5 +1,4 @@
 from customtkinter import *
-import time
 import tkinter as tk
 import backend
 
@@ -103,20 +102,18 @@ class QuizPage(CTkFrame):
         self.controller = controller
         super().__init__(parent, fg_color="#007ea7", corner_radius=0)
         self.propagate(False)
+        self.default_button_color = "#00a8e8"
+        self.default_hover_color = "#007ea7"
 
         self.quiz_backend = backend.Quiz()
         self.quiz_backend.load_questions()
 
-        self.default_button_color = "#00a8e8"
-        self.default_hover_color = "#007ea7"
+
 
         self.score = 0
         self.attempts = 0
         self.question_number = self.quiz_backend.total_questions_answered + 1
         
-
-
-
         self.load_widgets()
 
     def load_widgets(self):
@@ -138,11 +135,11 @@ class QuizPage(CTkFrame):
         self.submit_button = CTkButton(self, text="Finish", font=("Times New Roman", 16), width=115, height=50,
                                        command=self.prompt_for_results)
 
+        #Pack widgets
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
         self.choices_frame.pack(anchor = 'w', padx=(30,0), pady=(35, 0))
         self.question_count_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
 
-        #Pack choices widgets
         self.pack_choices_widgets()
         self.submit_button.place(x=670, y=435)
 
@@ -232,7 +229,7 @@ class QuizPage(CTkFrame):
 
         self.after(1750, self.next_question)
 
-    # Marks the button with the right answer
+    # Highlights button with correct answer
     def highlight_answer(self, color, hover_color):
             for key in ("A", "B", "C", "D"):
                 correct_button = self.choices_widgets[key]["button"]
@@ -266,7 +263,6 @@ class QuizPage(CTkFrame):
     def increase_score(self):
             if self.attempts < 1:
                 self.score += 1
-#                self.question_count_variable.set(f"Score: {self.score}"
 
     def show_results_page(self):
         self.controller.show_page(ResultsPage)
