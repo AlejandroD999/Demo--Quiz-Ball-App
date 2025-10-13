@@ -33,5 +33,6 @@ Process Order:
 
 ***To Do***
 
-1. Eliminate print() when extracting questions. GUI version does not need (Last step)
+1. Complete Results page
 2. Make everything look good (Last after fundamentals completed).
+3. Eliminate print() when extracting questions. GUI version does not need (Last step)
