@@ -1,22 +1,22 @@
 [
     {
-        "category": "science",
-        "id": "647f9da63a4302a7192715db",
-        "correctAnswer": "Open and Closed",
+        "category": "arts_and_literature",
+        "id": "646339bc01d576cfac3aa3ac",
+        "correctAnswer": "Ian Fleming",
         "incorrectAnswers": [
-            "Curved and Straight",
-            "Hairline and Fault line ",
-            "Partial and Complete"
+            "Agatha Christie",
+            "Ernest Hemingway",
+            "George Orwell"
         ],
         "question": {
-            "text": "What are the two main types of bone fracture?"
+            "text": "Which author wrote 'Thunderball' and other James Bond novels?"
         },
         "tags": [
-            "anatomy",
-            "medicine",
-            "science",
-            "biology",
-            "bones"
+            "authors",
+            "james_bond",
+            "arts_and_literature",
+            "literature",
+            "espionage"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -24,19 +24,134 @@
         "isNiche": false
     },
     {
-        "category": "sport_and_leisure",
-        "id": "65056eff7a97013de78b53ab",
-        "correctAnswer": "Eel fishing",
+        "category": "history",
+        "id": "622a1c3d7cc59eab6f951bf3",
+        "correctAnswer": "Winston Churchill",
         "incorrectAnswers": [
-            "Bear hunting",
-            "Hawking",
-            "Crabbing"
+            "Abraham Lincoln",
+            "Neil Armstrong",
+            "Tom Cruise"
         ],
         "question": {
-            "text": "What are you doing when you are sniggling?"
+            "text": "Who said 'I have nothing to offer but blood, tears, toil and sweat'?"
         },
         "tags": [
-            "sport_and_leisure"
+            "quotes",
+            "people",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "6233844362eaad73716a8bf9",
+        "correctAnswer": "Lisbon",
+        "incorrectAnswers": [
+            "Madrid",
+            "Sarajevo",
+            "Brussels"
+        ],
+        "question": {
+            "text": "What Is The Most Westerly Capital City In Mainland Europe?"
+        },
+        "tags": [
+            "capital_cities",
+            "europe",
+            "records",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "food_and_drink",
+        "id": "625006ea0d86c8f685d80f06",
+        "correctAnswer": "Radiator",
+        "incorrectAnswers": [
+            "Little ears",
+            "Rings",
+            "to cut"
+        ],
+        "question": {
+            "text": "The pasta radiatori has what meaning in Italian?"
+        },
+        "tags": [
+            "food",
+            "words",
+            "language",
+            "food_and_drink"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "general_knowledge",
+        "id": "64730798cf09068746f6377c",
+        "correctAnswer": "Abbreviate",
+        "incorrectAnswers": [
+            "Abolish",
+            "Abduct",
+            "Abhor"
+        ],
+        "question": {
+            "text": "What is the verb that means to shorten a word or phrase by omitting letters?"
+        },
+        "tags": [
+            "vocabulary",
+            "grammar",
+            "words",
+            "language",
+            "general_knowledge"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c357cc59eab6f94fd1c",
+        "correctAnswer": "S\u00f8ren Kierkegaard",
+        "incorrectAnswers": [
+            "Ludwig Wittgenstein",
+            "Friedrich Nietzsche",
+            "Bertrand Russell"
+        ],
+        "question": {
+            "text": "Which philosopher famously said 'Life must be understood backward. But it must be lived forward '?"
+        },
+        "tags": [
+            "quotes",
+            "philosophy",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c3e7cc59eab6f952316",
+        "correctAnswer": "PVC",
+        "incorrectAnswers": [
+            "Plastic",
+            "Nylon",
+            "PoVy"
+        ],
+        "question": {
+            "text": "Developed in the USA in 1930, by what name is poly vinyl chloride better known?"
+        },
+        "tags": [
+            "words",
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -45,21 +160,21 @@
     },
     {
         "category": "society_and_culture",
-        "id": "639c9dab929b90846f2fc989",
-        "correctAnswer": "Hajj",
+        "id": "63e4c368106de6ffa7d4a7ec",
+        "correctAnswer": "Orange and Black",
         "incorrectAnswers": [
-            "Umrah",
-            "Haram",
-            "Ziyarat"
+            "Red and White",
+            "Pink and Blue",
+            "Green and Yellow"
         ],
         "question": {
-            "text": "What is the name for the Islamic pilgrimage to Mecca?"
+            "text": "Which of these are colors that are traditionally associated with Halloween?"
         },
         "tags": [
-            "islam",
-            "religion",
             "society_and_culture",
-            "traditions"
+            "halloween",
+            "traditions",
+            "colours"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -67,145 +182,45 @@
         "isNiche": false
     },
     {
-        "category": "music",
-        "id": "622a1c387cc59eab6f950b7b",
-        "correctAnswer": "Modern Talking",
-        "incorrectAnswers": [
-            "Sodom",
-            "Rage",
-            "Edguy"
-        ],
-        "question": {
-            "text": "Which German synth pop duo released the song 'You're My Heart, You're My Soul'?"
-        },
-        "tags": [
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94f8ba",
-        "correctAnswer": "Anthony Perkins",
-        "incorrectAnswers": [
-            "Orson Welles",
-            "Andy Serkis",
-            "Robert Duvall"
-        ],
-        "question": {
-            "text": "Which actor played the role of Norman Bates in Psycho?"
-        },
-        "tags": [
-            "film",
-            "acting",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "62374300cb85f7ce9e949e07",
-        "correctAnswer": "Zimbabwe",
-        "incorrectAnswers": [
-            "Namibia",
-            "Malaysia",
-            "Belgium"
-        ],
-        "question": {
-            "text": "Harare is the capital city of which country?"
-        },
-        "tags": [
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "6243351bcfaae40c12961486",
-        "correctAnswer": "A Buck",
-        "incorrectAnswers": [
-            "A Jack",
-            "A Billy",
-            "A Drake"
-        ],
-        "question": {
-            "text": "What is a male rat known as?"
-        },
-        "tags": [
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "625e9fa4796f721e95543fac",
-        "correctAnswer": "White",
-        "incorrectAnswers": [
-            "Red",
-            "Green",
-            "Blue"
-        ],
-        "question": {
-            "text": "Which of these colors is included on the flag of Qatar?"
-        },
-        "tags": [
-            "flags",
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "6242cb51d543524f1b19c922",
-        "correctAnswer": "A kindle",
-        "incorrectAnswers": [
-            "A gang",
-            "A stud",
-            "A fall"
-        ],
-        "question": {
-            "text": "What is the word for a group of kittens?"
-        },
-        "tags": [
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "history",
-        "id": "622a1c3c7cc59eab6f951874",
-        "correctAnswer": "800BC",
+        "id": "6488deed50a27f7378a91de8",
+        "correctAnswer": "A shield",
         "incorrectAnswers": [
-            "2000BC",
-            "50BC",
-            "200AD"
+            "A sword",
+            "A helmet",
+            "A spear"
         ],
         "question": {
-            "text": "When was the Greek alphabet first used?"
+            "text": "Used by the Roman military, what was a Scutum?"
         },
         "tags": [
-            "ancient_greece",
+            "military",
+            "arms",
+            "weapons",
+            "the_romans"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "637162811bf863c45ca6c380",
+        "correctAnswer": "Every man is the maker of his own fortune",
+        "incorrectAnswers": [
+            "Nothing is arduous for the fortunate",
+            "A beard doesn't make one fortuitous",
+            "One swallow does not make summer"
+        ],
+        "question": {
+            "text": "How does that Latin phrase 'Faber est suae quisque fortunae' translate into English?"
+        },
+        "tags": [
+            "society_and_culture",
             "language",
-            "the_ancient_world",
-            "history"
+            "the_romans",
+            "classics"
         ],
         "type": "text_choice",
         "difficulty": "medium",

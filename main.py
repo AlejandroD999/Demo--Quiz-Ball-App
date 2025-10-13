@@ -103,15 +103,19 @@ class QuizPage(CTkFrame):
         self.controller = controller
         super().__init__(parent, fg_color="#007ea7", corner_radius=0)
         self.propagate(False)
-        
-        self.score = 0
-        self.attempts = 0
+
+        self.quiz_backend = backend.Quiz()
+        self.quiz_backend.load_questions()
 
         self.default_button_color = "#00a8e8"
         self.default_hover_color = "#007ea7"
 
-        self.quiz_backend = backend.Quiz()
-        self.quiz_backend.load_questions()
+        self.score = 0
+        self.attempts = 0
+        self.question_number = self.quiz_backend.total_questions_answered + 1
+        
+
+
 
         self.load_widgets()
 
@@ -125,7 +129,7 @@ class QuizPage(CTkFrame):
         self.choices_frame = CTkFrame(self, fg_color="#3b5c69", width=445, height=320)
         self.choices_frame.propagate(False)
 
-        self.question_count_variable = tk.StringVar(self, value=f"Score: {self.quiz_backend.total_questions_answered}")
+        self.question_count_variable = tk.StringVar(self, value=f"Question #{self.question_number}")
         self.question_count_label = CTkLabel(self.choices_frame, textvariable = self.question_count_variable, font=("Times New Roman", 25),
                                 anchor='w', fg_color="#3b5c69", text_color="#bfdbf7", width=345)
 
@@ -228,8 +232,6 @@ class QuizPage(CTkFrame):
 
         self.after(1750, self.next_question)
 
-                
-
     # Marks the button with the right answer
     def highlight_answer(self, color, hover_color):
             for key in ("A", "B", "C", "D"):
@@ -241,13 +243,17 @@ class QuizPage(CTkFrame):
 
     #Updates window to show the next question
     def next_question(self):
+        #Adjust values
         self.increase_score()
-        self.quiz_backend.total_questions_answered += 1  
+        self.quiz_backend.total_questions_answered += 1
+        self.question_number = self.quiz_backend.total_questions_answered + 1
         self.quiz_backend.asked_questions.add(self.question_dict["question"]["index"])
         self.question_dict = self.question_handling()
+        #Update values
         self.question_label.configure(text=self.question_dict["question"]["text"])
+        self.question_count_variable.set(f"Question #{self.question_number}")
         self.attempts = 0
-
+        
         for idx, letter in enumerate(["A", "B", "C", "D"]):
             btn = self.choices_widgets[letter]["button"]
             btn.configure(
@@ -260,8 +266,7 @@ class QuizPage(CTkFrame):
     def increase_score(self):
             if self.attempts < 1:
                 self.score += 1
-#                self.question_count_variable.set(f"Score: {self.score}")
-            self.question_count_variable.set(f"Score: {self.quiz_backend.total_questions_answered}")
+#                self.question_count_variable.set(f"Score: {self.score}"
 
     def show_results_page(self):
         self.controller.show_page(ResultsPage)
