@@ -52,11 +52,7 @@ class HomePage(CTkFrame):
         
         self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3).pack(pady=(20, 0))
-#Test Mode button | Delete after all pages complete
-        self.Test_page = CTkButton(self, text="Test", font=("Times New Roman", 25),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3, command=lambda: self.controller.show_page(ResultsPage)).pack(pady=(20, 0))
+                                 border_color="black", corner_radius = 3).pack(pady=(20, 0))        
 
         self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 25),
                                  text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
