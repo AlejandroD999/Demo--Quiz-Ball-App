@@ -1,18 +1,20 @@
 [
     {
-        "category": "science",
-        "id": "62433323cfaae40c129613c2",
-        "correctAnswer": "A Pup",
+        "category": "society_and_culture",
+        "id": "622a1c357cc59eab6f94fd12",
+        "correctAnswer": "Baruch Spinoza",
         "incorrectAnswers": [
-            "A Kit",
-            "A Gosling",
-            "A Poult"
+            "Spinoza",
+            "Jean-Jacques Rousseau",
+            "Socrates"
         ],
         "question": {
-            "text": "What is the word for a young bat?"
+            "text": "Which philosopher famously said 'If men were born free, they would, so long as they remained free, form no conception of good and evil'?"
         },
         "tags": [
-            "science"
+            "philosophy",
+            "quotes",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -20,23 +22,21 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "622a1c3b7cc59eab6f95172e",
-        "correctAnswer": "The Simpsons",
+        "category": "science",
+        "id": "6498a3c00752843c0d8aadf1",
+        "correctAnswer": "Conjunctivitis",
         "incorrectAnswers": [
-            "The Flintstones",
-            "The Bradys",
-            "The Sopranos"
+            "Myopia",
+            "Cataracts",
+            "Glaucoma"
         ],
         "question": {
-            "text": "Which TV Family Adopted A Greyhound For Christmas?"
+            "text": "What is the medical term for the eye condition marked by redness, excessive tearing, and itching?"
         },
         "tags": [
-            "tv",
-            "dogs",
-            "film_and_tv",
-            "fictitious_characters",
-            "christmas"
+            "medicine",
+            "biology",
+            "anatomy"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -44,80 +44,19 @@
         "isNiche": false
     },
     {
-        "category": "music",
-        "id": "622a1c357cc59eab6f94ffb2",
-        "correctAnswer": "Aerosmith",
+        "category": "science",
+        "id": "6243345ccfaae40c1296143b",
+        "correctAnswer": "A Piglet",
         "incorrectAnswers": [
-            "AC/DC",
-            "David Bowie",
-            "Freddie Mercury"
+            "A Leveret",
+            "A Tadpole",
+            "A Bunny"
         ],
         "question": {
-            "text": "Who Suggested \"Lets Get Rocked\""
+            "text": "What is the word for a young hedgehog?"
         },
         "tags": [
-            "lyrics",
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "sport_and_leisure",
-        "id": "6384b45e83dddfb71ee5e376",
-        "correctAnswer": "The Six Nations",
-        "incorrectAnswers": [
-            "The Open Championship",
-            "The FINA World Championships",
-            "The Hopman Cup"
-        ],
-        "question": {
-            "text": "Which of these is a Rugby competition?"
-        },
-        "tags": [
-            "sport"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "622a1c3d7cc59eab6f951c6c",
-        "correctAnswer": "4 O'clock",
-        "incorrectAnswers": [
-            "Midnight",
-            "9 O'clock",
-            "Lunchtime"
-        ],
-        "question": {
-            "text": "According to The Everly Bros Song \"Wake Up Little Susie\", What Time Did Susie Finally Wake Up?"
-        },
-        "tags": [
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c367cc59eab6f950387",
-        "correctAnswer": "Lady Godiva",
-        "incorrectAnswers": [
-            "Lady Gaga",
-            "Lady Geronimo",
-            "Lady Galebe"
-        ],
-        "question": {
-            "text": "Who is famous for historically riding naked on horseback through Coventry, England?"
-        },
-        "tags": [
-            "history"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -126,18 +65,66 @@
     },
     {
         "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950eec",
-        "correctAnswer": "Jack London",
+        "id": "622a1c367cc59eab6f950173",
+        "correctAnswer": "Geoffrey Chaucer",
         "incorrectAnswers": [
-            "Edgar Rice Burroughs",
-            "James Fenimore Cooper",
-            "Frederik Pohl"
+            "Bede",
+            "William Wordsworth",
+            "Charles Dickens"
         ],
         "question": {
-            "text": "Which author wrote 'White Fang'?"
+            "text": "Who wrote \"The Canterbury Tales\"?"
         },
         "tags": [
             "literature",
+            "middle_ages",
+            "medieval",
+            "people",
+            "arts_and_literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "63e13a2f106de6ffa7d4a7ae",
+        "correctAnswer": "San Francisco",
+        "incorrectAnswers": [
+            "Los Angeles",
+            "New York City",
+            "Chicago"
+        ],
+        "question": {
+            "text": "The \"Zebra murders\" of 1973-74 took place in which US city?"
+        },
+        "tags": [
+            "society_and_culture",
+            "crime",
+            "1970's",
+            "usa"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c347cc59eab6f94f963",
+        "correctAnswer": "Parade's End",
+        "incorrectAnswers": [
+            "Lolita",
+            "The English Patient",
+            "My Life As a Man"
+        ],
+        "question": {
+            "text": "Which book contains the character 'Christopher Tietjens'?"
+        },
+        "tags": [
+            "literature",
+            "fictitious_characters",
             "arts_and_literature"
         ],
         "type": "text_choice",
@@ -147,17 +134,19 @@
     },
     {
         "category": "society_and_culture",
-        "id": "622a1c367cc59eab6f950138",
-        "correctAnswer": "A Labyrinth",
+        "id": "6357fd0a68bd5000211e7176",
+        "correctAnswer": "Bangladesh",
         "incorrectAnswers": [
-            "A Statue",
-            "A Child",
-            "A Flying Horse"
+            "Indonesia",
+            "South Africa",
+            "Peru"
         ],
         "question": {
-            "text": "In Greek mythology, what did Daedalus construct for Minos?"
+            "text": "Bengali is a language spoken in which of these countries?"
         },
         "tags": [
+            "language",
+            "linguistics",
             "society_and_culture"
         ],
         "type": "text_choice",
@@ -167,20 +156,17 @@
     },
     {
         "category": "history",
-        "id": "622a1c3d7cc59eab6f951bc0",
-        "correctAnswer": "32",
+        "id": "622a1c3d7cc59eab6f951b8e",
+        "correctAnswer": "France",
         "incorrectAnswers": [
-            "22",
-            "42",
-            "52"
+            "Italy",
+            "The United Kingdom",
+            "Spain"
         ],
         "question": {
-            "text": "How old was Alexander the Great when he died ?"
+            "text": "In 1956, Tunisia gained independence from which country?"
         },
         "tags": [
-            "ancient_greece",
-            "people",
-            "leaders",
             "history"
         ],
         "type": "text_choice",
@@ -189,24 +175,42 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "64b5a8837282fc9eadbafd9a",
-        "correctAnswer": "Common-law",
+        "category": "film_and_tv",
+        "id": "622a1c377cc59eab6f95071a",
+        "correctAnswer": "Helen Mirren",
         "incorrectAnswers": [
-            "Civil",
-            "Religious",
-            "Arranged"
+            "Kathy Bates",
+            "Kirsten Dunst",
+            "Sandra B\u00e6 Hovedr"
         ],
         "question": {
-            "text": "What is another name for an informal marriage that often comes with some level of legal recognition?"
+            "text": "Which actress has appeared in films including Gosford Park and The Queen?"
         },
         "tags": [
-            "marriage",
-            "law",
-            "society_and_culture"
+            "film_and_tv"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "62433459cfaae40c1296143a",
+        "correctAnswer": "A Sow",
+        "incorrectAnswers": [
+            "A Nanny",
+            "A Soar",
+            "A Lioness"
+        ],
+        "question": {
+            "text": "A female hedgehog is known as what?"
+        },
+        "tags": [
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }

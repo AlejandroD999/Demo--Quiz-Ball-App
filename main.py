@@ -284,22 +284,38 @@ class ResultsPage(CTkFrame):
 
     def load_widgets(self):
         self.results_title = CTkLabel(self, text="Results", fg_color=self.controller.background_color, text_color="#007ea7",
-                        font=("Times New Roman", 48)).pack(pady=(35, 0))
+                        font=("Times New Roman", 42)).pack(pady=(25, 0))
         
         self.load_results_button = CTkButton(self, text="Load Results", width=30, height=4,
                                              command=self.load_results)
 
-        self.results_frame = CTkFrame(self, width= 200, height= 200, corner_radius= 2, border_width= 3)
+        self.results_frame = CTkFrame(self, width= 450, height= 315, corner_radius= 2, border_width= 3)
+        self.results_frame.propagate(False)
 
         self.load_results_button.pack()        
 
 
     def load_results(self):
-
+        self.grade = self.get_grade()
         self.load_results_button.pack_forget()
+
+        self.grade_label = CTkLabel(self.results_frame, text=f"{self.grade["grade"]}({int(self.grade["score"])}%)" , font=("Times New Roman", 36))
+
+        self.passed_label = CTkLabel(self.results_frame, text="You nailed it! Keep up the great performance." if self.grade["passed"] else "Don’t be discouraged—every attempt is a step toward improvement.",
+                                     font=("Times New Roman", 16))
+        self.correct_answers_label = CTkLabel(self.results_frame, text=f"Total Correct Answers: {self.quiz_backend.score}",
+                                              font=("Times New Roman", 16))
+        self.questions_answered_label = CTkLabel(self.results_frame, text=f"Total Questions Answered: {self.quiz_backend.total_questions_answered}",
+                                           font=("Times New Roman", 16))
+
+
+
+        self.grade_label.pack(anchor="w")
+        self.passed_label.pack(anchor="w")
+        self.correct_answers_label.pack(anchor="w")
+        self.questions_answered_label.pack(anchor="w")
         self.results_frame.pack()
 
-        self.grade = self.get_grade()
 
 
     def get_grade(self):
@@ -312,11 +328,11 @@ class ResultsPage(CTkFrame):
             if grades[key] <= self.score_percentage:
                 grade = key
 
-        return grade
+        return {"score": self.score_percentage,
+                "grade": grade,
+                "passed": True if self.score_percentage >= 70 else False
+                }
 
-
-        print(self.quiz_backend.score, self.quiz_backend.total_questions_answered)
-        print(self.score_percentage)
 
 
 
