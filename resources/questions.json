@@ -1,162 +1,63 @@
 [
     {
-        "category": "arts_and_literature",
-        "id": "622a1c347cc59eab6f94fa15",
-        "correctAnswer": "Diego Rivera",
+        "category": "music",
+        "id": "622a1c357cc59eab6f94ff0a",
+        "correctAnswer": "Madonna",
         "incorrectAnswers": [
-            "\u200eSalvador Dal\u00ed",
-            "Paul C\u00e9zanne",
-            "Vincent van Gogh"
+            "Eric Clapton",
+            "Nicki Minaj",
+            "Alanis Morissette"
         ],
         "question": {
-            "text": "Which artist painted \"The Flower Carrier\""
+            "text": "Who sung 'Material Girl'?"
         },
         "tags": [
-            "painting",
-            "art",
-            "arts_and_literature"
+            "songs",
+            "musicians",
+            "general_knowledge",
+            "music"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "625fd6cadc0dd3b72da64d0b",
-        "correctAnswer": "1997",
-        "incorrectAnswers": [
-            "1989",
-            "1993",
-            "2001"
-        ],
-        "question": {
-            "text": "In which year was Good Will Hunting released?"
-        },
-        "tags": [
-            "film"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "easy",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950fa7",
-        "correctAnswer": "William Shakespeare",
+        "id": "622a1c367cc59eab6f950170",
+        "correctAnswer": "A. A. Milne",
         "incorrectAnswers": [
-            "Arthur C. Clarke",
-            "Isaac Newton",
-            "Enid Blyton"
+            "Roald Dahl",
+            "Enid Blyton",
+            "Beatrix Potter"
         ],
         "question": {
-            "text": "Which author wrote 'King Lear'?"
+            "text": "Who created Winnie the Pooh?"
         },
         "tags": [
-            "literature",
+            "people",
+            "childrens_literature",
             "arts_and_literature"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "general_knowledge",
-        "id": "622a1c377cc59eab6f950446",
-        "correctAnswer": "Scorpio",
+        "id": "622a1c377cc59eab6f950435",
+        "correctAnswer": "27",
         "incorrectAnswers": [
-            "Aries",
-            "Gemini",
-            "Cancer"
+            "15",
+            "47",
+            "70"
         ],
         "question": {
-            "text": "If you were born on Halloween, what star sign would you be"
+            "text": "How Old Was Playboy Founder Hugh Hefner When He Launched The First Edition Of 'Playboy''?"
         },
         "tags": [
-            "halloween",
-            "general_knowledge"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950f55",
-        "correctAnswer": "Isaac Asimov",
-        "incorrectAnswers": [
-            "Ursula K. Le Guin",
-            "Philip K. Dick",
-            "Stephen King"
-        ],
-        "question": {
-            "text": "Which author wrote 'Foundation\u2019s Edge'?"
-        },
-        "tags": [
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c367cc59eab6f95039d",
-        "correctAnswer": "The Stuarts",
-        "incorrectAnswers": [
-            "The Tudors",
-            "The Plantagenets",
-            "The Lancasters"
-        ],
-        "question": {
-            "text": "Which Royal House Ruled England Between 1603 & 1714?"
-        },
-        "tags": [
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "62573f3e9da29df7b05f738f",
-        "correctAnswer": "Saving Private Ryan",
-        "incorrectAnswers": [
-            "The Deer Hunter",
-            "The Big Lebowski",
-            "Platoon"
-        ],
-        "question": {
-            "text": "Name the movie that matches the following plot summary: 'In World War II a group of soldiers go behind enemy lines to rescue a paratrooper.'"
-        },
-        "tags": [
-            "film",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "general_knowledge",
-        "id": "622a1c3c7cc59eab6f951991",
-        "correctAnswer": "Son of the Dragon",
-        "incorrectAnswers": [
-            "Evil Eyes",
-            "Blood Hunger",
-            "Lord of the Tower"
-        ],
-        "question": {
-            "text": "What Does Dracula Mean?"
-        },
-        "tags": [
+            "people",
             "general_knowledge"
         ],
         "type": "text_choice",
@@ -166,20 +67,63 @@
     },
     {
         "category": "sport_and_leisure",
-        "id": "622a1c367cc59eab6f9500c5",
-        "correctAnswer": "One",
+        "id": "622a1c367cc59eab6f950082",
+        "correctAnswer": "Ipswich Town",
         "incorrectAnswers": [
-            "Two",
-            "Three",
-            "Four"
+            "Plymouth Argyle",
+            "Norwich City",
+            "Bristol Rovers"
         ],
         "question": {
-            "text": "How many referees work a soccer game?"
+            "text": "Which English football team are nicknamed the Tractor Boys?"
         },
         "tags": [
-            "sport",
+            "uk",
+            "football",
             "soccer",
-            "football"
+            "nicknames",
+            "sport"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c3c7cc59eab6f951b24",
+        "correctAnswer": "Battle of Little Bighorn",
+        "incorrectAnswers": [
+            "Battle of Gettysburg",
+            "Battle of Cold Harbor",
+            "Battle of Stones River"
+        ],
+        "question": {
+            "text": "In which battle was George A. Custer defeated?"
+        },
+        "tags": [
+            "battles",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "622a1c387cc59eab6f950a74",
+        "correctAnswer": "Norway",
+        "incorrectAnswers": [
+            "Estonia",
+            "Latvia",
+            "Lithuania"
+        ],
+        "question": {
+            "text": "Which of these countries borders Finland?"
+        },
+        "tags": [
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -187,23 +131,93 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "622a1c3d7cc59eab6f951c9d",
-        "correctAnswer": "X resembles the first letter of Christ in Greek",
+        "category": "film_and_tv",
+        "id": "649ca3c7e3aef0a3c23f6415",
+        "correctAnswer": "Gene Roddenberry",
         "incorrectAnswers": [
-            "To avoid saying the name of Christ",
-            "To allow for the possibility that Christ didn't exist",
-            "To make the name more fun"
+            "George Lucas",
+            "Linus Torvalds",
+            "Stanley Kubrick"
         ],
         "question": {
-            "text": "What is the origin of The X In 'Xmas'?"
+            "text": "Who was the creator of Star Trek?"
         },
         "tags": [
-            "christmas",
-            "society_and_culture"
+            "tv",
+            "film_and_tv",
+            "science_fiction",
+            "star_trek"
         ],
         "type": "text_choice",
         "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "6293ec6b7f41d6338b96eeef",
+        "correctAnswer": "Max Planck",
+        "incorrectAnswers": [
+            "Louis Daguerre",
+            "Mahavira",
+            "Enrico Fermi"
+        ],
+        "question": {
+            "text": "Which theoretical physicist developed a theory of quantum physics and discovered energy quanta?"
+        },
+        "tags": [
+            "people",
+            "society_and_culture",
+            "physics",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c3c7cc59eab6f951ace",
+        "correctAnswer": "Jordan",
+        "incorrectAnswers": [
+            "Monaco",
+            "Syria",
+            "Iran"
+        ],
+        "question": {
+            "text": "King Abdullah was assassinated in 1951. Of which country was he king?"
+        },
+        "tags": [
+            "leaders",
+            "1950's",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c397cc59eab6f950fb0",
+        "correctAnswer": "Albert Einstein",
+        "incorrectAnswers": [
+            "Stephen Hawking",
+            "Enrico Fermi",
+            "Paul Dirac"
+        ],
+        "question": {
+            "text": "Who proposed The Theory of Relativity?"
+        },
+        "tags": [
+            "people",
+            "physics",
+            "general_knowledge",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     }
