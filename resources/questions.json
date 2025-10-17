@@ -1,18 +1,66 @@
 [
     {
-        "category": "music",
-        "id": "622a1c397cc59eab6f950cce",
-        "correctAnswer": "Queen",
+        "category": "geography",
+        "id": "6233846262eaad73716a8c05",
+        "correctAnswer": "Arabic",
         "incorrectAnswers": [
-            "Level 42",
-            "Deep Purple",
-            "Feeder"
+            "Hebrew",
+            "Egyptian",
+            "Italian"
         ],
         "question": {
-            "text": "Which British rock band (1970-) released the studio album 'News of the World'?"
+            "text": "What is the official language of Egypt?"
         },
         "tags": [
-            "music"
+            "africa",
+            "language",
+            "the_middle_east",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "624334bccfaae40c12961461",
+        "correctAnswer": "A Bull",
+        "incorrectAnswers": [
+            "A Stallion",
+            "A Macho",
+            "A Cock"
+        ],
+        "question": {
+            "text": "What is the word for a male moose?"
+        },
+        "tags": [
+            "animals",
+            "biology",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "6486be6759bc33d1c362f336",
+        "correctAnswer": "Pileus",
+        "incorrectAnswers": [
+            "Stipe",
+            "Gills",
+            "Rhizome"
+        ],
+        "question": {
+            "text": "What is the circular cap on a mushroom called?"
+        },
+        "tags": [
+            "botany",
+            "plants",
+            "science",
+            "biology"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -21,19 +69,20 @@
     },
     {
         "category": "geography",
-        "id": "6233854362eaad73716a8c5d",
-        "correctAnswer": "Casablanca",
+        "id": "6470d59c32850588056636ee",
+        "correctAnswer": "The Alps",
         "incorrectAnswers": [
-            "Casa del Sol",
-            "Casamor",
-            "Casa del Albus"
+            "The Pyrenees",
+            "The Urals",
+            "The Himalayas"
         ],
         "question": {
-            "text": "What seaport's name is Spanish for 'white house'?"
+            "text": "What is the name of the European mountain range whose glaciers formed lakes like Como and Constance?"
         },
         "tags": [
-            "places",
-            "language",
+            "mountains",
+            "lakes",
+            "europe",
             "geography"
         ],
         "type": "text_choice",
@@ -43,64 +92,20 @@
     },
     {
         "category": "film_and_tv",
-        "id": "6256992b9da29df7b05f72b6",
-        "correctAnswer": "Angelina Jolie",
+        "id": "622a1c377cc59eab6f950732",
+        "correctAnswer": "Ralph Fiennes",
         "incorrectAnswers": [
-            "Marisa Tomei",
-            "Tilda Swinton",
-            "Brie Larson"
+            "Brian Cox",
+            "Mark Wahlberg",
+            "Leonardo DiCaprio"
         ],
         "question": {
-            "text": "The role of Thena in the Marvel Cinematic Universe is played by which actor?"
+            "text": "Which actor has starred in films including Schindler's List and Skyfall?"
         },
         "tags": [
-            "mcu",
-            "film",
             "acting",
-            "marvel",
-            "comics",
+            "film",
             "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "646339bc01d576cfac3aa3ab",
-        "correctAnswer": "Mad Men",
-        "incorrectAnswers": [
-            "Breaking Bad",
-            "The Sopranos",
-            "The Wire"
-        ],
-        "question": {
-            "text": "Which TV show featured characters named Peggy Olson and Joan Holloway?"
-        },
-        "tags": [
-            "tv",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "63d9530f168979b94b2e4f8a",
-        "correctAnswer": "Law of Conservation of Energy",
-        "incorrectAnswers": [
-            "Law of Universal Gravitation",
-            "Law of Thermodynamics",
-            "Law of the Lever"
-        ],
-        "question": {
-            "text": "What is the name of the physical law that states that energy is neither created or destroyed?"
-        },
-        "tags": [
-            "science"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -109,85 +114,18 @@
     },
     {
         "category": "arts_and_literature",
-        "id": "622a1c3a7cc59eab6f951362",
-        "correctAnswer": "Neoclassicism",
+        "id": "622a1c367cc59eab6f95014b",
+        "correctAnswer": "Bertolt Brecht",
         "incorrectAnswers": [
-            "Romanticism",
-            "Fauvism",
-            "Impressionism"
+            "Giuseppe Verdi",
+            "Robert Wilson",
+            "Maurice Maeterlinck"
         ],
         "question": {
-            "text": "Which artistic style of the late eighteenth and early nineteenth centuries revived the order and harmony of ancient Greek and Roman art?"
+            "text": "Who wrote the \"Threepenny\" opera?"
         },
         "tags": [
-            "words",
-            "art",
             "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "622a1c377cc59eab6f950546",
-        "correctAnswer": "Animal behaviour",
-        "incorrectAnswers": [
-            "The Earth's atmosphere",
-            "Glaciers",
-            "Friction and lubrication"
-        ],
-        "question": {
-            "text": "What is Ethology the study of?"
-        },
-        "tags": [
-            "words",
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "622a1c367cc59eab6f9503ea",
-        "correctAnswer": "Egg Mcmuffin",
-        "incorrectAnswers": [
-            "MSG",
-            "Aqua Faba",
-            "Instant Noodles"
-        ],
-        "question": {
-            "text": "What did Herb Peterson invent?"
-        },
-        "tags": [
-            "food_and_drink"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "645fcc58541c4d4fc8cf303e",
-        "correctAnswer": "Lancelot",
-        "incorrectAnswers": [
-            "Galahad",
-            "Tristan",
-            "Percival"
-        ],
-        "question": {
-            "text": "According to Arthurian legend, which knight had an affair with Queen Guinevere, the wife of King Arthur?"
-        },
-        "tags": [
-            "legends",
-            "myths",
-            "romance",
-            "arthurian",
-            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -196,22 +134,87 @@
     },
     {
         "category": "general_knowledge",
-        "id": "645cb16b7d263fd5097043cc",
-        "correctAnswer": "Carded",
+        "id": "645f9565541c4d4fc8cf2eda",
+        "correctAnswer": "Recoil",
         "incorrectAnswers": [
-            "Combed",
-            "Washed",
-            "Sheared"
+            "Muzzle flash",
+            "Backfire",
+            "Forward thrust"
         ],
         "question": {
-            "text": "What term is used to describe the process of preparing wool fibers before they are spun?"
+            "text": "What is the term for the backward momentum that a person feels after firing a gun?"
         },
         "tags": [
-            "textiles",
-            "fashion"
+            "military",
+            "phrases"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "general_knowledge",
+        "id": "64824e697778562fd76a962d",
+        "correctAnswer": "Opaque",
+        "incorrectAnswers": [
+            "Transparent",
+            "Translucent",
+            "Obtuse"
+        ],
+        "question": {
+            "text": "What word means that an object is impossible to see through?"
+        },
+        "tags": [
+            "words",
+            "general_knowledge"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "623386ef0161109f922aabf1",
+        "correctAnswer": "Belize",
+        "incorrectAnswers": [
+            "Guatemala",
+            "Nicaragua",
+            "Panama"
+        ],
+        "question": {
+            "text": "Which Central American country extends furthest north?"
+        },
+        "tags": [
+            "central_america",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c357cc59eab6f94fc44",
+        "correctAnswer": "\"A census taker once tried to test me. I ate his liver with some fava beans and a nice Chianti.\"",
+        "incorrectAnswers": [
+            "\"Attica! Attica!\"",
+            "\"Chewie, we\u2019re home.\"",
+            "\"What is this? A center for ants? How can we be expected to teach children to learn how to read\u2026if they can\u2019t even fit inside the building?\""
+        ],
+        "question": {
+            "text": "Which of these quotes is from the film 'The Silence of the Lambs'?"
+        },
+        "tags": [
+            "film",
+            "quotes",
+            "general_knowledge",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     }
