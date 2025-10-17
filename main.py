@@ -11,7 +11,7 @@ class App(CTk):
         self.geometry("800x500")
         self.resizable(0, 0)
         self.title("CogniTriv")
-        self.background_color = "#00171f"
+        self.background_color = "#161a1d"
 
         self.backend = backend.Quiz()
         self.container = CTkFrame(self, fg_color=self.background_color)
@@ -42,20 +42,22 @@ class HomePage(CTkFrame):
         self.load_widgets()
 
     def load_widgets(self):
-        self.app_title = CTkLabel(self, text="CogniTriv", fg_color=self.controller.background_color, text_color="#007ea7",
-                         font=("Times New Roman", 48)).pack(pady=(35, 0))
+        self.app_title = CTkLabel(self, text="CogniTriv", fg_color=self.controller.background_color, 
+                                  text_color="#a4161a", font=("Calibri", 54, "bold")).pack(pady=(30, 0))
 
-        self.start_button = CTkButton(self, text="Start Quiz", font=("Times New Roman", 25),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3, command = self.start_quiz).pack(pady=(100, 0))
+        self.start_button = CTkButton(self, text="Start", font=("Times New Roman", 31),
+                                 text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
+                                 border_color="#d3d3d3", corner_radius = 3, border_width= 1,
+                                 command = self.start_quiz).pack(pady=(100, 0))
         
-        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 25),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3).pack(pady=(20, 0))        
+        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 32),
+                                 text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
+                                 border_color="#d3d3d3", corner_radius = 3, border_width=1).pack(pady=(20, 0))        
 
-        self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 25),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 border_color="black", corner_radius = 3, command=lambda: quit()).pack(pady=(20, 0))
+        self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31),
+                                 text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
+                                 border_color="#d3d3d3", corner_radius = 3, border_width= 1,
+                                 command=lambda: quit()).pack(pady=(20, 0))
 
     def start_quiz(self):
         self.controller.show_page(QuizPage)
