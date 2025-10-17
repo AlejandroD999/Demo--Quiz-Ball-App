@@ -1,6 +1,5 @@
 import backend
 from customtkinter import *
-import math
 import tkinter as tk
 
 
