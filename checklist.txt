@@ -5,7 +5,13 @@
         -Home Screen
         -Icon
     
-    > Chose a good paletter:
-        -Red
-        -White
-        -black
+    > Chose a good color palette:
+        #0b090a
+        #161a1d
+        #660708
+        #a4161a
+        #ba181b
+        #b1a7a6
+        #d3d3d3
+        #f5f3f4
+        #FFFFFF
