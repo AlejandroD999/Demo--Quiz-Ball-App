@@ -5,7 +5,7 @@
         -Home Screen
         -Icon
     
-    > Chose a good color palette:
+    > Color Palette:
         #0b090a
         #161a1d
         #660708
