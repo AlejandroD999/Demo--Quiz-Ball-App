@@ -1,0 +1,4 @@
+***To Do***
+
+1. Make everything look good (Last after fundamentals completed).
+2. Eliminate print() when extracting questions. GUI version does not need (Last step)

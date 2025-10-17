@@ -15,7 +15,6 @@ def extract():
         questions_dir = os.path.join(curr_dir, "resources", "questions.json")
         with open(questions_dir, 'w') as f:
             json.dump(data, f, indent=4)
-        print(f"Questions successfully extracted")
 
     except requests.exceptions.RequestException as e:
         return f"Error making API request: {e}"
