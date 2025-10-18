@@ -30,7 +30,6 @@ class App(CTk):
         page = self.pages[page_class]
         page.tkraise()
 
-
 class HomePage(CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent, fg_color = controller.background_color, corner_radius=0)
@@ -139,7 +138,7 @@ class QuizPage(CTkFrame):
 
         #Pack widgets
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
-#anchor = 'w', padx=(30,0), pady=(35, 0)
+
         self.choices_frame.place(x=30, y=155)
         self.question_count_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
 
@@ -201,7 +200,7 @@ class QuizPage(CTkFrame):
 
         self.after(1750, self.next_question)
 
-    # Highlights button with correct answer
+    # Modifies color of button with correct answer
     def highlight_answer(self, color, hover_color):
             for key in self.choices_widgets.keys():
                 correct_button = self.choices_widgets[key]["button"]
@@ -210,7 +209,6 @@ class QuizPage(CTkFrame):
                     correct_button.configure(fg_color = color,
                                              hover_color = hover_color)
                     return
-
 
     #Updates window to show the next question
     def next_question(self):
@@ -240,23 +238,24 @@ class QuizPage(CTkFrame):
                 self.quiz_backend.score += 1
 
     def prompt_for_results(self):
-        background_color = self.default_button_color
+        background_color = self.controller.background_color
         top = CTkToplevel()
 
-        top.title("Get Results")
+        top.title("Finish Quiz")
         top.config(bg=background_color)
         top.geometry("350x100")
+        top.resizable(False, False)
 
-        label = CTkLabel(top, text="Do you want to finish this round?", font=("Times New Roman", 20),
-                         bg_color=background_color)
+        label = CTkLabel(top, text="Do you want to finish?", font=("Times New Roman", 24),
+                         bg_color=background_color, text_color="#f5f3f4")
         buttons_frame = CTkFrame(top, width=185, height= 10, fg_color=background_color)
 
-        confirm_button = CTkButton(buttons_frame, text="Confirm", width=90, command=lambda: self.prompt_confirm_action(top),
-                                   bg_color=background_color,
+        confirm_button = CTkButton(buttons_frame, text="Finish", width=90, command=lambda: self.prompt_confirm_action(top),
+                                   fg_color=self.default_button_color, hover_color= self.default_hover_color,
                                    text_color="black")
 
         dismiss_button = CTkButton(buttons_frame, text="Dismiss", width=90, command=top.destroy,
-                                   bg_color=background_color,
+                                   fg_color=self.default_button_color, hover_color= self.default_hover_color,
                                    text_color="black")
 
         label.pack()
@@ -301,7 +300,7 @@ class ResultsPage(CTkFrame):
         self.grade = self.get_grade()
         self.load_results_button.pack_forget()
 
-        self.grade_label = CTkLabel(self.results_frame, text=f"{self.grade["grade"]}({int(self.grade["score"])}%)" , font=("Times New Roman", 36))
+        self.grade_label = CTkLabel(self.results_frame, text=f"{self.grade["grade"]}({self.grade["score"]}%)" , font=("Times New Roman", 36))
 
         self.passed_label = CTkLabel(self.results_frame, text="You nailed it! Keep up the great performance." if self.grade["passed"] else "Don’t be discouraged—every attempt is a step toward improvement.",
                                      font=("Times New Roman", 16))
@@ -321,8 +320,8 @@ class ResultsPage(CTkFrame):
 
 
     def get_grade(self):
-        grades = {"F": 0, "D": 60, "C": 70, "C+": 76.67, "B-": 80, "B": 83.33, "B+": 86.67, "A-": 90, "A": 93.33}
-        self.score_percentage = round((float(self.quiz_backend.score / self.quiz_backend.total_questions_answered) * 100), 1)
+        grades = {"F": 0, "D-": 52, "D": 60, "C": 70, "C+": 76.67, "B-": 80, "B": 83.33, "B+": 86.67, "A-": 90, "A": 93.33}
+        self.score_percentage = round((float(self.quiz_backend.score / self.quiz_backend.total_questions_answered) * 100), 2)
 
         grade = ""
         for key in grades.keys():
