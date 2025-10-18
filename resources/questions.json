@@ -1,152 +1,19 @@
 [
     {
-        "category": "music",
-        "id": "622a1c357cc59eab6f94ff0a",
-        "correctAnswer": "Madonna",
-        "incorrectAnswers": [
-            "Eric Clapton",
-            "Nicki Minaj",
-            "Alanis Morissette"
-        ],
-        "question": {
-            "text": "Who sung 'Material Girl'?"
-        },
-        "tags": [
-            "songs",
-            "musicians",
-            "general_knowledge",
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "arts_and_literature",
-        "id": "622a1c367cc59eab6f950170",
-        "correctAnswer": "A. A. Milne",
-        "incorrectAnswers": [
-            "Roald Dahl",
-            "Enid Blyton",
-            "Beatrix Potter"
-        ],
-        "question": {
-            "text": "Who created Winnie the Pooh?"
-        },
-        "tags": [
-            "people",
-            "childrens_literature",
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "general_knowledge",
-        "id": "622a1c377cc59eab6f950435",
-        "correctAnswer": "27",
-        "incorrectAnswers": [
-            "15",
-            "47",
-            "70"
-        ],
-        "question": {
-            "text": "How Old Was Playboy Founder Hugh Hefner When He Launched The First Edition Of 'Playboy''?"
-        },
-        "tags": [
-            "people",
-            "general_knowledge"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "sport_and_leisure",
-        "id": "622a1c367cc59eab6f950082",
-        "correctAnswer": "Ipswich Town",
-        "incorrectAnswers": [
-            "Plymouth Argyle",
-            "Norwich City",
-            "Bristol Rovers"
-        ],
-        "question": {
-            "text": "Which English football team are nicknamed the Tractor Boys?"
-        },
-        "tags": [
-            "uk",
-            "football",
-            "soccer",
-            "nicknames",
-            "sport"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c3c7cc59eab6f951b24",
-        "correctAnswer": "Battle of Little Bighorn",
-        "incorrectAnswers": [
-            "Battle of Gettysburg",
-            "Battle of Cold Harbor",
-            "Battle of Stones River"
-        ],
-        "question": {
-            "text": "In which battle was George A. Custer defeated?"
-        },
-        "tags": [
-            "battles",
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "geography",
-        "id": "622a1c387cc59eab6f950a74",
-        "correctAnswer": "Norway",
+        "id": "649fcf8eebb41911d4cbd6e4",
+        "correctAnswer": "Ireland",
         "incorrectAnswers": [
-            "Estonia",
-            "Latvia",
-            "Lithuania"
+            "Great Britain",
+            "New Zealand",
+            "Japan"
         ],
         "question": {
-            "text": "Which of these countries borders Finland?"
+            "text": "The Dingle Peninsula is the westernmost point of which island?"
         },
         "tags": [
+            "islands",
             "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "649ca3c7e3aef0a3c23f6415",
-        "correctAnswer": "Gene Roddenberry",
-        "incorrectAnswers": [
-            "George Lucas",
-            "Linus Torvalds",
-            "Stanley Kubrick"
-        ],
-        "question": {
-            "text": "Who was the creator of Star Trek?"
-        },
-        "tags": [
-            "tv",
-            "film_and_tv",
-            "science_fiction",
-            "star_trek"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -155,43 +22,19 @@
     },
     {
         "category": "society_and_culture",
-        "id": "6293ec6b7f41d6338b96eeef",
-        "correctAnswer": "Max Planck",
+        "id": "622a1c357cc59eab6f94fc9c",
+        "correctAnswer": "Turkic",
         "incorrectAnswers": [
-            "Louis Daguerre",
-            "Mahavira",
-            "Enrico Fermi"
+            "Niger\u2013Congo",
+            "Indo-European",
+            "Sino-Tibetan"
         ],
         "question": {
-            "text": "Which theoretical physicist developed a theory of quantum physics and discovered energy quanta?"
+            "text": "The language 'Uyghur' belongs to which language family?"
         },
         "tags": [
-            "people",
-            "society_and_culture",
-            "physics",
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c3c7cc59eab6f951ace",
-        "correctAnswer": "Jordan",
-        "incorrectAnswers": [
-            "Monaco",
-            "Syria",
-            "Iran"
-        ],
-        "question": {
-            "text": "King Abdullah was assassinated in 1951. Of which country was he king?"
-        },
-        "tags": [
-            "leaders",
-            "1950's",
-            "history"
+            "language",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -199,22 +42,171 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c397cc59eab6f950fb0",
-        "correctAnswer": "Albert Einstein",
+        "category": "film_and_tv",
+        "id": "622a1c367cc59eab6f9501fa",
+        "correctAnswer": "David Yates",
         "incorrectAnswers": [
-            "Stephen Hawking",
-            "Enrico Fermi",
-            "Paul Dirac"
+            "Steven Spielberg",
+            "Woody Allen",
+            "Martin Scorsese"
         ],
         "question": {
-            "text": "Who proposed The Theory of Relativity?"
+            "text": "Which director directed Harry Potter and the Order of the Phoenix?"
         },
         "tags": [
-            "people",
-            "physics",
-            "general_knowledge",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "62573f309da29df7b05f738d",
+        "correctAnswer": "A young F.B.I. cadet must receive the help of a cannibal to help catch another serial killer.",
+        "incorrectAnswers": [
+            "A tramp who has fallen in love with a blind flower girl saves money to help her medically.",
+            "Follows the rise and fall of a stock-broker living the high life.",
+            "A former neo-nazi tries to prevent his brother from going down the same path that he did."
+        ],
+        "question": {
+            "text": "What is the plot of the movie The Silence of the Lambs?"
+        },
+        "tags": [
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "64626250ab138b829b81e9fc",
+        "correctAnswer": "13",
+        "incorrectAnswers": [
+            "1",
+            "2",
+            "8"
+        ],
+        "question": {
+            "text": "What is the atomic number of aluminum?"
+        },
+        "tags": [
+            "chemistry",
+            "materials",
             "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "food_and_drink",
+        "id": "622a1c3b7cc59eab6f951601",
+        "correctAnswer": "Sturgeon\u00a0",
+        "incorrectAnswers": [
+            "Salmon",
+            "Trout",
+            "Herring"
+        ],
+        "question": {
+            "text": "Which fish does caviar come from? "
+        },
+        "tags": [
+            "fish",
+            "food",
+            "food_and_drink"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "6461407e4d46e537ca8cd9e0",
+        "correctAnswer": "The Great Wall of China",
+        "incorrectAnswers": [
+            "The Panama Canal",
+            "The Golden Gate Bridge",
+            "The Hoover Dam"
+        ],
+        "question": {
+            "text": "Which of these structures stretches for over 4,000 miles, often called the largest building project ever completed?"
+        },
+        "tags": [
+            "architecture",
+            "engineering",
+            "civil_engineering",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "62611fe54b176d54800e3d78",
+        "correctAnswer": "1945",
+        "incorrectAnswers": [
+            "1921",
+            "1880",
+            "1972"
+        ],
+        "question": {
+            "text": "When did Alan Turing break the Enigma code?"
+        },
+        "tags": [
+            "events",
+            "technology",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c3f7cc59eab6f95236d",
+        "correctAnswer": "It faces backwards",
+        "incorrectAnswers": [
+            "It is on their head",
+            "It is detachable",
+            "Both males and females have it"
+        ],
+        "question": {
+            "text": "What is an unusual feature of the wombat's pouch?"
+        },
+        "tags": [
+            "animals",
+            "biology",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "623740d5cb85f7ce9e949d27",
+        "correctAnswer": "Israel",
+        "incorrectAnswers": [
+            "Ukraine",
+            "Pakistan",
+            "Turkey"
+        ],
+        "question": {
+            "text": "Jerusalem is the capital city of which country?"
+        },
+        "tags": [
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "medium",
