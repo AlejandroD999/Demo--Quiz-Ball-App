@@ -1,18 +1,21 @@
 [
     {
         "category": "geography",
-        "id": "649fcf8eebb41911d4cbd6e4",
-        "correctAnswer": "Ireland",
+        "id": "623387f50161109f922aac58",
+        "correctAnswer": "Madrid\u00a0",
         "incorrectAnswers": [
-            "Great Britain",
-            "New Zealand",
-            "Japan"
+            "Lisbon",
+            "Paris",
+            "Rome"
         ],
         "question": {
-            "text": "The Dingle Peninsula is the westernmost point of which island?"
+            "text": "Which European capital city stands on the Manzanares River?"
         },
         "tags": [
-            "islands",
+            "rivers",
+            "europe",
+            "capital_cities",
+            "cities",
             "geography"
         ],
         "type": "text_choice",
@@ -22,82 +25,63 @@
     },
     {
         "category": "society_and_culture",
-        "id": "622a1c357cc59eab6f94fc9c",
-        "correctAnswer": "Turkic",
+        "id": "64746af65a4c31088dd9cff6",
+        "correctAnswer": "The Miata",
         "incorrectAnswers": [
-            "Niger\u2013Congo",
-            "Indo-European",
-            "Sino-Tibetan"
+            "The Mustang",
+            "The Camaro",
+            "The Corvette"
         ],
         "question": {
-            "text": "The language 'Uyghur' belongs to which language family?"
+            "text": "What is the name of the sports car introduced by Mazda in 1989?"
         },
         "tags": [
-            "language",
-            "society_and_culture"
+            "cars",
+            "brands",
+            "1980's",
+            "motoring"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c367cc59eab6f9501fa",
-        "correctAnswer": "David Yates",
-        "incorrectAnswers": [
-            "Steven Spielberg",
-            "Woody Allen",
-            "Martin Scorsese"
-        ],
-        "question": {
-            "text": "Which director directed Harry Potter and the Order of the Phoenix?"
-        },
-        "tags": [
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "62573f309da29df7b05f738d",
-        "correctAnswer": "A young F.B.I. cadet must receive the help of a cannibal to help catch another serial killer.",
-        "incorrectAnswers": [
-            "A tramp who has fallen in love with a blind flower girl saves money to help her medically.",
-            "Follows the rise and fall of a stock-broker living the high life.",
-            "A former neo-nazi tries to prevent his brother from going down the same path that he did."
-        ],
-        "question": {
-            "text": "What is the plot of the movie The Silence of the Lambs?"
-        },
-        "tags": [
-            "film",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "science",
-        "id": "64626250ab138b829b81e9fc",
-        "correctAnswer": "13",
+        "id": "6243339fcfaae40c129613f3",
+        "correctAnswer": "A Buck",
         "incorrectAnswers": [
-            "1",
-            "2",
-            "8"
+            "A Macho",
+            "A Cob",
+            "A Tom"
         ],
         "question": {
-            "text": "What is the atomic number of aluminum?"
+            "text": "What is the word for a male deer?"
         },
         "tags": [
-            "chemistry",
-            "materials",
+            "animals",
+            "names",
             "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "sport_and_leisure",
+        "id": "62417d6e0f96c4efe8d773c6",
+        "correctAnswer": "New York City FC",
+        "incorrectAnswers": [
+            "New York United",
+            "New York Hawks",
+            "New York Tigers"
+        ],
+        "question": {
+            "text": "Which of these is a soccer team based in New York?"
+        },
+        "tags": [
+            "sport"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -105,21 +89,61 @@
         "isNiche": false
     },
     {
-        "category": "food_and_drink",
-        "id": "622a1c3b7cc59eab6f951601",
-        "correctAnswer": "Sturgeon\u00a0",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f9510da",
+        "correctAnswer": "Comet",
         "incorrectAnswers": [
-            "Salmon",
-            "Trout",
-            "Herring"
+            "Meteor",
+            "Moon",
+            "Satellite"
         ],
         "question": {
-            "text": "Which fish does caviar come from? "
+            "text": "A heavenly body moving under the attraction of the Sun and consisting of a nucleus and a tail is a(n) _______."
         },
         "tags": [
-            "fish",
-            "food",
-            "food_and_drink"
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "6266bc01b0e62e469cf43e88",
+        "correctAnswer": "Woodwind",
+        "incorrectAnswers": [
+            "Stringed",
+            "Percussion",
+            "Brass"
+        ],
+        "question": {
+            "text": "What type of instrument is a clarinet?"
+        },
+        "tags": [
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c3b7cc59eab6f9513ca",
+        "correctAnswer": "Twilight",
+        "incorrectAnswers": [
+            "Voyages Extraordinaires",
+            "Harry Potter",
+            "Percy Jackson & the Olympians"
+        ],
+        "question": {
+            "text": "In which book series would you find the character 'Jacob Black'?"
+        },
+        "tags": [
+            "literature",
+            "young_adult",
+            "arts_and_literature"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -128,65 +152,19 @@
     },
     {
         "category": "geography",
-        "id": "6461407e4d46e537ca8cd9e0",
-        "correctAnswer": "The Great Wall of China",
+        "id": "625e9dba796f721e95543f28",
+        "correctAnswer": "Red",
         "incorrectAnswers": [
-            "The Panama Canal",
-            "The Golden Gate Bridge",
-            "The Hoover Dam"
+            "Black",
+            "Orange",
+            "Yellow"
         ],
         "question": {
-            "text": "Which of these structures stretches for over 4,000 miles, often called the largest building project ever completed?"
+            "text": "Which of these colors would you find on the flag of Azerbaijan?"
         },
         "tags": [
-            "architecture",
-            "engineering",
-            "civil_engineering",
+            "flags",
             "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "62611fe54b176d54800e3d78",
-        "correctAnswer": "1945",
-        "incorrectAnswers": [
-            "1921",
-            "1880",
-            "1972"
-        ],
-        "question": {
-            "text": "When did Alan Turing break the Enigma code?"
-        },
-        "tags": [
-            "events",
-            "technology",
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "622a1c3f7cc59eab6f95236d",
-        "correctAnswer": "It faces backwards",
-        "incorrectAnswers": [
-            "It is on their head",
-            "It is detachable",
-            "Both males and females have it"
-        ],
-        "question": {
-            "text": "What is an unusual feature of the wombat's pouch?"
-        },
-        "tags": [
-            "animals",
-            "biology",
-            "science"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -194,19 +172,44 @@
         "isNiche": false
     },
     {
-        "category": "geography",
-        "id": "623740d5cb85f7ce9e949d27",
-        "correctAnswer": "Israel",
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94fa73",
+        "correctAnswer": "Kevin Spacey",
         "incorrectAnswers": [
-            "Ukraine",
-            "Pakistan",
-            "Turkey"
+            "James Cromwell",
+            "Ed Harris",
+            "Brad Pitt"
         ],
         "question": {
-            "text": "Jerusalem is the capital city of which country?"
+            "text": "Who won the 1995 Academy Award for Best Supporting Actor for playing the role of Roger 'Verbal' Kint in The Usual Suspects?"
         },
         "tags": [
-            "geography"
+            "acting",
+            "film",
+            "academy_awards",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "food_and_drink",
+        "id": "624c607850d1a5e051325a5d",
+        "correctAnswer": "Roast Beef Dinner",
+        "incorrectAnswers": [
+            "Stamppot",
+            "Chicken Machboos",
+            "Poutine"
+        ],
+        "question": {
+            "text": "Which of these dishes is most associated with England?"
+        },
+        "tags": [
+            "food",
+            "uk",
+            "food_and_drink"
         ],
         "type": "text_choice",
         "difficulty": "medium",

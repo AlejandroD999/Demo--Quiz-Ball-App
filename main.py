@@ -121,7 +121,8 @@ class QuizPage(CTkFrame):
         self.question_dict = self.question_handling()
 
         self.question_label = CTkLabel(self, text = self.question_dict["question"]["text"], font=("Times New Roman", 28),
-                                        wraplength=650, fg_color="#d3d3d3", width=750)
+                                        wraplength=650, fg_color=self.controller.background_color, text_color= self.default_button_text_color, 
+                                        width=750)
 
         self.choices_frame = CTkFrame(self, fg_color="#0b090a", width=445, height=320)
         self.choices_frame.propagate(False)
