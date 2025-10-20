@@ -17,4 +17,8 @@
         #FFFFFF
 
     School colors:
-        
+        #ad1413
+        #ffffff
+        #000000
+2. Mode Selection (Dark / Light)f5f3f4
+3. Continue where left off (main.py -> line 295)

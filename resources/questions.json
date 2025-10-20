@@ -1,22 +1,18 @@
 [
     {
-        "category": "geography",
-        "id": "623387f50161109f922aac58",
-        "correctAnswer": "Madrid\u00a0",
+        "category": "science",
+        "id": "62433531cfaae40c1296148f",
+        "correctAnswer": "A Bull",
         "incorrectAnswers": [
-            "Lisbon",
-            "Paris",
-            "Rome"
+            "A Drone",
+            "A Tiercel",
+            "A Rooster"
         ],
         "question": {
-            "text": "Which European capital city stands on the Manzanares River?"
+            "text": "A male sea lion is known as what?"
         },
         "tags": [
-            "rivers",
-            "europe",
-            "capital_cities",
-            "cities",
-            "geography"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -24,44 +20,64 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "64746af65a4c31088dd9cff6",
-        "correctAnswer": "The Miata",
+        "category": "film_and_tv",
+        "id": "624dba41de6018633d31f6bb",
+        "correctAnswer": "George Lazenby",
         "incorrectAnswers": [
-            "The Mustang",
-            "The Camaro",
-            "The Corvette"
+            "Roger Moore",
+            "Pierce Brosnan",
+            "Sean Connery"
         ],
         "question": {
-            "text": "What is the name of the sports car introduced by Mazda in 1989?"
+            "text": "Who played the role of James Bond in On Her Majesty's Secret Service?"
         },
         "tags": [
-            "cars",
-            "brands",
-            "1980's",
-            "motoring"
+            "james_bond",
+            "film",
+            "acting",
+            "film_and_tv"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "6243339fcfaae40c129613f3",
-        "correctAnswer": "A Buck",
+        "category": "film_and_tv",
+        "id": "645bc180f09106226db2359e",
+        "correctAnswer": "Soccer",
         "incorrectAnswers": [
-            "A Macho",
-            "A Cob",
-            "A Tom"
+            "Baseball",
+            "Basketball",
+            "Hockey"
         ],
         "question": {
-            "text": "What is the word for a male deer?"
+            "text": "In the 1992 film \"Ladybugs\", a flustered Rodney Dangerfield coached a girls' team in which sport?"
         },
         "tags": [
-            "animals",
-            "names",
-            "science"
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "sport_and_leisure",
+        "id": "640747c0658741a165677ea2",
+        "correctAnswer": "3 meters",
+        "incorrectAnswers": [
+            "2 meters",
+            "1 meter",
+            "4 meters"
+        ],
+        "question": {
+            "text": "What is the height of a basketball hoop in competitions?"
+        },
+        "tags": [
+            "basketball",
+            "sport"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -70,17 +86,18 @@
     },
     {
         "category": "sport_and_leisure",
-        "id": "62417d6e0f96c4efe8d773c6",
-        "correctAnswer": "New York City FC",
+        "id": "622a1c367cc59eab6f95008d",
+        "correctAnswer": "Swim Across The English Channel",
         "incorrectAnswers": [
-            "New York United",
-            "New York Hawks",
-            "New York Tigers"
+            "Fly Solo Across the Atlantic",
+            "Run a marathon in under 2.5 hours",
+            "Become elected as Prime Minister of the UK"
         ],
         "question": {
-            "text": "Which of these is a soccer team based in New York?"
+            "text": "What in 1926, did Gertrude Ederle become the first woman to do?"
         },
         "tags": [
+            "firsts",
             "sport"
         ],
         "type": "text_choice",
@@ -89,19 +106,39 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3a7cc59eab6f9510da",
-        "correctAnswer": "Comet",
+        "category": "society_and_culture",
+        "id": "622a1c367cc59eab6f95013a",
+        "correctAnswer": "Crete",
         "incorrectAnswers": [
-            "Meteor",
-            "Moon",
-            "Satellite"
+            "Minoa",
+            "Lesbos",
+            "Rhodes"
         ],
         "question": {
-            "text": "A heavenly body moving under the attraction of the Sun and consisting of a nucleus and a tail is a(n) _______."
+            "text": "In Greek mythology, what was Minos the king of?"
         },
         "tags": [
-            "science"
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c367cc59eab6f950146",
+        "correctAnswer": "The Cheshire Cat's",
+        "incorrectAnswers": [
+            "Albert Einstein's",
+            "Imhotep's",
+            "Rita Skeeter's"
+        ],
+        "question": {
+            "text": "Whose smile remained after the rest of it had vanished?"
+        },
+        "tags": [
+            "arts_and_literature"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -110,15 +147,15 @@
     },
     {
         "category": "music",
-        "id": "6266bc01b0e62e469cf43e88",
-        "correctAnswer": "Woodwind",
+        "id": "622a1c387cc59eab6f950b9c",
+        "correctAnswer": "Wings",
         "incorrectAnswers": [
-            "Stringed",
-            "Percussion",
-            "Brass"
+            "Level 42",
+            "Deep Purple",
+            "The Chemical Brothers"
         ],
         "question": {
-            "text": "What type of instrument is a clarinet?"
+            "text": "Which British\u2013American rock band led by Paul McCartney released the album 'Band on the Run'?"
         },
         "tags": [
             "music"
@@ -129,42 +166,21 @@
         "isNiche": false
     },
     {
-        "category": "arts_and_literature",
-        "id": "622a1c3b7cc59eab6f9513ca",
-        "correctAnswer": "Twilight",
+        "category": "music",
+        "id": "622a1c347cc59eab6f94fbac",
+        "correctAnswer": "\"What I Got\" by Sublime",
         "incorrectAnswers": [
-            "Voyages Extraordinaires",
-            "Harry Potter",
-            "Percy Jackson & the Olympians"
+            "\"Rapper's Delight\" by Sugarhill Gang",
+            "\"Fergalicious\" by Fergie and will.i.am.",
+            "\"In da Club\" by 50 Cent"
         ],
         "question": {
-            "text": "In which book series would you find the character 'Jacob Black'?"
+            "text": "Which song begins with the lyrics: \"Early in the morning, risin' to the street / Light me up that cigarette, and I'll strap shoes on my feet...\"?"
         },
         "tags": [
-            "literature",
-            "young_adult",
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "625e9dba796f721e95543f28",
-        "correctAnswer": "Red",
-        "incorrectAnswers": [
-            "Black",
-            "Orange",
-            "Yellow"
-        ],
-        "question": {
-            "text": "Which of these colors would you find on the flag of Azerbaijan?"
-        },
-        "tags": [
-            "flags",
-            "geography"
+            "lyrics",
+            "songs",
+            "music"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -172,44 +188,19 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fa73",
-        "correctAnswer": "Kevin Spacey",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f95109c",
+        "correctAnswer": "Salt",
         "incorrectAnswers": [
-            "James Cromwell",
-            "Ed Harris",
-            "Brad Pitt"
+            "Sugar",
+            "Vinegar",
+            "Lemon Juice"
         ],
         "question": {
-            "text": "Who won the 1995 Academy Award for Best Supporting Actor for playing the role of Roger 'Verbal' Kint in The Usual Suspects?"
+            "text": "What is the common name of the chemical compound sodium chloride?"
         },
         "tags": [
-            "acting",
-            "film",
-            "academy_awards",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "624c607850d1a5e051325a5d",
-        "correctAnswer": "Roast Beef Dinner",
-        "incorrectAnswers": [
-            "Stamppot",
-            "Chicken Machboos",
-            "Poutine"
-        ],
-        "question": {
-            "text": "Which of these dishes is most associated with England?"
-        },
-        "tags": [
-            "food",
-            "uk",
-            "food_and_drink"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "medium",

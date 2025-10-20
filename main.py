@@ -1,5 +1,6 @@
 import backend
 from customtkinter import *
+import os
 import tkinter as tk
 
 
@@ -18,7 +19,7 @@ class App(CTk):
         self.container.pack(fill="both", expand= True)
 
         self.pages = {}
-        for Page in (HomePage, ModeSelectionPage, QuizPage, ResultsPage):
+        for Page in (HomePage, LearnMorePage, ModeSelectionPage, QuizPage, ResultsPage):
             page = Page(self.container, self)
             self.pages[Page] = page
             page.grid(row=0, column=0, sticky="nsew")
@@ -47,19 +48,18 @@ class HomePage(CTkFrame):
         self.start_button = CTkButton(self, text="Start", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
-                                 command = self.start_quiz).pack(pady=(100, 0))
+                                 command= lambda: self.controller.show_page(QuizPage)).pack(pady=(100, 0))
         
         self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 32),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
-                                 border_color="#d3d3d3", corner_radius = 3, border_width=1).pack(pady=(20, 0))        
+                                 border_color="#d3d3d3", corner_radius = 3, border_width=1,
+                                 command=lambda: self.controller.show_page(LearnMorePage)).pack(pady=(20, 0))        
 
         self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command=lambda: quit()).pack(pady=(20, 0))
 
-    def start_quiz(self):
-        self.controller.show_page(QuizPage)
 
 class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
@@ -275,6 +275,34 @@ class QuizPage(CTkFrame):
         self.controller.show_page(ResultsPage)
         return
 
+class LearnMorePage(CTkFrame):
+    def __init__(self, parent, controller):
+        super().__init__(parent, fg_color = controller.background_color)
+        self.controller = controller
+        self.propagate(False)
+
+        self.load_widgets()
+
+    def load_widgets(self):
+        
+        CTkButton(self, text="Pull Contnet", command =lambda: self.pull_file_content("learn_more.txt", "resources")).pack()
+
+
+
+    def pull_file_content(self, file_name, folder):
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        file_address = os.path.join(current_dir, folder, file_name)
+
+        try:
+            with open(file_address, "r") as file:
+                content = file.read()
+
+            print(content)
+
+        except FileNotFoundError:
+            raise FileNotFoundError("File was not found")
+
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
         self.controller = controller
@@ -285,13 +313,15 @@ class ResultsPage(CTkFrame):
         self.load_widgets()
 
     def load_widgets(self):
-        self.results_title = CTkLabel(self, text="Results", fg_color=self.controller.background_color, text_color="#007ea7",
-                        font=("Times New Roman", 42)).pack(pady=(25, 0))
+        self.results_title = CTkLabel(self, text="Results", fg_color=self.controller.background_color, text_color= "#ba181b",
+                        font=("Times New Roman", 64, "italic")).pack(pady=(20, 5))
         
-        self.load_results_button = CTkButton(self, text="Load Results", width=30, height=4,
+        self.load_results_button = CTkButton(self, text="Load Results", width=270, height=58, fg_color= "#a4161a",
+                                             text_color= "#f5f3f4", hover_color = "#660708", border_width=4, border_color= "#d3d3d3",
                                              command=self.load_results)
 
-        self.results_frame = CTkFrame(self, width= 450, height= 315, corner_radius= 2, border_width= 3)
+        self.results_frame = CTkFrame(self, width= 562, height= 338, corner_radius= 2, border_width= 3,
+                                      fg_color="#ba181b", border_color= "#ffffff")
         self.results_frame.propagate(False)
 
         self.load_results_button.pack()        
@@ -301,22 +331,24 @@ class ResultsPage(CTkFrame):
         self.grade = self.get_grade()
         self.load_results_button.pack_forget()
 
-        self.grade_label = CTkLabel(self.results_frame, text=f"{self.grade["grade"]}({self.grade["score"]}%)" , font=("Times New Roman", 36))
+        self.grade_label = CTkLabel(self.results_frame, text=f"{self.grade["grade"]}({self.grade["score"]}%)",
+                                    font=("Times New Roman", 36), text_color= "#f5f3f4")
 
         self.passed_label = CTkLabel(self.results_frame, text="You nailed it! Keep up the great performance." if self.grade["passed"] else "Don’t be discouraged—every attempt is a step toward improvement.",
-                                     font=("Times New Roman", 16))
+                                     font=("Times New Roman", 24, "italic"), text_color = "#ffffff",
+                                     wraplength=540, justify="left")
         self.correct_answers_label = CTkLabel(self.results_frame, text=f"Total Correct Answers: {self.quiz_backend.score}",
-                                              font=("Times New Roman", 16))
+                                              font=("Times New Roman", 24), text_color = "#d3d3d3")
         self.questions_answered_label = CTkLabel(self.results_frame, text=f"Total Questions Answered: {self.quiz_backend.total_questions_answered}",
-                                           font=("Times New Roman", 16))
+                                           font=("Times New Roman", 24), text_color = "#d3d3d3")
 
 
-
-        self.grade_label.pack(anchor="w")
-        self.passed_label.pack(anchor="w")
-        self.correct_answers_label.pack(anchor="w")
-        self.questions_answered_label.pack(anchor="w")
         self.results_frame.pack()
+        self.grade_label.pack(anchor="w", padx=(20, 0), pady=(5, 0))
+        self.passed_label.pack(anchor="w", padx=(20, 0))
+        self.correct_answers_label.pack(anchor="w", padx=(20, 0), pady=(25, 0))
+        self.questions_answered_label.pack(anchor="w",padx=(20, 0))
+        
 
 
 
