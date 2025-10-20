@@ -281,11 +281,20 @@ class LearnMorePage(CTkFrame):
         self.controller = controller
         self.propagate(False)
 
+
         self.load_widgets()
 
     def load_widgets(self):
+
+        self.content = self.pull_file_content("learn_more.md", "resources")
         
-        CTkButton(self, text="Pull Contnet", command =lambda: self.pull_file_content("learn_more.txt", "resources")).pack()
+        self.content_frame = CTkScrollableFrame(self, 200, 200, fg_color = "#ba181b")
+
+        self.content_label = CTkLabel(self.content_frame, text=self.content, font=("Times New Roman", 16),
+                                      text_color = "#f5f3f4")
+
+        self.content_frame.pack()
+        self.content_label.pack(anchor="w", padx=20, pady=(0, 0))
 
 
 
@@ -298,7 +307,7 @@ class LearnMorePage(CTkFrame):
             with open(file_address, "r") as file:
                 content = file.read()
 
-            print(content)
+            return content
 
         except FileNotFoundError:
             raise FileNotFoundError("File was not found")
