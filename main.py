@@ -8,9 +8,11 @@ class App(CTk):
 
     def __init__(self):
         super().__init__()
+        self.screen_with = self.winfo_screenwidth()
+        self.screen_height = self.winfo_screenheight()
 
-        self.geometry("800x500")
-        self.resizable(0, 0)
+        self.geometry(f"{800}x{500}")
+        self.resizable(1, 1)
         self.title("CogniTriv")
         self.background_color = "#161a1d"
 
@@ -36,7 +38,7 @@ class HomePage(CTkFrame):
         super().__init__(parent, fg_color = controller.background_color, corner_radius=0)
         self.controller = controller
 
-        self.configure(width=800, height=500)
+        self.configure(width=800, height=800)
         self.propagate(False)
 
         self.load_widgets()
@@ -286,14 +288,15 @@ class LearnMorePage(CTkFrame):
 
     def load_widgets(self):
 
-        self.content = self.pull_file_content("learn_more.md", "resources")
+        self.content = self.pull_file_content("learn_more.txt", "resources")
         
-        self.content_frame = CTkScrollableFrame(self, 200, 200, fg_color = "#ba181b")
+        self.content_frame = CTkScrollableFrame(self, 475, 500, fg_color = "#595a5c",
+                                                border_width=3, border_color="#f5f3f4")
 
         self.content_label = CTkLabel(self.content_frame, text=self.content, font=("Times New Roman", 16),
                                       text_color = "#f5f3f4")
 
-        self.content_frame.pack()
+        self.content_frame.pack(anchor="e", pady=(0, 0))
         self.content_label.pack(anchor="w", padx=20, pady=(0, 0))
 
 
