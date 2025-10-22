@@ -8,13 +8,16 @@ class App(CTk):
 
     def __init__(self):
         super().__init__()
-        self.screen_with = self.winfo_screenwidth()
-        self.screen_height = self.winfo_screenheight()
+        self.window_width = (self.winfo_screenwidth() // 2) + (self.winfo_screenwidth() / 25)
+        self.window_height = (self.winfo_screenheight() // 2) + (self.winfo_screenheight() / 9)
 
-        self.geometry(f"{800}x{500}")
-        self.resizable(1, 1)
-        self.title("CogniTriv")
         self.background_color = "#161a1d"
+
+        self.geometry(f"{self.window_width}x{self.window_height}")
+        self.configure(bg_color=self.background_color)
+        self.resizable(0, 0)
+        self.title("CogniTriv")
+
 
         self.backend = backend.Quiz()
         self.container = CTkFrame(self, fg_color=self.background_color)
@@ -38,7 +41,7 @@ class HomePage(CTkFrame):
         super().__init__(parent, fg_color = controller.background_color, corner_radius=0)
         self.controller = controller
 
-        self.configure(width=800, height=800)
+        self.configure(width=self.controller.window_width, height=self.controller.window_height)
         self.propagate(False)
 
         self.load_widgets()
@@ -146,7 +149,7 @@ class QuizPage(CTkFrame):
         self.question_count_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
 
         self.pack_choices_widgets()
-        self.finish_button.place(x=650, y=420)
+        self.finish_button.place(x=self.controller.window_width - 130, y=self.controller.window_height - 60)
 
     def question_handling(self):
         question_attributes = {}
