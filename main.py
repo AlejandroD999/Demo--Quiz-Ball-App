@@ -12,6 +12,9 @@ class App(CTk):
         self.window_height = (self.winfo_screenheight() // 2) + (self.winfo_screenheight() / 9)
 
         self.background_color = "#161a1d"
+        self.default_button_color = "#ba181b"
+        self.default_hover_color = "#a4161a"
+        self.default_button_text_color = "#d3d3d3"
 
         self.geometry(f"{self.window_width}x{self.window_height}")
         self.configure(bg_color=self.background_color)
@@ -22,6 +25,8 @@ class App(CTk):
         self.backend = backend.Quiz()
         self.container = CTkFrame(self, fg_color=self.background_color)
         self.container.pack(fill="both", expand= True)
+
+
 
         self.pages = {}
         for Page in (HomePage, LearnMorePage, ModeSelectionPage, QuizPage, ResultsPage):
@@ -64,7 +69,6 @@ class HomePage(CTkFrame):
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command=lambda: quit()).pack(pady=(20, 0))
-
 
 class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
@@ -109,9 +113,7 @@ class QuizPage(CTkFrame):
         self.controller = controller
         super().__init__(parent, fg_color="#161a1d", corner_radius=0)
         self.propagate(False)
-        self.default_button_color = "#ba181b"
-        self.default_hover_color = "#a4161a"
-        self.default_button_text_color = "#d3d3d3"
+
 
         self.quiz_backend = self.controller.backend
         self.quiz_backend.load_questions()
@@ -126,7 +128,7 @@ class QuizPage(CTkFrame):
         self.question_dict = self.question_handling()
 
         self.question_label = CTkLabel(self, text = self.question_dict["question"]["text"], font=("Times New Roman", 28),
-                                        wraplength=650, fg_color=self.controller.background_color, text_color= self.default_button_text_color, 
+                                        wraplength=650, fg_color=self.controller.background_color, text_color= self.controller.default_button_text_color, 
                                         width=750)
 
         self.choices_frame = CTkFrame(self, fg_color="#0b090a", width=445, height=320)
@@ -145,11 +147,12 @@ class QuizPage(CTkFrame):
         #Pack widgets
         self.question_label.pack(anchor = 'n', padx=(0, 0), pady=(15, 0))
 
-        self.choices_frame.place(x=30, y=155)
+        self.choices_frame.place(x=self.controller.window_width - (self.controller.window_width * .97),
+                                 y=self.controller.window_height - (self.controller.window_height * .70))
         self.question_count_label.pack(anchor= 'w', padx=(15, 0), pady=(5, 0))
 
         self.pack_choices_widgets()
-        self.finish_button.place(x=self.controller.window_width - 130, y=self.controller.window_height - 60)
+        self.finish_button.place(x=(self.controller.window_width - 130), y=(self.controller.window_height - 60))
 
     def question_handling(self):
         question_attributes = {}
@@ -168,8 +171,8 @@ class QuizPage(CTkFrame):
         for idx, label in enumerate(["A", "B", "C", "D"]):
 #            frame = CTkFrame(self.choices_frame, fg_color="#00a8e8", width=420, height=65)
             button = CTkButton(self.choices_frame, 
-                               fg_color=self.default_button_color, hover_color=self.default_hover_color,
-                               text_color=self.default_button_text_color,
+                               fg_color=self.controller.default_button_color, hover_color=self.controller.default_hover_color,
+                               text_color=self.controller.default_button_text_color,
                                text=self.question_dict["all_choices"][idx],
                                width=420, height=65)
             button._text_label.configure(wraplength=295)
@@ -233,8 +236,8 @@ class QuizPage(CTkFrame):
             btn = self.choices_widgets[letter]["button"]
             btn.configure(
                 text=self.question_dict["all_choices"][idx],
-                fg_color= self.default_button_color,
-                hover_color = self.default_hover_color,
+                fg_color= self.controller.default_button_color,
+                hover_color = self.controller.default_hover_color,
                 state="normal"
             )
         self.finish_button.configure(state="normal")
@@ -257,11 +260,11 @@ class QuizPage(CTkFrame):
         buttons_frame = CTkFrame(top, width=185, height= 10, fg_color=background_color)
 
         confirm_button = CTkButton(buttons_frame, text="Finish", width=90, command=lambda: self.prompt_confirm_action(top),
-                                   fg_color=self.default_button_color, hover_color= self.default_hover_color,
+                                   fg_color=self.controller.default_button_color, hover_color= self.controller.default_hover_color,
                                    text_color="black")
 
         dismiss_button = CTkButton(buttons_frame, text="Dismiss", width=90, command=top.destroy,
-                                   fg_color=self.default_button_color, hover_color= self.default_hover_color,
+                                   fg_color=self.controller.default_button_color, hover_color= self.controller.default_hover_color,
                                    text_color="black")
 
         label.pack()
@@ -357,13 +360,16 @@ class ResultsPage(CTkFrame):
         self.questions_answered_label = CTkLabel(self.results_frame, text=f"Total Questions Answered: {self.quiz_backend.total_questions_answered}",
                                            font=("Times New Roman", 24), text_color = "#d3d3d3")
 
+        self.retake_button = CTkButton(self.results_frame, text="Retake Quiz", width=115, height=50,
+                                          fg_color="black")
+
 
         self.results_frame.pack()
         self.grade_label.pack(anchor="w", padx=(20, 0), pady=(5, 0))
         self.passed_label.pack(anchor="w", padx=(20, 0))
         self.correct_answers_label.pack(anchor="w", padx=(20, 0), pady=(25, 0))
         self.questions_answered_label.pack(anchor="w",padx=(20, 0))
-        
+        self.retake_button.pack()
 
 
 
