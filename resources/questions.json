@@ -1,104 +1,20 @@
 [
     {
-        "category": "science",
-        "id": "62433531cfaae40c1296148f",
-        "correctAnswer": "A Bull",
-        "incorrectAnswers": [
-            "A Drone",
-            "A Tiercel",
-            "A Rooster"
-        ],
-        "question": {
-            "text": "A male sea lion is known as what?"
-        },
-        "tags": [
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "film_and_tv",
-        "id": "624dba41de6018633d31f6bb",
-        "correctAnswer": "George Lazenby",
+        "id": "622a1c377cc59eab6f9506a0",
+        "correctAnswer": "Naomi Watts",
         "incorrectAnswers": [
-            "Roger Moore",
-            "Pierce Brosnan",
-            "Sean Connery"
+            "Melissa Leo",
+            "Frances Conroy",
+            "Laura Linney"
         ],
         "question": {
-            "text": "Who played the role of James Bond in On Her Majesty's Secret Service?"
+            "text": "Which actress has starred in both Birdman and King Kong?"
         },
         "tags": [
-            "james_bond",
+            "film_and_tv",
             "film",
-            "acting",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "645bc180f09106226db2359e",
-        "correctAnswer": "Soccer",
-        "incorrectAnswers": [
-            "Baseball",
-            "Basketball",
-            "Hockey"
-        ],
-        "question": {
-            "text": "In the 1992 film \"Ladybugs\", a flustered Rodney Dangerfield coached a girls' team in which sport?"
-        },
-        "tags": [
-            "film",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "sport_and_leisure",
-        "id": "640747c0658741a165677ea2",
-        "correctAnswer": "3 meters",
-        "incorrectAnswers": [
-            "2 meters",
-            "1 meter",
-            "4 meters"
-        ],
-        "question": {
-            "text": "What is the height of a basketball hoop in competitions?"
-        },
-        "tags": [
-            "basketball",
-            "sport"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "sport_and_leisure",
-        "id": "622a1c367cc59eab6f95008d",
-        "correctAnswer": "Swim Across The English Channel",
-        "incorrectAnswers": [
-            "Fly Solo Across the Atlantic",
-            "Run a marathon in under 2.5 hours",
-            "Become elected as Prime Minister of the UK"
-        ],
-        "question": {
-            "text": "What in 1926, did Gertrude Ederle become the first woman to do?"
-        },
-        "tags": [
-            "firsts",
-            "sport"
+            "acting"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -107,17 +23,40 @@
     },
     {
         "category": "society_and_culture",
-        "id": "622a1c367cc59eab6f95013a",
-        "correctAnswer": "Crete",
+        "id": "63e4c350106de6ffa7d4a7cf",
+        "correctAnswer": "Tin",
         "incorrectAnswers": [
-            "Minoa",
-            "Lesbos",
-            "Rhodes"
+            "Gold",
+            "Silver",
+            "Bronze"
         ],
         "question": {
-            "text": "In Greek mythology, what was Minos the king of?"
+            "text": "In western societies, what is the traditional gift for a 10th wedding anniversary?"
         },
         "tags": [
+            "society_and_culture",
+            "traditions"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "648614a2f773f09dc0193b34",
+        "correctAnswer": "A French cuff",
+        "incorrectAnswers": [
+            "A button cuff",
+            "A barrel cuff",
+            "A saville cuff"
+        ],
+        "question": {
+            "text": "What is a wide cuff that is folded back and fastened with a cuff link called?"
+        },
+        "tags": [
+            "clothing",
+            "fashion",
             "society_and_culture"
         ],
         "type": "text_choice",
@@ -126,18 +65,64 @@
         "isNiche": false
     },
     {
-        "category": "arts_and_literature",
-        "id": "622a1c367cc59eab6f950146",
-        "correctAnswer": "The Cheshire Cat's",
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94f8e7",
+        "correctAnswer": "Robert Duvall",
         "incorrectAnswers": [
-            "Albert Einstein's",
-            "Imhotep's",
-            "Rita Skeeter's"
+            "Samuel L. Jackson",
+            "Daniel Day-Lewis",
+            "Orson Welles"
         ],
         "question": {
-            "text": "Whose smile remained after the rest of it had vanished?"
+            "text": "Which actor played the role of Lt. Col. Bill Kilgore in Apocalypse Now?"
         },
         "tags": [
+            "people",
+            "acting",
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c347cc59eab6f94f96e",
+        "correctAnswer": "Nine Stories",
+        "incorrectAnswers": [
+            "The Metamorphosis",
+            "Blood Meridian",
+            "Portnoy's Complaint"
+        ],
+        "question": {
+            "text": "Which book contains the character 'Seymour Glass'?"
+        },
+        "tags": [
+            "literature",
+            "fictitious_characters",
+            "arts_and_literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "622a1c397cc59eab6f950f79",
+        "correctAnswer": "Stephen King",
+        "incorrectAnswers": [
+            "H. P. Lovecraft",
+            "Edgar Allan Poe",
+            "Jack Vance"
+        ],
+        "question": {
+            "text": "Which author wrote 'Carrie'?"
+        },
+        "tags": [
+            "literature",
             "arts_and_literature"
         ],
         "type": "text_choice",
@@ -146,19 +131,19 @@
         "isNiche": false
     },
     {
-        "category": "music",
-        "id": "622a1c387cc59eab6f950b9c",
-        "correctAnswer": "Wings",
+        "category": "science",
+        "id": "622a1c377cc59eab6f9504bd",
+        "correctAnswer": "rocks and the conditions by which they form",
         "incorrectAnswers": [
-            "Level 42",
-            "Deep Purple",
-            "The Chemical Brothers"
+            "demons",
+            "medicine relating to women, or of women in general",
+            "prehistoric metaphytes "
         ],
         "question": {
-            "text": "Which British\u2013American rock band led by Paul McCartney released the album 'Band on the Run'?"
+            "text": "What is Petrology the study of?"
         },
         "tags": [
-            "music"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -166,21 +151,42 @@
         "isNiche": false
     },
     {
-        "category": "music",
-        "id": "622a1c347cc59eab6f94fbac",
-        "correctAnswer": "\"What I Got\" by Sublime",
+        "category": "science",
+        "id": "624334f3cfaae40c12961477",
+        "correctAnswer": "A Boar",
         "incorrectAnswers": [
-            "\"Rapper's Delight\" by Sugarhill Gang",
-            "\"Fergalicious\" by Fergie and will.i.am.",
-            "\"In da Club\" by 50 Cent"
+            "A Macho",
+            "A Bull",
+            "A Hob"
         ],
         "question": {
-            "text": "Which song begins with the lyrics: \"Early in the morning, risin' to the street / Light me up that cigarette, and I'll strap shoes on my feet...\"?"
+            "text": "What is the word for a male pig?"
         },
         "tags": [
-            "lyrics",
-            "songs",
-            "music"
+            "names",
+            "animals",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "622a1c367cc59eab6f950320",
+        "correctAnswer": "Gamal Abdul Nasser",
+        "incorrectAnswers": [
+            "Ahmed Sabzi",
+            "Omar Sharif",
+            "Asser Yasin"
+        ],
+        "question": {
+            "text": "Who was the President of Egypt in 1956 who nationalized the Suez Canal, causing British and French troops to invade the region?"
+        },
+        "tags": [
+            "wars",
+            "politics"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -189,21 +195,21 @@
     },
     {
         "category": "science",
-        "id": "622a1c3a7cc59eab6f95109c",
-        "correctAnswer": "Salt",
+        "id": "624333a2cfaae40c129613f4",
+        "correctAnswer": "A Doe",
         "incorrectAnswers": [
-            "Sugar",
-            "Vinegar",
-            "Lemon Juice"
+            "A Pen",
+            "A Mare",
+            "A Nanny"
         ],
         "question": {
-            "text": "What is the common name of the chemical compound sodium chloride?"
+            "text": "A female deer is known as what?"
         },
         "tags": [
             "science"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "easy",
         "regions": [],
         "isNiche": false
     }
