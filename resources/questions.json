@@ -1,83 +1,18 @@
 [
     {
-        "category": "society_and_culture",
-        "id": "6266e6acff2394bd44dee05c",
-        "correctAnswer": "Neuf",
-        "incorrectAnswers": [
-            "Nove",
-            "Negen",
-            "Trois"
-        ],
-        "question": {
-            "text": "In French, what is the word for for 'nine'?"
-        },
-        "tags": [
-            "language",
-            "translations",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950e1c",
-        "correctAnswer": "Mikhail Lermontov",
-        "incorrectAnswers": [
-            "Nikolai Gogol",
-            "Mikhail Bulgakov",
-            "Alexander Pushkin"
-        ],
-        "question": {
-            "text": "Which author wrote 'A Hero of Our Time'?"
-        },
-        "tags": [
-            "literature",
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "6262afa1014f58b5fc1a3fd8",
-        "correctAnswer": "On My Way",
-        "incorrectAnswers": [
-            "Oh My Word",
-            "Old Man Ways",
-            "Oh Man, Why"
-        ],
-        "question": {
-            "text": "If someone typed the letters 'OMW' in a message, what would they mean?"
-        },
-        "tags": [
-            "the_internet",
-            "initials",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "music",
-        "id": "622a1c357cc59eab6f94fedc",
-        "correctAnswer": "Mariah Carey",
+        "id": "622a1c357cc59eab6f94ff5d",
+        "correctAnswer": "Bob Dylan",
         "incorrectAnswers": [
-            "Drake",
-            "Nicki Minaj",
-            "Madonna"
+            "Neil Young",
+            "Eric Clapton",
+            "Alanis Morissette"
         ],
         "question": {
-            "text": "Which American singer and songwriter released the song 'Emotions'?"
+            "text": "Which American musician released the album 'Highway 61 Revisited'?"
         },
         "tags": [
-            "songs",
+            "music_albums",
             "music"
         ],
         "type": "text_choice",
@@ -86,16 +21,107 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "622a1c357cc59eab6f94fca5",
-        "correctAnswer": "Afroasiatic",
+        "category": "sport_and_leisure",
+        "id": "622a1c367cc59eab6f950044",
+        "correctAnswer": "Fred Perry",
         "incorrectAnswers": [
-            "Indo-European",
-            "Turkic",
-            "Dravidian"
+            "Roy Emerson",
+            "Rod Laver",
+            "Andre Agassi"
         ],
         "question": {
-            "text": "The language 'Sanaani Spoken Arabic' belongs to which language family?"
+            "text": "Who was the first to win the career grand slam of tennis (all four major championships)?"
+        },
+        "tags": [
+            "tennis",
+            "firsts",
+            "people",
+            "sport"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "6262af894b176d54800e3dce",
+        "correctAnswer": "Not Safe For Work",
+        "incorrectAnswers": [
+            "Nice Suckers Finish Worst",
+            "Now, Salt For Weeks",
+            "No Situation For Wheels"
+        ],
+        "question": {
+            "text": "What do the letters 'NSFW' mean on internet chats?"
+        },
+        "tags": [
+            "the_internet",
+            "initials"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "6266e6c4ff2394bd44dee063",
+        "correctAnswer": "Ten",
+        "incorrectAnswers": [
+            "Green",
+            "Three",
+            "White"
+        ],
+        "question": {
+            "text": "What does the word 'zehn' mean in German?"
+        },
+        "tags": [
+            "language",
+            "translations",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "625698b09da29df7b05f7297",
+        "correctAnswer": "Wong",
+        "incorrectAnswers": [
+            "Loki",
+            "Steve Rogers",
+            "Nick Fury"
+        ],
+        "question": {
+            "text": "In the Marvel Cinematic Universe, which character is played by Benedict Wong?"
+        },
+        "tags": [
+            "mcu",
+            "film",
+            "acting",
+            "marvel",
+            "comics",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c357cc59eab6f94ffae",
+        "correctAnswer": "Japan",
+        "incorrectAnswers": [
+            "Mongolia",
+            "Nigeria",
+            "Angola"
+        ],
+        "question": {
+            "text": "In what country do people speak the Language they call Nihongo?"
         },
         "tags": [
             "language",
@@ -107,24 +133,21 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "62c2f9e7b3eadb0437fda6ae",
-        "correctAnswer": "Lamborghini",
+        "category": "geography",
+        "id": "622a1c357cc59eab6f94fe00",
+        "correctAnswer": "Syracuse\u00a0",
         "incorrectAnswers": [
-            "Linux",
-            "Herm\u00e8s",
-            "Tripadvisor"
+            "Albany",
+            "Uticer",
+            "Ithaca"
         ],
         "question": {
-            "text": "Which of these brands has a bull on its logo?"
+            "text": "Which port of Sicily shares its name with a city in New York State?"
         },
         "tags": [
-            "society_and_culture",
-            "business",
-            "marketing",
-            "animals",
-            "logos",
-            "symbols"
+            "new_york",
+            "cities",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -132,20 +155,21 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3e7cc59eab6f952322",
-        "correctAnswer": "Real & Imaginary",
+        "category": "society_and_culture",
+        "id": "6357fd2268bd5000211e7180",
+        "correctAnswer": "Pakistan",
         "incorrectAnswers": [
-            "True & False",
-            "Big & Small",
-            "Logical & Intuitive"
+            "Nigeria",
+            "South Africa",
+            "Algeria"
         ],
         "question": {
-            "text": "What are the 2 parts of complex numbers known as?"
+            "text": "Urdu is a language spoken in which of these countries?"
         },
         "tags": [
-            "mathematics",
-            "science"
+            "language",
+            "linguistics",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -154,18 +178,18 @@
     },
     {
         "category": "film_and_tv",
-        "id": "645bc4634638d58091b1b9d0",
-        "correctAnswer": "The Ugly American",
+        "id": "622a1c357cc59eab6f94fc3f",
+        "correctAnswer": "\"Love means never having to say you're sorry.\"",
         "incorrectAnswers": [
-            "The Quiet American",
-            "The Americanization of Emily",
-            "An American in Vietnam"
+            "\"Greed, for lack of a better word, is good.\"",
+            "\"May the Force be with you.\"",
+            "\"This is the day you will always remember as the day you almost caught Captain Jack Sparrow!\""
         ],
         "question": {
-            "text": "Which 1963 drama features Marlon Brando as the U.S. Ambassador to an Asian country?"
+            "text": "Which of these quotes is from the film 'Love Story'?"
         },
         "tags": [
-            "actors",
+            "quotes",
             "film",
             "film_and_tv"
         ],
@@ -175,44 +199,20 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "622a1c3c7cc59eab6f951ad3",
-        "correctAnswer": "Capricorn",
+        "category": "geography",
+        "id": "623742a2cb85f7ce9e949de1",
+        "correctAnswer": "Tonga",
         "incorrectAnswers": [
-            "Gemini",
-            "Aries",
-            "Scorpio"
+            "Andorra",
+            "Kyrgyzstan",
+            "Somalia"
         ],
         "question": {
-            "text": "What star sign would you be if you were born on Christmas Day?"
+            "text": "Nuku'alofa is the capital city of which country?"
         },
         "tags": [
-            "christmas",
-            "symbols",
-            "society_and_culture"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "622a1c3e7cc59eab6f952238",
-        "correctAnswer": "Sagittarius",
-        "incorrectAnswers": [
-            "Scorpio",
-            "Virgo",
-            "Gemini"
-        ],
-        "question": {
-            "text": "In which constellation would you look to find the center of The Milky Way?"
-        },
-        "tags": [
-            "science",
-            "physics",
-            "space",
-            "astronomy"
+            "capital_cities",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "hard",

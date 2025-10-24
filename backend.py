@@ -55,35 +55,6 @@ class Quiz:
 
         return random_index
 
-# Only for input based questions (if any)
-    def get_answer(self, index):
-        #Get Answer
-        answer = input("Answer: ")
-
-        #Check Answer
-        if self.check_answer(answer, index):
-            print("✅ Correct!")
-            self.score += 1
-
-        else:
-            print(f"Incorrect!!\nCorrect answer is {self._data[index]["correctAnswer"]}")
-
-        self.total_questions_answered += 1
-# Only for input based questions (if any)
-    def check_answer(self, answer, index):
-        correct_answer = str(self._data[index]['correctAnswer'])
-
-        try:
-            answer_num = float(answer)
-            correct_num = float(correct_answer)
-
-            #True if ratio is <= 0.01
-            return abs(answer_num - correct_num) <= 0.01
-        except ValueError:
-            return self.is_similar(answer, correct_answer)
-
-
-
     def get_possible_answers(self, index):
         incorrect_answers = self._data[index]["incorrectAnswers"]
         correct_answer = self._data[index]["correctAnswer"]
@@ -97,13 +68,6 @@ class Quiz:
         random.shuffle(possible_answers)
 
         return possible_answers
-
-    def is_similar(self, answer: str, correct: str, threshold: float = 0.6) -> bool:
-            ratio = SequenceMatcher(None, answer.lower().strip(), correct.lower().strip()).ratio()
-            return ratio >= threshold
-
-    def display_score(self):
-        print(f"\nJob well done.\nYour score is {self.score}/{self.total_questions_answered}")
 
     def generate_questions(self):
         eq.extract()
