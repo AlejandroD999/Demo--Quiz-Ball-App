@@ -1,0 +1,25 @@
+.body
+{
+    background-color: rgb(223, 156, 79);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_container
+{
+    max-width: 150vw;
+    max-height: auto;
+    width: 35vw;
+    margin: 25px;
+    height: auto;
+
+    border-radius: 5px;
+    opacity: 0.87;
+
+    padding-left: 15px;
+    background-color: #d3d3d3;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
