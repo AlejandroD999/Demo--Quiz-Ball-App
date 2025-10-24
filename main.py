@@ -2,7 +2,7 @@ import backend
 from customtkinter import *
 import os
 import tkinter as tk
-
+import webbrowser
 
 class App(CTk):
 
@@ -63,12 +63,19 @@ class HomePage(CTkFrame):
         self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width=1,
-                                 command=lambda: self.controller.show_page(LearnMorePage)).pack(pady=(20, 0))        
+                                 command=lambda: self.open_website("resources", "learn_more.html")).pack(pady=(20, 0))        
 
         self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command=lambda: self.controller.destroy()).pack(pady=(20, 0))
+
+    def open_website(self, file_parent, file_name):
+
+        address_of_main = os.path.abspath(os.path.dirname(__file__))
+        file_address = os.path.join(address_of_main, file_parent, file_name)
+        
+        webbrowser.open(file_address)
 
 class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
