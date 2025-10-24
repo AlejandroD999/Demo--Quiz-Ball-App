@@ -77,6 +77,13 @@ class Quiz:
     def all_asked(self):
         return True if len(self.asked_questions) >= len(self._data) else False    
 
+    def reset(self):
+        self.score = 0
+        self._data = None
+        self.total_questions_answered = 0
+        self.asked_questions.clear()
+
+
 if __name__ == '__main__':
     q = Quiz()
     q.load_questions()
