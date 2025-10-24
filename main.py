@@ -60,7 +60,7 @@ class HomePage(CTkFrame):
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command= lambda: self.controller.show_page(QuizPage)).pack(pady=(100, 0))
         
-        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 32),
+        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width=1,
                                  command=lambda: self.controller.show_page(LearnMorePage)).pack(pady=(20, 0))        
@@ -339,13 +339,14 @@ class ResultsPage(CTkFrame):
                                              command=self.load_results)
 
         self.results_frame = CTkFrame(self, width= 562, height= 338, corner_radius= 2, border_width= 3,
-                                      fg_color="#ba181b", border_color= "#ffffff")
+                                      fg_color="#595a5c", border_color= "#ffffff")
         self.results_frame.propagate(False)
 
         self.load_results_button.pack()        
 
 
     def load_results(self):
+
         self.grade = self.get_grade()
         self.load_results_button.pack_forget()
 
@@ -361,7 +362,13 @@ class ResultsPage(CTkFrame):
                                            font=("Times New Roman", 24), text_color = "#d3d3d3")
 
         self.retake_button = CTkButton(self.results_frame, text="Retake Quiz", width=115, height=50,
-                                          fg_color="black")
+                                          fg_color=self.controller.default_button_color, hover_color=self.controller.default_hover_color,
+                                            command=lambda: self.retake())
+
+        results_frame_width = self.results_frame.winfo_reqwidth()
+        results_frame_height = self.results_frame.winfo_reqheight()
+        retake_button_width = self.retake_button.winfo_reqwidth()
+        retake_button_height = self.retake_button.winfo_reqheight()
 
 
         self.results_frame.pack()
@@ -369,9 +376,9 @@ class ResultsPage(CTkFrame):
         self.passed_label.pack(anchor="w", padx=(20, 0))
         self.correct_answers_label.pack(anchor="w", padx=(20, 0), pady=(25, 0))
         self.questions_answered_label.pack(anchor="w",padx=(20, 0))
-        self.retake_button.pack()
-
-
+        self.retake_button.place(x=(results_frame_width - ((results_frame_width / 5) + (retake_button_width / 16))),
+                                 y= (results_frame_height - ((results_frame_height / 8) + (retake_button_height / 3)))
+                                 )
 
     def get_grade(self):
         grades = {"F": 0, "D-": 52, "D": 60, "C": 70, "C+": 76.67, "B-": 80, "B": 83.33, "B+": 86.67, "A-": 90, "A": 93.33}
@@ -387,6 +394,13 @@ class ResultsPage(CTkFrame):
                 "grade": grade,
                 "passed": True if self.score_percentage >= 70 else False
                 }
+
+    def retake(self):
+        main_address = os.path.abspath(__file__)
+        
+        self.controller.backend = backend.Quiz()
+        self.update()
+        self.controller.show_page(HomePage)
 
 
 

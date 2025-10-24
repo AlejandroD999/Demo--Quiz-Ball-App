@@ -1,62 +1,19 @@
 [
     {
-        "category": "film_and_tv",
-        "id": "622a1c377cc59eab6f9506a0",
-        "correctAnswer": "Naomi Watts",
-        "incorrectAnswers": [
-            "Melissa Leo",
-            "Frances Conroy",
-            "Laura Linney"
-        ],
-        "question": {
-            "text": "Which actress has starred in both Birdman and King Kong?"
-        },
-        "tags": [
-            "film_and_tv",
-            "film",
-            "acting"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "society_and_culture",
-        "id": "63e4c350106de6ffa7d4a7cf",
-        "correctAnswer": "Tin",
+        "id": "6266e6acff2394bd44dee05c",
+        "correctAnswer": "Neuf",
         "incorrectAnswers": [
-            "Gold",
-            "Silver",
-            "Bronze"
+            "Nove",
+            "Negen",
+            "Trois"
         ],
         "question": {
-            "text": "In western societies, what is the traditional gift for a 10th wedding anniversary?"
+            "text": "In French, what is the word for for 'nine'?"
         },
         "tags": [
-            "society_and_culture",
-            "traditions"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "society_and_culture",
-        "id": "648614a2f773f09dc0193b34",
-        "correctAnswer": "A French cuff",
-        "incorrectAnswers": [
-            "A button cuff",
-            "A barrel cuff",
-            "A saville cuff"
-        ],
-        "question": {
-            "text": "What is a wide cuff that is folded back and fastened with a cuff link called?"
-        },
-        "tags": [
-            "clothing",
-            "fashion",
+            "language",
+            "translations",
             "society_and_culture"
         ],
         "type": "text_choice",
@@ -65,20 +22,150 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94f8e7",
-        "correctAnswer": "Robert Duvall",
+        "category": "arts_and_literature",
+        "id": "622a1c397cc59eab6f950e1c",
+        "correctAnswer": "Mikhail Lermontov",
         "incorrectAnswers": [
-            "Samuel L. Jackson",
-            "Daniel Day-Lewis",
-            "Orson Welles"
+            "Nikolai Gogol",
+            "Mikhail Bulgakov",
+            "Alexander Pushkin"
         ],
         "question": {
-            "text": "Which actor played the role of Lt. Col. Bill Kilgore in Apocalypse Now?"
+            "text": "Which author wrote 'A Hero of Our Time'?"
         },
         "tags": [
-            "people",
-            "acting",
+            "literature",
+            "arts_and_literature"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "6262afa1014f58b5fc1a3fd8",
+        "correctAnswer": "On My Way",
+        "incorrectAnswers": [
+            "Oh My Word",
+            "Old Man Ways",
+            "Oh Man, Why"
+        ],
+        "question": {
+            "text": "If someone typed the letters 'OMW' in a message, what would they mean?"
+        },
+        "tags": [
+            "the_internet",
+            "initials",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "622a1c357cc59eab6f94fedc",
+        "correctAnswer": "Mariah Carey",
+        "incorrectAnswers": [
+            "Drake",
+            "Nicki Minaj",
+            "Madonna"
+        ],
+        "question": {
+            "text": "Which American singer and songwriter released the song 'Emotions'?"
+        },
+        "tags": [
+            "songs",
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "622a1c357cc59eab6f94fca5",
+        "correctAnswer": "Afroasiatic",
+        "incorrectAnswers": [
+            "Indo-European",
+            "Turkic",
+            "Dravidian"
+        ],
+        "question": {
+            "text": "The language 'Sanaani Spoken Arabic' belongs to which language family?"
+        },
+        "tags": [
+            "language",
+            "society_and_culture"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "62c2f9e7b3eadb0437fda6ae",
+        "correctAnswer": "Lamborghini",
+        "incorrectAnswers": [
+            "Linux",
+            "Herm\u00e8s",
+            "Tripadvisor"
+        ],
+        "question": {
+            "text": "Which of these brands has a bull on its logo?"
+        },
+        "tags": [
+            "society_and_culture",
+            "business",
+            "marketing",
+            "animals",
+            "logos",
+            "symbols"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c3e7cc59eab6f952322",
+        "correctAnswer": "Real & Imaginary",
+        "incorrectAnswers": [
+            "True & False",
+            "Big & Small",
+            "Logical & Intuitive"
+        ],
+        "question": {
+            "text": "What are the 2 parts of complex numbers known as?"
+        },
+        "tags": [
+            "mathematics",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "645bc4634638d58091b1b9d0",
+        "correctAnswer": "The Ugly American",
+        "incorrectAnswers": [
+            "The Quiet American",
+            "The Americanization of Emily",
+            "An American in Vietnam"
+        ],
+        "question": {
+            "text": "Which 1963 drama features Marlon Brando as the U.S. Ambassador to an Asian country?"
+        },
+        "tags": [
+            "actors",
             "film",
             "film_and_tv"
         ],
@@ -88,42 +175,21 @@
         "isNiche": false
     },
     {
-        "category": "arts_and_literature",
-        "id": "622a1c347cc59eab6f94f96e",
-        "correctAnswer": "Nine Stories",
+        "category": "society_and_culture",
+        "id": "622a1c3c7cc59eab6f951ad3",
+        "correctAnswer": "Capricorn",
         "incorrectAnswers": [
-            "The Metamorphosis",
-            "Blood Meridian",
-            "Portnoy's Complaint"
+            "Gemini",
+            "Aries",
+            "Scorpio"
         ],
         "question": {
-            "text": "Which book contains the character 'Seymour Glass'?"
+            "text": "What star sign would you be if you were born on Christmas Day?"
         },
         "tags": [
-            "literature",
-            "fictitious_characters",
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950f79",
-        "correctAnswer": "Stephen King",
-        "incorrectAnswers": [
-            "H. P. Lovecraft",
-            "Edgar Allan Poe",
-            "Jack Vance"
-        ],
-        "question": {
-            "text": "Which author wrote 'Carrie'?"
-        },
-        "tags": [
-            "literature",
-            "arts_and_literature"
+            "christmas",
+            "symbols",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -132,84 +198,24 @@
     },
     {
         "category": "science",
-        "id": "622a1c377cc59eab6f9504bd",
-        "correctAnswer": "rocks and the conditions by which they form",
+        "id": "622a1c3e7cc59eab6f952238",
+        "correctAnswer": "Sagittarius",
         "incorrectAnswers": [
-            "demons",
-            "medicine relating to women, or of women in general",
-            "prehistoric metaphytes "
+            "Scorpio",
+            "Virgo",
+            "Gemini"
         ],
         "question": {
-            "text": "What is Petrology the study of?"
+            "text": "In which constellation would you look to find the center of The Milky Way?"
         },
         "tags": [
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "624334f3cfaae40c12961477",
-        "correctAnswer": "A Boar",
-        "incorrectAnswers": [
-            "A Macho",
-            "A Bull",
-            "A Hob"
-        ],
-        "question": {
-            "text": "What is the word for a male pig?"
-        },
-        "tags": [
-            "names",
-            "animals",
-            "science"
+            "science",
+            "physics",
+            "space",
+            "astronomy"
         ],
         "type": "text_choice",
         "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c367cc59eab6f950320",
-        "correctAnswer": "Gamal Abdul Nasser",
-        "incorrectAnswers": [
-            "Ahmed Sabzi",
-            "Omar Sharif",
-            "Asser Yasin"
-        ],
-        "question": {
-            "text": "Who was the President of Egypt in 1956 who nationalized the Suez Canal, causing British and French troops to invade the region?"
-        },
-        "tags": [
-            "wars",
-            "politics"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "624333a2cfaae40c129613f4",
-        "correctAnswer": "A Doe",
-        "incorrectAnswers": [
-            "A Pen",
-            "A Mare",
-            "A Nanny"
-        ],
-        "question": {
-            "text": "A female deer is known as what?"
-        },
-        "tags": [
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
         "regions": [],
         "isNiche": false
     }
