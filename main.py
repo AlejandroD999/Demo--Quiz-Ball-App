@@ -68,7 +68,7 @@ class HomePage(CTkFrame):
         self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
-                                 command=lambda: quit()).pack(pady=(20, 0))
+                                 command=lambda: self.controller.destroy()).pack(pady=(20, 0))
 
 class ModeSelectionPage(CTkFrame):
     def __init__(self, parent, controller):
@@ -344,7 +344,6 @@ class ResultsPage(CTkFrame):
 
         self.load_results_button.pack()        
 
-
     def load_results(self):
 
         self.grade = self.get_grade()
@@ -396,15 +395,18 @@ class ResultsPage(CTkFrame):
                 }
 
     def retake(self):
-        main_address = os.path.abspath(__file__)
-        
-        self.controller.backend = backend.Quiz()
-        self.update()
+        self.controller.backend.reset()
+
+        for page in self.controller.pages.values():
+            page.destroy()
+
+        self.controller.pages.clear()
+        for Page in (HomePage, LearnMorePage, ModeSelectionPage, QuizPage, ResultsPage):
+            page = Page(self.controller.container, self.controller)
+            self.controller.pages[Page] = page
+            page.grid(row=0, column=0, sticky="nsew")
+
         self.controller.show_page(HomePage)
-
-
-
-
 
 if __name__ == '__main__':
     app = App()
