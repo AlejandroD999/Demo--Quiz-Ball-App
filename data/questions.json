@@ -1,167 +1,41 @@
 [
     {
-        "category": "music",
-        "id": "622a1c357cc59eab6f94fe9e",
-        "correctAnswer": "Rihanna",
+        "category": "science",
+        "id": "622a1c377cc59eab6f9505ac",
+        "correctAnswer": "Male health and disease",
         "incorrectAnswers": [
-            "Drake",
-            "Nicki Minaj",
-            "Ricky Martin"
+            "Animal behaviour",
+            "The causation of disease",
+            "The structure of cells"
         ],
         "question": {
-            "text": "Which singer released the studio album 'Loud'?"
+            "text": "What is Andrology the study of?"
         },
         "tags": [
-            "music_albums",
-            "musicians",
-            "music"
+            "words",
+            "science"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "food_and_drink",
-        "id": "624ab092348a461bfc670684",
-        "correctAnswer": "Europe",
+        "id": "6250065d0d86c8f685d80ee5",
+        "correctAnswer": "Squid-like",
         "incorrectAnswers": [
-            "Central America",
-            "China",
-            "Central Asia"
+            "Pens",
+            "homemade",
+            "Priest-chokers"
         ],
         "question": {
-            "text": "Where in the world are parsnips originally from?"
+            "text": "The pasta calamarata has what meaning in Italian?"
         },
         "tags": [
             "food",
-            "food_and_drink"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "622a1c387cc59eab6f950bb0",
-        "correctAnswer": "Simon & Garfunkel",
-        "incorrectAnswers": [
-            "MercyMe",
-            "Three 6 Mafia",
-            "The Velvet Underground"
-        ],
-        "question": {
-            "text": "Which American music duo released the song 'The Sound of Silence'?"
-        },
-        "tags": [
-            "general_knowledge",
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c367cc59eab6f9503a8",
-        "correctAnswer": "Louis XVI",
-        "incorrectAnswers": [
-            "Louis XIV",
-            "Charles IX",
-            "Charles XII"
-        ],
-        "question": {
-            "text": "Which King Was Overthrown As A Result Of The French Revolution?"
-        },
-        "tags": [
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "6462620fab138b829b81e9b2",
-        "correctAnswer": "A Breve",
-        "incorrectAnswers": [
-            "A Minim",
-            "A Semibreve",
-            "A Crotchet"
-        ],
-        "question": {
-            "text": "What is the name of the musical note that is equal in length to two whole notes?"
-        },
-        "tags": [
-            "music",
-            "music_theory"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "64e927cd0b0fc0be2ff5aa34",
-        "correctAnswer": "The Amundsen Gulf",
-        "incorrectAnswers": [
-            "The Franklin Gulf",
-            "The Hudson Gulf",
-            "The Davis Gulf"
-        ],
-        "question": {
-            "text": "Which gulf is at the western end of the Northwest Passage through the Arctic Ocean?"
-        },
-        "tags": [
-            "bodies_of_water",
-            "geography",
-            "oceans"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "geography",
-        "id": "6237426acb85f7ce9e949dca",
-        "correctAnswer": "Madrid",
-        "incorrectAnswers": [
-            "San Marino",
-            "Barcelona",
-            "Seville"
-        ],
-        "question": {
-            "text": "What is the capital city of Spain?"
-        },
-        "tags": [
-            "europe",
-            "capital_cities",
-            "general_knowledge",
-            "geography"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "624ab083348a461bfc67067e",
-        "correctAnswer": "The Americas",
-        "incorrectAnswers": [
-            "Southeast Asia",
-            "Africa",
-            "Europe"
-        ],
-        "question": {
-            "text": "From which part of the world do squashes originate?"
-        },
-        "tags": [
+            "words",
+            "language",
             "food_and_drink"
         ],
         "type": "text_choice",
@@ -170,22 +44,41 @@
         "isNiche": false
     },
     {
-        "category": "sport_and_leisure",
-        "id": "622a1c367cc59eab6f95033b",
-        "correctAnswer": "Althea Gibson",
+        "category": "general_knowledge",
+        "id": "622a1c3a7cc59eab6f95107e",
+        "correctAnswer": "1 year",
         "incorrectAnswers": [
-            "Venus Williams",
-            "Serena Williams",
-            "Maureen Dalyweather"
+            "1 month",
+            "1 week",
+            "1 day"
         ],
         "question": {
-            "text": "Who was the first African-American female to win a Wimbledon Tennis event?"
+            "text": "Two rats can become the progenitors of 15,000 rats in less than"
         },
         "tags": [
-            "firsts",
-            "tennis",
-            "people",
-            "sport"
+            "general_knowledge"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94fa6e",
+        "correctAnswer": "Morgan Freeman",
+        "incorrectAnswers": [
+            "Alan Alda",
+            "Thomas Haden Church",
+            "Jamie Foxx"
+        ],
+        "question": {
+            "text": "Who won the 2004 Academy Award for Best Supporting Actor for playing the role of Eddie Scrap-Iron Dupris in Million Dollar Baby?"
+        },
+        "tags": [
+            "academy_awards",
+            "film",
+            "film_and_tv"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -194,23 +87,132 @@
     },
     {
         "category": "society_and_culture",
-        "id": "65056f317a97013de78b53f0",
-        "correctAnswer": "Islam",
+        "id": "6266e5c9ff2394bd44dee019",
+        "correctAnswer": "Green",
         "incorrectAnswers": [
-            "Christianity",
-            "Judaism",
-            "Buddhism"
+            "Nine",
+            "Red",
+            "Six"
         ],
         "question": {
-            "text": "What is the main religion in Algeria?"
+            "text": "In French, what is the meaning of the word 'vert'?"
         },
         "tags": [
-            "society_and_culture",
-            "religion",
-            "countries"
+            "language",
+            "translations",
+            "society_and_culture"
         ],
         "type": "text_choice",
         "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "625fd6c0dc0dd3b72da64d08",
+        "correctAnswer": "1995",
+        "incorrectAnswers": [
+            "1983",
+            "1987",
+            "1991"
+        ],
+        "question": {
+            "text": "In which year was Braveheart released?"
+        },
+        "tags": [
+            "film",
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "622a1c357cc59eab6f94fdca",
+        "correctAnswer": "3",
+        "incorrectAnswers": [
+            "2",
+            "4",
+            "5"
+        ],
+        "question": {
+            "text": "How Many Movements Traditionally Make Up A Concerto?"
+        },
+        "tags": [
+            "classical_music",
+            "numbers",
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "6244372e746187c5e7be9339",
+        "correctAnswer": "Baking Soda",
+        "incorrectAnswers": [
+            "Bleach",
+            "Table Salt",
+            "Dolomite"
+        ],
+        "question": {
+            "text": "What is the common name for sodium bicarbonate?"
+        },
+        "tags": [
+            "chemistry",
+            "general_knowledge",
+            "names",
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "food_and_drink",
+        "id": "622a1c3b7cc59eab6f951622",
+        "correctAnswer": "The Earl Of Sandwich\u00a0",
+        "incorrectAnswers": [
+            "Samuel D Wich",
+            "King Sandwich",
+            "Judge Sandwich"
+        ],
+        "question": {
+            "text": "After Who Was The Sandwich Named?"
+        },
+        "tags": [
+            "food_and_drink"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "general_knowledge",
+        "id": "622a1c357cc59eab6f94fe21",
+        "correctAnswer": "Mont Blanc Tunnel",
+        "incorrectAnswers": [
+            "Italo-Franco Tunnel",
+            "Trans-Alpine Tunnel",
+            "Labinnah Tunnel"
+        ],
+        "question": {
+            "text": "What tunnel connects France and Italy?"
+        },
+        "tags": [
+            "europe",
+            "france",
+            "italy",
+            "general_knowledge"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }

@@ -17,7 +17,7 @@ class Quiz:
         scripts_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
         try:
-            questions_dir = os.path.join(scripts_dir, "resources", "questions.json")
+            questions_dir = os.path.join(scripts_dir, "data", "questions.json")
             with open(questions_dir, 'r') as file:
                 data = json.load(file)    
             
