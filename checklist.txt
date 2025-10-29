@@ -21,5 +21,3 @@
         #ad1413
         #ffffff
         #000000
-2. Fix resizing and widgets location
-3. Mode Selection (Dark / Light)

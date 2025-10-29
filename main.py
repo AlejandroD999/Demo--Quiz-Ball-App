@@ -8,8 +8,8 @@ class App(CTk):
 
     def __init__(self):
         super().__init__()
-        self.window_width = (self.winfo_screenwidth() // 2) + (self.winfo_screenwidth() / 25)
-        self.window_height = (self.winfo_screenheight() // 2) + (self.winfo_screenheight() / 9)
+        self.window_width = int((self.winfo_screenwidth() // 2) + (self.winfo_screenwidth() / 25))
+        self.window_height = int((self.winfo_screenheight() // 2) + (self.winfo_screenheight() / 9))
 
         self.background_color = "#161a1d"
         self.default_button_color = "#ba181b"
@@ -216,12 +216,15 @@ class QuizPage(CTkFrame):
                 self.quiz_backend.score += 1
 
     def prompt_for_results(self):
+        width = int(self.winfo_screenwidth() / 4)
+        height = int(self.winfo_screenheight() / 8)
+
         background_color = self.controller.background_color
         top = CTkToplevel()
 
         top.title("Finish Quiz")
         top.config(bg=background_color)
-        top.geometry("350x100")
+        top.geometry(f"{width}x{height}")
         top.resizable(False, False)
 
         label = CTkLabel(top, text="Do you want to finish?", font=("Times New Roman", 24),
