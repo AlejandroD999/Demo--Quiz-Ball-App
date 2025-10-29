@@ -1,37 +1,40 @@
 [
     {
-        "category": "history",
-        "id": "622a1c367cc59eab6f9503ce",
-        "correctAnswer": "Falkland Islands",
+        "category": "music",
+        "id": "622a1c357cc59eab6f94fe9e",
+        "correctAnswer": "Rihanna",
         "incorrectAnswers": [
-            "Gold",
-            "Nuclear Weapons",
-            "Industrial Sabotage"
+            "Drake",
+            "Nicki Minaj",
+            "Ricky Martin"
         ],
         "question": {
-            "text": "What was the war between Argentina and Great Britan over?"
+            "text": "Which singer released the studio album 'Loud'?"
         },
         "tags": [
-            "history"
+            "music_albums",
+            "musicians",
+            "music"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "food_and_drink",
-        "id": "622a1c367cc59eab6f950263",
-        "correctAnswer": "Russia\u00a0",
+        "id": "624ab092348a461bfc670684",
+        "correctAnswer": "Europe",
         "incorrectAnswers": [
-            "Hungary",
-            "Bolivia",
-            "Mexico"
+            "Central America",
+            "China",
+            "Central Asia"
         ],
         "question": {
-            "text": "Which country does one associate with 'Kvass'?"
+            "text": "Where in the world are parsnips originally from?"
         },
         "tags": [
+            "food",
             "food_and_drink"
         ],
         "type": "text_choice",
@@ -40,105 +43,20 @@
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "622a1c377cc59eab6f9505b9",
-        "correctAnswer": "Jacqueline Bisset",
-        "incorrectAnswers": [
-            "Sophia Loren",
-            "Mila Kunis",
-            "Hilary Duff"
-        ],
-        "question": {
-            "text": "Which actress has starred in films including Murder on the Orient Express and Casino Royale?"
-        },
-        "tags": [
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
         "category": "music",
-        "id": "622a1c367cc59eab6f950399",
-        "correctAnswer": "Barbara Streisand",
+        "id": "622a1c387cc59eab6f950bb0",
+        "correctAnswer": "Simon & Garfunkel",
         "incorrectAnswers": [
-            "Dolly Parton",
-            "Grace Jones",
-            "Cher"
+            "MercyMe",
+            "Three 6 Mafia",
+            "The Velvet Underground"
         ],
         "question": {
-            "text": "Which US Singer Duetted With Donna Summer On The US Number One 'No More Tears'?"
+            "text": "Which American music duo released the song 'The Sound of Silence'?"
         },
         "tags": [
-            "songs",
-            "people",
+            "general_knowledge",
             "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "music",
-        "id": "622a1c387cc59eab6f950bb9",
-        "correctAnswer": "The Kinks",
-        "incorrectAnswers": [
-            "Deep Purple",
-            "Snow Patrol",
-            "Lostprophets"
-        ],
-        "question": {
-            "text": "Which English rock band released the song 'You Really Got Me'?"
-        },
-        "tags": [
-            "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fac5",
-        "correctAnswer": "Matthew McConaughey",
-        "incorrectAnswers": [
-            "Christian Bale",
-            "Bruce Dern",
-            "Leonardo DiCaprio"
-        ],
-        "question": {
-            "text": "Who won the 2013 Academy Award for Best Leading Actor for playing the role of Ron Woodroof in Dallas Buyers Club?"
-        },
-        "tags": [
-            "acting",
-            "film",
-            "academy_awards",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c377cc59eab6f9506ff",
-        "correctAnswer": "Bradley Cooper",
-        "incorrectAnswers": [
-            "Ryan Reynolds",
-            "Jim Carrey",
-            "Hugh Jackman"
-        ],
-        "question": {
-            "text": "Which Hollywood actor has starred in films including Guardians of the Galaxy and American Hustle?"
-        },
-        "tags": [
-            "film_and_tv",
-            "acting"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -147,43 +65,18 @@
     },
     {
         "category": "history",
-        "id": "622a1c3b7cc59eab6f95177f",
-        "correctAnswer": "The Mongols",
+        "id": "622a1c367cc59eab6f9503a8",
+        "correctAnswer": "Louis XVI",
         "incorrectAnswers": [
-            "The Huns",
-            "The Parthians",
-            "The Greeks"
+            "Louis XIV",
+            "Charles IX",
+            "Charles XII"
         ],
         "question": {
-            "text": "Which people were led by Genghis Khan?"
+            "text": "Which King Was Overthrown As A Result Of The French Revolution?"
         },
         "tags": [
-            "people",
             "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "64909c4c58265893a0c86d90",
-        "correctAnswer": "Pyrite",
-        "incorrectAnswers": [
-            "Magnetite",
-            "Hematite",
-            "Chromite"
-        ],
-        "question": {
-            "text": "What is the name of the type of iron which is sometimes known as \"Fool's gold\"?"
-        },
-        "tags": [
-            "chemistry",
-            "geology",
-            "minerals",
-            "science",
-            "materials"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -191,22 +84,130 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3e7cc59eab6f9522a4",
-        "correctAnswer": "54",
+        "category": "music",
+        "id": "6462620fab138b829b81e9b2",
+        "correctAnswer": "A Breve",
         "incorrectAnswers": [
-            "64",
-            "9",
-            "16"
+            "A Minim",
+            "A Semibreve",
+            "A Crotchet"
         ],
         "question": {
-            "text": "How many colored squares does a Rubiks Cube have?"
+            "text": "What is the name of the musical note that is equal in length to two whole notes?"
         },
         "tags": [
-            "toys",
-            "mathematics",
-            "numbers",
-            "science"
+            "music",
+            "music_theory"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "64e927cd0b0fc0be2ff5aa34",
+        "correctAnswer": "The Amundsen Gulf",
+        "incorrectAnswers": [
+            "The Franklin Gulf",
+            "The Hudson Gulf",
+            "The Davis Gulf"
+        ],
+        "question": {
+            "text": "Which gulf is at the western end of the Northwest Passage through the Arctic Ocean?"
+        },
+        "tags": [
+            "bodies_of_water",
+            "geography",
+            "oceans"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "6237426acb85f7ce9e949dca",
+        "correctAnswer": "Madrid",
+        "incorrectAnswers": [
+            "San Marino",
+            "Barcelona",
+            "Seville"
+        ],
+        "question": {
+            "text": "What is the capital city of Spain?"
+        },
+        "tags": [
+            "europe",
+            "capital_cities",
+            "general_knowledge",
+            "geography"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "food_and_drink",
+        "id": "624ab083348a461bfc67067e",
+        "correctAnswer": "The Americas",
+        "incorrectAnswers": [
+            "Southeast Asia",
+            "Africa",
+            "Europe"
+        ],
+        "question": {
+            "text": "From which part of the world do squashes originate?"
+        },
+        "tags": [
+            "food_and_drink"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "sport_and_leisure",
+        "id": "622a1c367cc59eab6f95033b",
+        "correctAnswer": "Althea Gibson",
+        "incorrectAnswers": [
+            "Venus Williams",
+            "Serena Williams",
+            "Maureen Dalyweather"
+        ],
+        "question": {
+            "text": "Who was the first African-American female to win a Wimbledon Tennis event?"
+        },
+        "tags": [
+            "firsts",
+            "tennis",
+            "people",
+            "sport"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "65056f317a97013de78b53f0",
+        "correctAnswer": "Islam",
+        "incorrectAnswers": [
+            "Christianity",
+            "Judaism",
+            "Buddhism"
+        ],
+        "question": {
+            "text": "What is the main religion in Algeria?"
+        },
+        "tags": [
+            "society_and_culture",
+            "religion",
+            "countries"
         ],
         "type": "text_choice",
         "difficulty": "medium",

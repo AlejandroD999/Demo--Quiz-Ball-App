@@ -4,7 +4,7 @@ import os
 
 def extract():
     api_url = "https://the-trivia-api.com/v2/questions"
-    curr_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     try:
         response = requests.get(api_url)
@@ -12,7 +12,7 @@ def extract():
 
         data = response.json()
 
-        questions_dir = os.path.join(curr_dir, "resources", "questions.json")
+        questions_dir = os.path.join(root_dir, "resources", "questions.json")
         with open(questions_dir, 'w') as f:
             json.dump(data, f, indent=4)
 

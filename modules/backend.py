@@ -1,5 +1,5 @@
 from difflib import SequenceMatcher
-import extract_questions as eq
+from modules import extract_questions as eq
 import json
 import os
 import random
@@ -14,7 +14,7 @@ class Quiz:
         self.asked_questions = set()
 
     def load_questions(self):
-        scripts_dir = os.path.dirname(os.path.abspath(__file__))
+        scripts_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
         try:
             questions_dir = os.path.join(scripts_dir, "resources", "questions.json")
