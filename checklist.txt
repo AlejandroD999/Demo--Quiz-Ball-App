@@ -22,5 +22,4 @@
         #ffffff
         #000000
 2. Fix resizing and widgets location
-3. Mode Selection (Dark / Light)f5f3f4
-4. Make, take home button (idea: reboot app)
+3. Mode Selection (Dark / Light)

@@ -2,7 +2,7 @@ import backend
 from customtkinter import *
 import os
 import tkinter as tk
-
+import webbrowser
 
 class App(CTk):
 
@@ -29,7 +29,7 @@ class App(CTk):
 
 
         self.pages = {}
-        for Page in (HomePage, LearnMorePage, ModeSelectionPage, QuizPage, ResultsPage):
+        for Page in (HomePage, QuizPage, ResultsPage):
             page = Page(self.container, self)
             self.pages[Page] = page
             page.grid(row=0, column=0, sticky="nsew")
@@ -63,50 +63,19 @@ class HomePage(CTkFrame):
         self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width=1,
-                                 command=lambda: self.controller.show_page(LearnMorePage)).pack(pady=(20, 0))        
+                                 command=lambda: self.open_website("learn_more", "index.html")).pack(pady=(20, 0))        
 
         self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command=lambda: self.controller.destroy()).pack(pady=(20, 0))
 
-class ModeSelectionPage(CTkFrame):
-    def __init__(self, parent, controller):
-        super().__init__(parent, fg_color= controller.background_color, corner_radius=0)
-        self.controller = controller
-        self.propagate(False)
+    def open_website(self, file_parent, file_name):
 
-        self.load_widgets()
-
-
-    def load_widgets(self):
-
-        self.buttons_frame = CTkFrame(self, fg_color=self.controller.background_color)
-
-        self.mode_label = CTkLabel(self, text="Select a Mode", font=("Times New Roman", 54), text_color = "#007ea7",
-                                                 bg_color=self.controller.background_color).pack(pady=(60, 0))
-
-        self.buttons_frame.pack(pady=(35, 0)) 
-
-        self.easy_button = CTkButton(self.buttons_frame, text="Easy", font=("Times New Roman", 35),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 height=3,
-                                 border_color="black", corner_radius = 3).pack(side="left",padx=10, pady=20)
-
-        self.medium_button = CTkButton(self.buttons_frame, text="Medium", font=("Times New Roman", 35),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 height=3,
-                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 10))
-
-        self.hard_button = CTkButton(self.buttons_frame, text="Hard", font=("Times New Roman", 35),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 height=3,
-                                 border_color="black", corner_radius = 3).pack(side="left", padx=(20, 10))
-
-        self.random_button = CTkButton(self, text="Random", font=("Times New Roman", 35),
-                                 text_color = "black", fg_color = '#007ea7', hover_color = '#00a8e8',
-                                 height=2,
-                                 border_color="black", corner_radius = 3).pack()
+        address_of_main = os.path.abspath(os.path.dirname(__file__))
+        file_address = os.path.join(address_of_main, file_parent, file_name)
+    
+        webbrowser.open(file_address)
 
 class QuizPage(CTkFrame):
     def __init__(self, parent, controller):
@@ -283,44 +252,6 @@ class QuizPage(CTkFrame):
         self.controller.show_page(ResultsPage)
         return
 
-class LearnMorePage(CTkFrame):
-    def __init__(self, parent, controller):
-        super().__init__(parent, fg_color = controller.background_color)
-        self.controller = controller
-        self.propagate(False)
-
-
-        self.load_widgets()
-
-    def load_widgets(self):
-
-        self.content = self.pull_file_content("learn_more.txt", "resources")
-        
-        self.content_frame = CTkScrollableFrame(self, 475, 500, fg_color = "#595a5c",
-                                                border_width=3, border_color="#f5f3f4")
-
-        self.content_label = CTkLabel(self.content_frame, text=self.content, font=("Times New Roman", 16),
-                                      text_color = "#f5f3f4")
-
-        self.content_frame.pack(anchor="e", pady=(0, 0))
-        self.content_label.pack(anchor="w", padx=20, pady=(0, 0))
-
-
-
-    def pull_file_content(self, file_name, folder):
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        
-        file_address = os.path.join(current_dir, folder, file_name)
-
-        try:
-            with open(file_address, "r") as file:
-                content = file.read()
-
-            return content
-
-        except FileNotFoundError:
-            raise FileNotFoundError("File was not found")
-
 class ResultsPage(CTkFrame):
     def __init__(self, parent, controller):
         self.controller = controller
@@ -401,7 +332,7 @@ class ResultsPage(CTkFrame):
             page.destroy()
 
         self.controller.pages.clear()
-        for Page in (HomePage, LearnMorePage, ModeSelectionPage, QuizPage, ResultsPage):
+        for Page in (HomePage, QuizPage, ResultsPage):
             page = Page(self.controller.container, self.controller)
             self.controller.pages[Page] = page
             page.grid(row=0, column=0, sticky="nsew")
