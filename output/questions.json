@@ -1,19 +1,20 @@
 [
     {
-        "category": "science",
-        "id": "622a1c377cc59eab6f9505ac",
-        "correctAnswer": "Male health and disease",
+        "category": "geography",
+        "id": "62602e284b176d54800e3cc6",
+        "correctAnswer": "Bern",
         "incorrectAnswers": [
-            "Animal behaviour",
-            "The causation of disease",
-            "The structure of cells"
+            "Valencia",
+            "Athens",
+            "Oslo"
         ],
         "question": {
-            "text": "What is Andrology the study of?"
+            "text": "Which of these cities is in Switzerland?"
         },
         "tags": [
-            "words",
-            "science"
+            "cities",
+            "europe",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -21,22 +22,21 @@
         "isNiche": false
     },
     {
-        "category": "food_and_drink",
-        "id": "6250065d0d86c8f685d80ee5",
-        "correctAnswer": "Squid-like",
+        "category": "sport_and_leisure",
+        "id": "6477bad7550bc819ad646b41",
+        "correctAnswer": "Hooking",
         "incorrectAnswers": [
-            "Pens",
-            "homemade",
-            "Priest-chokers"
+            "Swiping",
+            "Checking",
+            "Slashing"
         ],
         "question": {
-            "text": "The pasta calamarata has what meaning in Italian?"
+            "text": "In hockey, what is the penalty called that involves impeding the progress of an opponent with the stick?"
         },
         "tags": [
-            "food",
-            "words",
-            "language",
-            "food_and_drink"
+            "hockey",
+            "sport",
+            "nhl"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -44,41 +44,20 @@
         "isNiche": false
     },
     {
-        "category": "general_knowledge",
-        "id": "622a1c3a7cc59eab6f95107e",
-        "correctAnswer": "1 year",
+        "category": "sport_and_leisure",
+        "id": "6477bb70550bc819ad646b8f",
+        "correctAnswer": "The wind-up",
         "incorrectAnswers": [
-            "1 month",
-            "1 week",
-            "1 day"
+            "The pitch",
+            "The strike",
+            "The charge"
         ],
         "question": {
-            "text": "Two rats can become the progenitors of 15,000 rats in less than"
+            "text": "Which of these is a legal pitching position in baseball?"
         },
         "tags": [
-            "general_knowledge"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94fa6e",
-        "correctAnswer": "Morgan Freeman",
-        "incorrectAnswers": [
-            "Alan Alda",
-            "Thomas Haden Church",
-            "Jamie Foxx"
-        ],
-        "question": {
-            "text": "Who won the 2004 Academy Award for Best Supporting Actor for playing the role of Eddie Scrap-Iron Dupris in Million Dollar Baby?"
-        },
-        "tags": [
-            "academy_awards",
-            "film",
-            "film_and_tv"
+            "baseball",
+            "sport"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -86,107 +65,83 @@
         "isNiche": false
     },
     {
-        "category": "society_and_culture",
-        "id": "6266e5c9ff2394bd44dee019",
-        "correctAnswer": "Green",
+        "category": "geography",
+        "id": "62374201cb85f7ce9e949da0",
+        "correctAnswer": "Bucharest",
         "incorrectAnswers": [
-            "Nine",
-            "Red",
-            "Six"
+            "Sarajevo",
+            "Bratislava",
+            "Vientiane"
         ],
         "question": {
-            "text": "In French, what is the meaning of the word 'vert'?"
+            "text": "What is the capital city of Romania?"
         },
         "tags": [
-            "language",
-            "translations",
-            "society_and_culture"
+            "europe",
+            "capital_cities",
+            "geography"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "625fd6c0dc0dd3b72da64d08",
-        "correctAnswer": "1995",
+        "category": "science",
+        "id": "622a1c3d7cc59eab6f951c18",
+        "correctAnswer": "Mexico",
         "incorrectAnswers": [
-            "1983",
-            "1987",
-            "1991"
+            "Russia",
+            "China",
+            "Australia"
         ],
         "question": {
-            "text": "In which year was Braveheart released?"
+            "text": "From Which Country Does The Poinsettia Plant Originate"
         },
         "tags": [
-            "film",
-            "film_and_tv"
+            "plants",
+            "science"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f951013",
+        "correctAnswer": "Borneo & Sumatra",
+        "incorrectAnswers": [
+            "Bali & Lombok",
+            "Sulawesi & Java",
+            "New Guinea & Komodo"
+        ],
+        "question": {
+            "text": "Which 2 Islands Are The Natural Habitat Of The Orang-Utan?"
+        },
+        "tags": [
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
         "category": "music",
-        "id": "622a1c357cc59eab6f94fdca",
-        "correctAnswer": "3",
+        "id": "622a1c357cc59eab6f94fdd9",
+        "correctAnswer": "Katy Perry",
         "incorrectAnswers": [
-            "2",
-            "4",
-            "5"
+            "Madonna",
+            "Nicki Minaj",
+            "Lady Gaga"
         ],
         "question": {
-            "text": "How Many Movements Traditionally Make Up A Concerto?"
+            "text": "Which American singer released the song 'Last Friday Night (T.G.I.F.)'?"
         },
         "tags": [
-            "classical_music",
-            "numbers",
+            "songs",
             "music"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "science",
-        "id": "6244372e746187c5e7be9339",
-        "correctAnswer": "Baking Soda",
-        "incorrectAnswers": [
-            "Bleach",
-            "Table Salt",
-            "Dolomite"
-        ],
-        "question": {
-            "text": "What is the common name for sodium bicarbonate?"
-        },
-        "tags": [
-            "chemistry",
-            "general_knowledge",
-            "names",
-            "science"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "food_and_drink",
-        "id": "622a1c3b7cc59eab6f951622",
-        "correctAnswer": "The Earl Of Sandwich\u00a0",
-        "incorrectAnswers": [
-            "Samuel D Wich",
-            "King Sandwich",
-            "Judge Sandwich"
-        ],
-        "question": {
-            "text": "After Who Was The Sandwich Named?"
-        },
-        "tags": [
-            "food_and_drink"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -194,25 +149,64 @@
         "isNiche": false
     },
     {
-        "category": "general_knowledge",
-        "id": "622a1c357cc59eab6f94fe21",
-        "correctAnswer": "Mont Blanc Tunnel",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f951052",
+        "correctAnswer": "Buck",
         "incorrectAnswers": [
-            "Italo-Franco Tunnel",
-            "Trans-Alpine Tunnel",
-            "Labinnah Tunnel"
+            "Doe",
+            "Colt",
+            "A Johnny"
         ],
         "question": {
-            "text": "What tunnel connects France and Italy?"
+            "text": "Which of these is a name for a male deer?"
         },
         "tags": [
-            "europe",
-            "france",
-            "italy",
-            "general_knowledge"
+            "science"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "history",
+        "id": "639898395c9a75021f310465",
+        "correctAnswer": "1939",
+        "incorrectAnswers": [
+            "1941",
+            "1945",
+            "1937"
+        ],
+        "question": {
+            "text": "What year did World War II begin?"
+        },
+        "tags": [
+            "history",
+            "world_war_2",
+            "wars"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "film_and_tv",
+        "id": "622a1c377cc59eab6f9505bb",
+        "correctAnswer": "Mila Kunis",
+        "incorrectAnswers": [
+            "Jacqueline Bisset",
+            "Sophia Loren",
+            "Madonna"
+        ],
+        "question": {
+            "text": "Which actress has acted in both That '70s Show and Black Swan?"
+        },
+        "tags": [
+            "film_and_tv"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
         "regions": [],
         "isNiche": false
     }
