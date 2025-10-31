@@ -3,7 +3,7 @@ from modules import backend
 import os
 from PIL import ImageTk, Image
 import platform
-import tkinter as tk
+from tkinter import font, StringVar
 import webbrowser
 
 class App(CTk):
@@ -59,8 +59,7 @@ class App(CTk):
 
     def show_page(self, page_class):
         page = self.pages[page_class]
-        page.tkraise()
-
+        page.lift()
 
 
 class HomePage(CTkFrame):
@@ -78,7 +77,7 @@ class HomePage(CTkFrame):
         self.load_image()
 
         self.app_title = CTkLabel(self, text="CogniTriv", fg_color=self.controller.background_color, 
-                                  text_color="#a4161a", font=("Calibri", 54, "bold")).pack(pady=(30, 0))
+                                  text_color="#a4161a", font=("Courier 10 Pitch", 54)).pack(pady=(30, 0))
 
         self.start_button = CTkButton(self, text="Start", font=("Times New Roman", 31),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
@@ -124,7 +123,6 @@ class QuizPage(CTkFrame):
         super().__init__(parent, fg_color="#161a1d", corner_radius=0)
         self.propagate(False)
 
-
         self.quiz_backend = self.controller.backend
         self.quiz_backend.load_questions()
 
@@ -144,7 +142,7 @@ class QuizPage(CTkFrame):
         self.choices_frame = CTkFrame(self, fg_color="#0b090a", width=445, height=320)
         self.choices_frame.propagate(False)
 
-        self.question_count_variable = tk.StringVar(self, value=f"Question #{self.question_number}")
+        self.question_count_variable = StringVar(self, value=f"Question #{self.question_number}")
         self.question_count_label = CTkLabel(self.choices_frame, textvariable = self.question_count_variable, font=("Times New Roman", 25),
                                 anchor='w', fg_color="#0b090a", text_color="#d3d3d3", width=345)
 
@@ -302,12 +300,13 @@ class ResultsPage(CTkFrame):
         super().__init__(parent, fg_color=self.controller.background_color, corner_radius=0)
         self.propagate(False)
 
+
         self.quiz_backend = self.controller.backend
         self.load_widgets()
 
     def load_widgets(self):
         self.results_title = CTkLabel(self, text="Results", fg_color=self.controller.background_color, text_color= "#ba181b",
-                        font=("Times New Roman", 64, "italic")).pack(pady=(20, 5))
+                        font=("Courier 10 Pitch", 64, "italic")).pack(pady=(20, 5))
         
         self.load_results_button = CTkButton(self, text="Load Results", width=270, height=58, fg_color= "#a4161a",
                                              text_color= "#f5f3f4", hover_color = "#660708", border_width=4, border_color= "#d3d3d3",
