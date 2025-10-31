@@ -1,20 +1,21 @@
 [
     {
-        "category": "geography",
-        "id": "62602e284b176d54800e3cc6",
-        "correctAnswer": "Bern",
+        "category": "society_and_culture",
+        "id": "647edb90520523194910c34f",
+        "correctAnswer": "Nirvana",
         "incorrectAnswers": [
-            "Valencia",
-            "Athens",
-            "Oslo"
+            "Fantasia",
+            "Elatia",
+            "Bodhi"
         ],
         "question": {
-            "text": "Which of these cities is in Switzerland?"
+            "text": "Which of these is a state of enlightenment in Buddhism?"
         },
         "tags": [
-            "cities",
-            "europe",
-            "geography"
+            "religion",
+            "society_and_culture",
+            "buddhism",
+            "words"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -23,63 +24,41 @@
     },
     {
         "category": "sport_and_leisure",
-        "id": "6477bad7550bc819ad646b41",
-        "correctAnswer": "Hooking",
+        "id": "64730759cf09068746f63758",
+        "correctAnswer": "The Triple Jump",
         "incorrectAnswers": [
-            "Swiping",
-            "Checking",
-            "Slashing"
+            "Long Jump",
+            "High Jump",
+            "Pole Vault"
         ],
         "question": {
-            "text": "In hockey, what is the penalty called that involves impeding the progress of an opponent with the stick?"
+            "text": "Which athletics event consists of two hops and a jump?"
         },
         "tags": [
-            "hockey",
-            "sport",
-            "nhl"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "sport_and_leisure",
-        "id": "6477bb70550bc819ad646b8f",
-        "correctAnswer": "The wind-up",
-        "incorrectAnswers": [
-            "The pitch",
-            "The strike",
-            "The charge"
-        ],
-        "question": {
-            "text": "Which of these is a legal pitching position in baseball?"
-        },
-        "tags": [
-            "baseball",
+            "olympics",
+            "track_and_field",
             "sport"
         ],
         "type": "text_choice",
-        "difficulty": "hard",
+        "difficulty": "easy",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "geography",
-        "id": "62374201cb85f7ce9e949da0",
-        "correctAnswer": "Bucharest",
+        "category": "arts_and_literature",
+        "id": "622a1c397cc59eab6f950ea0",
+        "correctAnswer": "Alexandre Dumas",
         "incorrectAnswers": [
-            "Sarajevo",
-            "Bratislava",
-            "Vientiane"
+            "Anatole France",
+            "Gustave Flaubert",
+            "Charles Perrault"
         ],
         "question": {
-            "text": "What is the capital city of Romania?"
+            "text": "Which author wrote 'Twenty Years After'?"
         },
         "tags": [
-            "europe",
-            "capital_cities",
-            "geography"
+            "literature",
+            "arts_and_literature"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -87,20 +66,21 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3d7cc59eab6f951c18",
-        "correctAnswer": "Mexico",
+        "category": "film_and_tv",
+        "id": "622a1c347cc59eab6f94f918",
+        "correctAnswer": "Casablanca",
         "incorrectAnswers": [
-            "Russia",
-            "China",
-            "Australia"
+            "Ghost",
+            "Gangs of New York",
+            "A Streetcar Named Desire"
         ],
         "question": {
-            "text": "From Which Country Does The Poinsettia Plant Originate"
+            "text": "Which film contains the character 'Rick Blaine'?"
         },
         "tags": [
-            "plants",
-            "science"
+            "film",
+            "fictitious_characters",
+            "film_and_tv"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -108,19 +88,20 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3a7cc59eab6f951013",
-        "correctAnswer": "Borneo & Sumatra",
+        "category": "film_and_tv",
+        "id": "625fd676dc0dd3b72da64cf2",
+        "correctAnswer": "1995",
         "incorrectAnswers": [
-            "Bali & Lombok",
-            "Sulawesi & Java",
-            "New Guinea & Komodo"
+            "1987",
+            "1991",
+            "1999"
         ],
         "question": {
-            "text": "Which 2 Islands Are The Natural Habitat Of The Orang-Utan?"
+            "text": "In which year was Seven first released in the cinema?"
         },
         "tags": [
-            "science"
+            "film",
+            "film_and_tv"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -129,39 +110,60 @@
     },
     {
         "category": "music",
-        "id": "622a1c357cc59eab6f94fdd9",
-        "correctAnswer": "Katy Perry",
+        "id": "622a1c397cc59eab6f950c2c",
+        "correctAnswer": "ABBA",
         "incorrectAnswers": [
-            "Madonna",
-            "Nicki Minaj",
-            "Lady Gaga"
+            "In Flames",
+            "HammerFall",
+            "Katatonia"
         ],
         "question": {
-            "text": "Which American singer released the song 'Last Friday Night (T.G.I.F.)'?"
+            "text": "Which Swedish pop group released the song 'Gimme! Gimme! Gimme! (A Man After Midnight)'?"
         },
         "tags": [
-            "songs",
             "music"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "easy",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3a7cc59eab6f951052",
-        "correctAnswer": "Buck",
+        "category": "history",
+        "id": "622a1c3c7cc59eab6f9518c4",
+        "correctAnswer": "Enigma",
         "incorrectAnswers": [
-            "Doe",
-            "Colt",
-            "A Johnny"
+            "Mystery",
+            "Paradox",
+            "Riddle"
         ],
         "question": {
-            "text": "Which of these is a name for a male deer?"
+            "text": "What Was The Name Given To The Coding Machine Used By The Germans In World War II?"
         },
         "tags": [
-            "science"
+            "technology",
+            "world_war_2",
+            "history"
+        ],
+        "type": "text_choice",
+        "difficulty": "easy",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "sport_and_leisure",
+        "id": "62417d6b0f96c4efe8d773c5",
+        "correctAnswer": "New York Red Bulls",
+        "incorrectAnswers": [
+            "New York Sounders",
+            "New York Whitesox",
+            "New York Royals"
+        ],
+        "question": {
+            "text": "Which of these is a soccer team based in New York?"
+        },
+        "tags": [
+            "sport"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -170,40 +172,41 @@
     },
     {
         "category": "history",
-        "id": "639898395c9a75021f310465",
-        "correctAnswer": "1939",
+        "id": "622a1c3d7cc59eab6f951c64",
+        "correctAnswer": "Perestroika",
         "incorrectAnswers": [
-            "1941",
-            "1945",
-            "1937"
+            "Apparatchik",
+            "Uskoreniye",
+            "Khozraschyot"
         ],
         "question": {
-            "text": "What year did World War II begin?"
+            "text": "After the fall of the iron curtain, Russian leader Mikhail Gorbachev introduced a period of restructuring known as what?"
         },
         "tags": [
-            "history",
-            "world_war_2",
-            "wars"
+            "russia",
+            "politics",
+            "cold_war",
+            "history"
         ],
         "type": "text_choice",
-        "difficulty": "medium",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     },
     {
-        "category": "film_and_tv",
-        "id": "622a1c377cc59eab6f9505bb",
-        "correctAnswer": "Mila Kunis",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f951033",
+        "correctAnswer": "Emperor",
         "incorrectAnswers": [
-            "Jacqueline Bisset",
-            "Sophia Loren",
-            "Madonna"
+            "King",
+            "Gentoo",
+            "Adelie"
         ],
         "question": {
-            "text": "Which actress has acted in both That '70s Show and Black Swan?"
+            "text": "What Is The Largest Species Of Penguin?"
         },
         "tags": [
-            "film_and_tv"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "medium",
