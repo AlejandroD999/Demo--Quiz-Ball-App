@@ -1,6 +1,8 @@
-from modules import backend
 from customtkinter import *
+from modules import backend
 import os
+from PIL import ImageTk, Image
+import platform
 import tkinter as tk
 import webbrowser
 
@@ -10,6 +12,7 @@ class App(CTk):
         super().__init__()
         self.window_width = int((self.winfo_screenwidth() // 2) + (self.winfo_screenwidth() / 25))
         self.window_height = int((self.winfo_screenheight() // 2) + (self.winfo_screenheight() / 9))
+        self.curr_dir = os.path.dirname(os.path.abspath(__file__))
 
         self.background_color = "#161a1d"
         self.default_button_color = "#ba181b"
@@ -18,6 +21,10 @@ class App(CTk):
 
         self.geometry(f"{self.window_width}x{self.window_height}")
         self.configure(bg_color=self.background_color)
+        self._set_appearance_mode("dark")
+
+
+        self.set_icon()
         self.resizable(0, 0)
         self.title("CogniTriv")
 
@@ -36,10 +43,25 @@ class App(CTk):
 
         self.show_page(HomePage)
 
-    
+    def set_icon(self):
+        ico_address = os.path.join(self.curr_dir, "assets", "icon", "gui_icon.ico")
+        png_address = os.path.join(self.curr_dir, "assets", "icon", "gui_icon.png")
+        system = platform.system()
+
+        try:
+            if system == "Windows":
+                self.iconbitmap(ico_address)
+            else:
+                self._icon_img = ImageTk.PhotoImage(Image.open(png_address))
+                self.iconphoto(False, self._icon_img)
+        except Exception as e:
+            print("Icon load failed", e)
+
     def show_page(self, page_class):
         page = self.pages[page_class]
         page.tkraise()
+
+
 
 class HomePage(CTkFrame):
     def __init__(self, parent, controller):
@@ -52,6 +74,9 @@ class HomePage(CTkFrame):
         self.load_widgets()
 
     def load_widgets(self):
+
+        self.load_image()
+
         self.app_title = CTkLabel(self, text="CogniTriv", fg_color=self.controller.background_color, 
                                   text_color="#a4161a", font=("Calibri", 54, "bold")).pack(pady=(30, 0))
 
@@ -69,6 +94,22 @@ class HomePage(CTkFrame):
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command=lambda: self.controller.destroy()).pack(pady=(20, 0))
+
+    def load_image(self):
+        img_path = os.path.join(self.controller.curr_dir, "assets", "icon", "gui_icon.png")
+
+        try:
+            pil_image = Image.open(img_path)
+        except FileNotFoundError:
+            print("Error: 'gui_icon.png', could not be found")
+
+        self._resized_image = pil_image.resize((100, 100), Image.LANCZOS)
+        self._ctk_image = CTkImage(self._resized_image, self._resized_image,
+                                   size=(100, 100))
+
+        image_label = CTkLabel(self, image=self._ctk_image, text='')
+        image_label.place(x= 0, y=0)
+
 
     def open_website(self, file_parent, file_name):
 
