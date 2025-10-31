@@ -101,8 +101,8 @@ class HomePage(CTkFrame):
             pil_image = Image.open(img_path)
         except FileNotFoundError:
             print("Error: 'gui_icon.png', could not be found")
-
-        self._resized_image = pil_image.resize((100, 100), Image.LANCZOS)
+        print
+        self._resized_image = pil_image.resize((int(self.controller.window_width / 6.25), int(self.controller.window_height * 3.205)), Image.LANCZOS)
         self._ctk_image = CTkImage(self._resized_image, self._resized_image,
                                    size=(100, 100))
 
