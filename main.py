@@ -80,16 +80,16 @@ class HomePage(CTkFrame):
                                   text_color="#a4161a", font=("Courier 10 Pitch", 54)).pack(pady=(30, 0))
 
         self.start_button = CTkButton(self, text="Start", font=("Times New Roman", 31),
-                                 text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a', height= int(self.controller.window_height / 10),
+                                 text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a', height= int(self.controller.window_height / 12),
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command= lambda: self.controller.show_page(QuizPage)).pack(padx=(27, 0), pady=(80, 0))
         
-        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 31), height= int(self.controller.window_height / 10),
+        self.LearnMore_button = CTkButton(self, text="Learn More", font=("Times New Roman", 31), height= int(self.controller.window_height / 12),
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width=1,
                                  command=lambda: self.open_website("learn_more", "index.html")).pack(padx=(27, 0), pady=(20, 0))        
 
-        self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31), height= int(self.controller.window_height / 10), 
+        self.exit_button = CTkButton(self, text="Exit", font=("Times New Roman", 31), height= int(self.controller.window_height / 12), 
                                  text_color = "black", fg_color = '#ba181b', hover_color = '#a4161a',
                                  border_color="#d3d3d3", corner_radius = 3, border_width= 1,
                                  command=lambda: self.controller.destroy()).pack(padx=(27, 0), pady=(20, 0))
