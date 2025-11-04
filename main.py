@@ -54,13 +54,12 @@ class App(CTk):
             else:
                 self._icon_img = ImageTk.PhotoImage(Image.open(png_address))
                 self.iconphoto(False, self._icon_img)
-        except Exception as e:
-            print("Icon load failed", e)
+        except FileNotFoundError as fe:
+            raise FileNotFoundError(f"File could not be found {fe}")
 
     def show_page(self, page_class):
         page = self.pages[page_class]
         page.lift()
-
 
 class HomePage(CTkFrame):
     def __init__(self, parent, controller):

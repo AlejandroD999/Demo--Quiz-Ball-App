@@ -1,11 +1,10 @@
 ## To-Do
 
-1. Fix -> Silent exception in set_icon()
-2. Fix -> Direct backend attribute access
+1. Fix -> Direct backend attribute access
 > ❌ self.quiz_backend._data[...]
-4. Recreating all pages on retake
+2. Recreating all pages on retake
 > Brute forced -> Bad
-5. Fix Magic numbers
+3. Fix Magic numbers
 > Current code has numbers that are hard to read <br>
 > Improve readability through constants or variables
 
