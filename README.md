@@ -63,8 +63,9 @@ pip install -r requirements.txt
 ```
 
 ### 3. Run
->Items to look for before running:
-> * Cloned Repository
-> * Installed dependencies
+>Before running, ensure the following:
+> * Repository is cloned
+> * Virtual environment is created and active
+> * Dependencies are installed
 
-After completing this requirements the last step would be to open the executable file found in the root directory (e.g where README.md is located).
+Once ready, execute the file located in the project root (where README.md resides).
