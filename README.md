@@ -1,18 +1,14 @@
 ![CogniTriv logo](https://github.com/AlejandroD999/CogniTriv/blob/master/assets/icon/gui_icon.png)
 
 # About 
-CogniTriv is a prep tool designed to provide an engaging and efficient way
-to <b>learn</b> from a wide range of topics. With access to over <i>200,000</i> questions
-across diverse categories, it allows users to sharpen their knowledge, <i>practice</i>
+CogniTriv is a prep tool designed to provide a more engaging and efficient <b>learning</b> experience from a wide range of topics.
+With access to over <i>200,000</i> questions across diverse categories, it allows users to sharpen their knowledge, <i>practice</i>
 recall, and <i>build confidence</i> through
 repetition and challenge-based learning.
 
 # Purpose
-Through the use of CogniTriv it's easier to; <b>gain hands-on experience</b> with real question
-formats, become more comortable under pressure. It's not just
-about memorization--it's about broadening your horizons,
-reinforcing your strenghts, and improving your response accuracy through
-practical engagement.
+CogniTriv makes it easier to gain hands-on experience with real question formats and become more comfortable under pressure.
+This is not just memorization. The goal is to broaden your knowledge, reinforce strengths, and improve response accuracy through practical engagement.
 
 # Installation
 
@@ -49,8 +45,16 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 ```
+### 4. Run
 
-# Setup
+>Before running, ensure the following:
+> * Repository is cloned
+> * Virtual environment is active
+> * Dependencies are installed
+
+Once ready, execute the file located in the project root (where README.md resides).
+
+# Maintenance
 
 ### 1. Pull updates
 
@@ -62,10 +66,4 @@ pip install -r requirements.txt
   git pull origin master
 ```
 
-### 3. Run
->Before running, ensure the following:
-> * Repository is cloned
-> * Virtual environment is created and active
-> * Dependencies are installed
 
-Once ready, execute the file located in the project root (where README.md resides).
