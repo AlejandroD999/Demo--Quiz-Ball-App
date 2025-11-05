@@ -1,21 +1,20 @@
 [
     {
-        "category": "society_and_culture",
-        "id": "647edb90520523194910c34f",
-        "correctAnswer": "Nirvana",
+        "category": "film_and_tv",
+        "id": "622a1c377cc59eab6f9507c6",
+        "correctAnswer": "Arnold Schwarzenegger",
         "incorrectAnswers": [
-            "Fantasia",
-            "Elatia",
-            "Bodhi"
+            "Christopher Lee",
+            "Anthony Hopkins",
+            "Tom Hanks"
         ],
         "question": {
-            "text": "Which of these is a state of enlightenment in Buddhism?"
+            "text": "Which actor has featured in films including Batman & Robin and Predator?"
         },
         "tags": [
-            "religion",
-            "society_and_culture",
-            "buddhism",
-            "words"
+            "acting",
+            "film",
+            "film_and_tv"
         ],
         "type": "text_choice",
         "difficulty": "medium",
@@ -23,21 +22,42 @@
         "isNiche": false
     },
     {
-        "category": "sport_and_leisure",
-        "id": "64730759cf09068746f63758",
-        "correctAnswer": "The Triple Jump",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f95100e",
+        "correctAnswer": "Dragon Flies",
         "incorrectAnswers": [
-            "Long Jump",
-            "High Jump",
-            "Pole Vault"
+            "Ants",
+            "Woodlice",
+            "Beetles"
         ],
         "question": {
-            "text": "Which athletics event consists of two hops and a jump?"
+            "text": "What Type Of Insects Are Hawkers, Clubtails, Biddies, Emeralds, Darts & Skimmers"
         },
         "tags": [
-            "olympics",
-            "track_and_field",
-            "sport"
+            "science"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "society_and_culture",
+        "id": "6293ece67f41d6338b96ef13",
+        "correctAnswer": "Menes",
+        "incorrectAnswers": [
+            "Rene Descartes",
+            "Imhotep",
+            "Diogenes"
+        ],
+        "question": {
+            "text": "Which influential historical person was an Egyptian pharaoh who united Upper and Lower Egypt to found the First Dynasty?"
+        },
+        "tags": [
+            "people",
+            "history",
+            "society_and_culture",
+            "ancient_egypt"
         ],
         "type": "text_choice",
         "difficulty": "easy",
@@ -45,63 +65,19 @@
         "isNiche": false
     },
     {
-        "category": "arts_and_literature",
-        "id": "622a1c397cc59eab6f950ea0",
-        "correctAnswer": "Alexandre Dumas",
+        "category": "science",
+        "id": "622a1c3a7cc59eab6f951045",
+        "correctAnswer": "Forty two",
         "incorrectAnswers": [
-            "Anatole France",
-            "Gustave Flaubert",
-            "Charles Perrault"
+            "Twenty",
+            "Five",
+            "Three"
         ],
         "question": {
-            "text": "Which author wrote 'Twenty Years After'?"
+            "text": "What is the atomic number of Molybdenum?"
         },
         "tags": [
-            "literature",
-            "arts_and_literature"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "622a1c347cc59eab6f94f918",
-        "correctAnswer": "Casablanca",
-        "incorrectAnswers": [
-            "Ghost",
-            "Gangs of New York",
-            "A Streetcar Named Desire"
-        ],
-        "question": {
-            "text": "Which film contains the character 'Rick Blaine'?"
-        },
-        "tags": [
-            "film",
-            "fictitious_characters",
-            "film_and_tv"
-        ],
-        "type": "text_choice",
-        "difficulty": "hard",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "film_and_tv",
-        "id": "625fd676dc0dd3b72da64cf2",
-        "correctAnswer": "1995",
-        "incorrectAnswers": [
-            "1987",
-            "1991",
-            "1999"
-        ],
-        "question": {
-            "text": "In which year was Seven first released in the cinema?"
-        },
-        "tags": [
-            "film",
-            "film_and_tv"
+            "science"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -110,17 +86,19 @@
     },
     {
         "category": "music",
-        "id": "622a1c397cc59eab6f950c2c",
-        "correctAnswer": "ABBA",
+        "id": "622a1c357cc59eab6f94fe83",
+        "correctAnswer": "Lady Gaga",
         "incorrectAnswers": [
-            "In Flames",
-            "HammerFall",
-            "Katatonia"
+            "Hikaru Utada",
+            "Drake",
+            "Madonna"
         ],
         "question": {
-            "text": "Which Swedish pop group released the song 'Gimme! Gimme! Gimme! (A Man After Midnight)'?"
+            "text": "Which American singer, songwriter, and actress released the song 'Poker Face'?"
         },
         "tags": [
+            "songs",
+            "general_knowledge",
             "music"
         ],
         "type": "text_choice",
@@ -129,64 +107,19 @@
         "isNiche": false
     },
     {
-        "category": "history",
-        "id": "622a1c3c7cc59eab6f9518c4",
-        "correctAnswer": "Enigma",
+        "category": "food_and_drink",
+        "id": "622a1c367cc59eab6f950236",
+        "correctAnswer": "Spey\u00a0",
         "incorrectAnswers": [
-            "Mystery",
-            "Paradox",
-            "Riddle"
+            "Tay",
+            "Tweed",
+            "Clyde"
         ],
         "question": {
-            "text": "What Was The Name Given To The Coding Machine Used By The Germans In World War II?"
+            "text": "Which Scottish river supplies over 90% of the water used in whiskey manufacturing?"
         },
         "tags": [
-            "technology",
-            "world_war_2",
-            "history"
-        ],
-        "type": "text_choice",
-        "difficulty": "easy",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "sport_and_leisure",
-        "id": "62417d6b0f96c4efe8d773c5",
-        "correctAnswer": "New York Red Bulls",
-        "incorrectAnswers": [
-            "New York Sounders",
-            "New York Whitesox",
-            "New York Royals"
-        ],
-        "question": {
-            "text": "Which of these is a soccer team based in New York?"
-        },
-        "tags": [
-            "sport"
-        ],
-        "type": "text_choice",
-        "difficulty": "medium",
-        "regions": [],
-        "isNiche": false
-    },
-    {
-        "category": "history",
-        "id": "622a1c3d7cc59eab6f951c64",
-        "correctAnswer": "Perestroika",
-        "incorrectAnswers": [
-            "Apparatchik",
-            "Uskoreniye",
-            "Khozraschyot"
-        ],
-        "question": {
-            "text": "After the fall of the iron curtain, Russian leader Mikhail Gorbachev introduced a period of restructuring known as what?"
-        },
-        "tags": [
-            "russia",
-            "politics",
-            "cold_war",
-            "history"
+            "food_and_drink"
         ],
         "type": "text_choice",
         "difficulty": "hard",
@@ -194,22 +127,85 @@
         "isNiche": false
     },
     {
-        "category": "science",
-        "id": "622a1c3a7cc59eab6f951033",
-        "correctAnswer": "Emperor",
+        "category": "geography",
+        "id": "622a1c357cc59eab6f94fe49",
+        "correctAnswer": "Water",
         "incorrectAnswers": [
-            "King",
-            "Gentoo",
-            "Adelie"
+            "Salt",
+            "Foliage",
+            "Human Settlement"
         ],
         "question": {
-            "text": "What Is The Largest Species Of Penguin?"
+            "text": "Over 75% of the Earth's surface is covered by some form of _____."
         },
         "tags": [
-            "science"
+            "general_knowledge",
+            "geography"
         ],
         "type": "text_choice",
         "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "arts_and_literature",
+        "id": "63a03990c7d86251f9b65c81",
+        "correctAnswer": "Little Jack Horner",
+        "incorrectAnswers": [
+            "Hey Diddle Diddle",
+            "Mary Had a Little Lamb",
+            "Baa Baa Black Sheep"
+        ],
+        "question": {
+            "text": "What nursery rhyme is about a child who eats a Christmas pie?"
+        },
+        "tags": [
+            "arts_and_literature",
+            "nursery_rhymes"
+        ],
+        "type": "text_choice",
+        "difficulty": "medium",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "geography",
+        "id": "645c9f6b42ea81e2554c5f26",
+        "correctAnswer": "Kenya",
+        "incorrectAnswers": [
+            "Cameroon",
+            "Mali",
+            "Senegal"
+        ],
+        "question": {
+            "text": "Which African country's national anthem is called 'Wimbo Wa Taifa' in Swahili, meaning 'anthem of the nation'?"
+        },
+        "tags": [
+            "africa",
+            "songs"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
+        "regions": [],
+        "isNiche": false
+    },
+    {
+        "category": "music",
+        "id": "622a1c387cc59eab6f950b58",
+        "correctAnswer": "Soundgarden",
+        "incorrectAnswers": [
+            "Evanescence",
+            "The Pussycat Dolls",
+            "Three 6 Mafia"
+        ],
+        "question": {
+            "text": "Which American rock band released the song 'Black Hole Sun'?"
+        },
+        "tags": [
+            "music"
+        ],
+        "type": "text_choice",
+        "difficulty": "hard",
         "regions": [],
         "isNiche": false
     }

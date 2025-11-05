@@ -2,9 +2,7 @@
 
 1. Fix -> Direct backend attribute access
 > ❌ self.quiz_backend._data[...]
-2. Recreating all pages on retake
-> Brute forced -> Bad
-3. Fix Magic numbers
+2. Fix Magic numbers
 > Current code has numbers that are hard to read <br>
 > Improve readability through constants or variables
 
